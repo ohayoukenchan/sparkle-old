@@ -7,15 +7,43 @@
 //
 
 import UIKit
+import Firebase
+import ReSwift
+
+// The global application store, which is responsible for managing the appliction state.
+let mainStore = Store<AppState>(
+    reducer: counterReducer,
+    state: nil
+)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    #if DEVELOPMENT
+    let firebasePlistName = "GoogleService-Info-development"
+    #elseif STAGING
+    let firebasePlistName = "GoogleService-Info-staging"
+    #else
+    let firebasePlistName = "GoogleService-Info"
+    #endif
+    
+    //let firebasePlistName = "GoogleService-Info"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        guard let filePath = Bundle.main.path(forResource: firebasePlistName, ofType: "plist") else {
+            fatalError("GoogleService-Info.plist not found")
+        }
+        
+        
+        guard let options = FirebaseOptions(contentsOfFile: filePath) else {
+            fatalError("cannot initialize Firebase with given file")
+        }
+        FirebaseApp.configure(options: options)
+//        FirebaseApp.configure()
         return true
     }
 
