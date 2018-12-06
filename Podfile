@@ -12,6 +12,8 @@ target 'Infra' do
     inherit! :search_paths
     pod 'ReSwift'
     pod 'ReSwiftRouter'
+    # Utility
+    pod 'R.swift'
   end
   
 #  target 'sparkle-development' do

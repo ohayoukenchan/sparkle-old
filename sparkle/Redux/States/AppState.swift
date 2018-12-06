@@ -7,7 +7,8 @@
 //
 
 import ReSwift
+import ReSwiftRouter
 
 struct AppState: StateType {
-    var counter: Int = 0
+    var navigationState: NavigationState
 }
