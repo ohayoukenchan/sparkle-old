@@ -22,7 +22,7 @@ class RootRoutable: Routable {
     
 //    func setToSearchViewController() -> Routable {
 //        self.window.rootViewController = R.storyboard.search.instantiateInitialViewController()
-//
+//        
 //        return SearchViewRoutable(window.rootViewController!)
 //    }
     
@@ -32,12 +32,11 @@ class RootRoutable: Routable {
         animated: Bool,
         completionHandler: @escaping RoutingCompletionHandler
         ) -> Routable {
-
-//        if to == RouteNames.search {
-//            completionHandler()
-//            return setToSearchViewController()
-//        } else
-        if to == RouteNames.splash {
+        
+        if to == RouteNames.search {
+            completionHandler()
+            return setToSplashViewController()
+        } else if to == RouteNames.splash {
             completionHandler()
             return setToSplashViewController()
         } else {
@@ -50,12 +49,11 @@ class RootRoutable: Routable {
         animated: Bool,
         completionHandler: @escaping RoutingCompletionHandler
         ) -> Routable {
-
-//        if routeElementIdentifier == RouteNames.search {
-//            completionHandler()
-//            return setToSearchViewController()
-//        } else
-        if routeElementIdentifier == RouteNames.splash {
+        
+        if routeElementIdentifier == RouteNames.search {
+            completionHandler()
+            return setToSplashViewController()
+        } else if routeElementIdentifier == RouteNames.splash {
             completionHandler()
             return setToSplashViewController()
         } else {
@@ -63,3 +61,4 @@ class RootRoutable: Routable {
         }
     }
 }
+

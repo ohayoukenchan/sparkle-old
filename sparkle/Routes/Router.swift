@@ -13,6 +13,6 @@ var router: Router<AppState>!
 
 struct RouteNames {
     static let splash = "Splash"
-//    static let search = "Search"
-//    static let bookDetail = "BookDetail"
+    static let search = "Search"
+    static let tweetDetail = "TweetDetail"
 }

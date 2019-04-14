@@ -9,10 +9,10 @@
 import UIKit
 import ReSwift
 
-class ViewController: UIViewController, StoreSubscriber {
-    typealias StoreSubscriberStateType = AppState
-    
-    @IBOutlet weak var counterLabel: UILabel!
+class ViewController: UIViewController {
+//    typealias StoreSubscriberStateType = AppState
+//
+//    @IBOutlet weak var counterLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,10 +27,10 @@ class ViewController: UIViewController, StoreSubscriber {
         // Dispose of any resources that can be recreated.
     }
     
-    func newState(state: AppState) {
-        // when the state changes, the UI is updated to reflect the current state
-        // counterLabel.text = "\(mainStore.state.counter)"
-    }
+//    func newState(state: AppState) {
+//        // when the state changes, the UI is updated to reflect the current state
+//        // counterLabel.text = "\(mainStore.state.counter)"
+//    }
     
     // when either button is tapped, an action is dispatched to the store
     // in order to update the application state

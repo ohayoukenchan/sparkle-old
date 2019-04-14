@@ -10,5 +10,8 @@ import ReSwift
 import ReSwiftRouter
 
 struct AppState: StateType {
+    var authState: AuthState = AuthState()
     var navigationState: NavigationState
+    var searchState: SearchState = SearchState()
+    var tweetDetail: TweetDetailState = TweetDetailState()
 }

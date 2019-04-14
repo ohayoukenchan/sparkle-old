@@ -7,24 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A6F918C21B8E963005C8B9E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F918B21B8E963005C8B9E /* R.generated.swift */; };
+		3A0C69A421BA38440077CE64 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0C69A321BA38440077CE64 /* Splash.storyboard */; };
+		3A0C69B421BE6AC00077CE64 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69B321BE6AC00077CE64 /* AuthState.swift */; };
+		3A0C69B621BF7B2D0077CE64 /* Redux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69B521BF7B2D0077CE64 /* Redux.swift */; };
+		3A0C69B821BF7B650077CE64 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69B721BF7B650077CE64 /* AppReducer.swift */; };
+		3A0C69BA21BF7B850077CE64 /* AuthReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69B921BF7B850077CE64 /* AuthReducer.swift */; };
+		3A0C69BC21BF7B9C0077CE64 /* SearchReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69BB21BF7B9C0077CE64 /* SearchReducer.swift */; };
+		3A0C69BE21BF7BB50077CE64 /* TweetDetailReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69BD21BF7BB50077CE64 /* TweetDetailReducer.swift */; };
+		3A0C69C021BF861C0077CE64 /* SearchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69BF21BF861C0077CE64 /* SearchState.swift */; };
+		3A0C69C221BF864D0077CE64 /* TweetDetailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69C121BF864D0077CE64 /* TweetDetailState.swift */; };
+		3A0C69C421BF86770077CE64 /* SearchAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69C321BF86770077CE64 /* SearchAction.swift */; };
+		3A0C69C621BF869F0077CE64 /* TweetDetailAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69C521BF869F0077CE64 /* TweetDetailAction.swift */; };
+		3A0C69C821BF86BA0077CE64 /* AuthAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69C721BF86BA0077CE64 /* AuthAction.swift */; };
+		3A63AD6621C8D81800B191FE /* TweetDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A63AD6421C8D81800B191FE /* TweetDetail.storyboard */; };
+		3A63AD6721C8D81800B191FE /* TweetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A63AD6521C8D81800B191FE /* TweetDetailViewController.swift */; };
+		3A74294421C8B48F0029C3C0 /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74294321C8B48F0029C3C0 /* LoginProvider.swift */; };
+		3A74294621C8B49E0029C3C0 /* SearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74294521C8B49E0029C3C0 /* SearchProvider.swift */; };
+		3A74294821C8B4B10029C3C0 /* OAuthTwitterHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74294721C8B4B10029C3C0 /* OAuthTwitterHeader.swift */; };
+		3A74294B21C8BF5E0029C3C0 /* TwitterCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74294A21C8BF5E0029C3C0 /* TwitterCredentials.swift */; };
+		3A74294E21C8BFC20029C3C0 /* String+PercentEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74294D21C8BFC20029C3C0 /* String+PercentEncoding.swift */; };
+		3A74295021C8BFD20029C3C0 /* String+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74294F21C8BFD20029C3C0 /* String+Random.swift */; };
+		3A74295221C8BFF20029C3C0 /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74295121C8BFF20029C3C0 /* UIView+CornerRadius.swift */; };
+		3A74295421C8C0290029C3C0 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74295321C8C0290029C3C0 /* Errors.swift */; };
+		3A74295621C8C0420029C3C0 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74295521C8C0420029C3C0 /* Config.swift */; };
+		3A74295921C8C0780029C3C0 /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74295821C8C0780029C3C0 /* Sizes.swift */; };
+		3A74295B21C8C51C0029C3C0 /* SearchViewRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74295A21C8C51C0029C3C0 /* SearchViewRoutable.swift */; };
+		3A74295D21C8C5470029C3C0 /* TweetDetailViewRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74295C21C8C5470029C3C0 /* TweetDetailViewRoutable.swift */; };
 		3A9FFCD921896A63007E2B8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9FFCD821896A63007E2B8C /* AppDelegate.swift */; };
 		3A9FFCDB21896A63007E2B8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9FFCDA21896A63007E2B8C /* ViewController.swift */; };
 		3A9FFCDE21896A63007E2B8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9FFCDC21896A63007E2B8C /* Main.storyboard */; };
 		3A9FFCE021896A65007E2B8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A9FFCDF21896A65007E2B8C /* Assets.xcassets */; };
-		3A9FFCE321896A65007E2B8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9FFCE121896A65007E2B8C /* LaunchScreen.storyboard */; };
 		3A9FFCEE21896A66007E2B8C /* sparkleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9FFCED21896A66007E2B8C /* sparkleTests.swift */; };
 		3A9FFCF921896A66007E2B8C /* sparkleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9FFCF821896A66007E2B8C /* sparkleUITests.swift */; };
 		3A9FFD1821896F10007E2B8C /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9FFD0F21896F0F007E2B8C /* Infra.framework */; };
 		3A9FFD1F21896F10007E2B8C /* InfraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9FFD1E21896F10007E2B8C /* InfraTests.swift */; };
 		3A9FFD2121896F10007E2B8C /* Infra.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A9FFD1121896F10007E2B8C /* Infra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A9FFD2521896F10007E2B8C /* Infra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9FFD0F21896F0F007E2B8C /* Infra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3AB5B62A225DBD8E00894CCB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5B629225DBD8E00894CCB /* R.generated.swift */; };
+		3AB5B632225DC32100894CCB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5B62C225DC32100894CCB /* SearchViewController.swift */; };
+		3AB5B633225DC32100894CCB /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB5B62D225DC32100894CCB /* Search.storyboard */; };
+		3AB5B634225DC32100894CCB /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB5B630225DC32100894CCB /* TweetCell.xib */; };
+		3AB5B635225DC32100894CCB /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5B631225DC32100894CCB /* TweetCell.swift */; };
 		3AB8B724218AF40900C512C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AB8B723218AF40900C512C4 /* GoogleService-Info.plist */; };
 		3AB8B725218AF40900C512C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AB8B723218AF40900C512C4 /* GoogleService-Info.plist */; };
 		3AB8B728218AF41400C512C4 /* GoogleService-Info-development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AB8B726218AF41300C512C4 /* GoogleService-Info-development.plist */; };
 		3AB8B729218AF41400C512C4 /* GoogleService-Info-development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AB8B726218AF41300C512C4 /* GoogleService-Info-development.plist */; };
 		3AB8B72A218AF41400C512C4 /* GoogleService-Info-staging.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AB8B727218AF41300C512C4 /* GoogleService-Info-staging.plist */; };
 		3AB8B72B218AF41400C512C4 /* GoogleService-Info-staging.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AB8B727218AF41300C512C4 /* GoogleService-Info-staging.plist */; };
+		3AC7E4E921C8AA6200EA1AB8 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC7E4E821C8AA6200EA1AB8 /* Tweet.swift */; };
 		3AE8395E218AC1BA00391531 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8395D218AC1BA00391531 /* AppState.swift */; };
 		3AE83961218AC24000391531 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE83960218AC24000391531 /* CounterReducer.swift */; };
 		3AE83964218AC27700391531 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE83963218AC27700391531 /* Actions.swift */; };
@@ -91,13 +121,38 @@
 /* Begin PBXFileReference section */
 		1694320975257083FD3ED969 /* Pods-Infra.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infra.staging.xcconfig"; path = "Pods/Target Support Files/Pods-Infra/Pods-Infra.staging.xcconfig"; sourceTree = "<group>"; };
 		3433B256797CE5D48A3CEF57 /* Pods-Infra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infra.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infra/Pods-Infra.debug.xcconfig"; sourceTree = "<group>"; };
+		3A0C69A321BA38440077CE64 /* Splash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		3A0C69B321BE6AC00077CE64 /* AuthState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
+		3A0C69B521BF7B2D0077CE64 /* Redux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redux.swift; sourceTree = "<group>"; };
+		3A0C69B721BF7B650077CE64 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		3A0C69B921BF7B850077CE64 /* AuthReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthReducer.swift; sourceTree = "<group>"; };
+		3A0C69BB21BF7B9C0077CE64 /* SearchReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchReducer.swift; sourceTree = "<group>"; };
+		3A0C69BD21BF7BB50077CE64 /* TweetDetailReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailReducer.swift; sourceTree = "<group>"; };
+		3A0C69BF21BF861C0077CE64 /* SearchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchState.swift; sourceTree = "<group>"; };
+		3A0C69C121BF864D0077CE64 /* TweetDetailState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailState.swift; sourceTree = "<group>"; };
+		3A0C69C321BF86770077CE64 /* SearchAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAction.swift; sourceTree = "<group>"; };
+		3A0C69C521BF869F0077CE64 /* TweetDetailAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailAction.swift; sourceTree = "<group>"; };
+		3A0C69C721BF86BA0077CE64 /* AuthAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAction.swift; sourceTree = "<group>"; };
 		3A11A97621898B4C0097EE84 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A11A97821898B4C0097EE84 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A11A97A21898B4C0097EE84 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A11A99B21898ECE0097EE84 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A11A99D21898ECE0097EE84 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A11A99F21898ECE0097EE84 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A6F918B21B8E963005C8B9E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		3A63AD6421C8D81800B191FE /* TweetDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TweetDetail.storyboard; sourceTree = "<group>"; };
+		3A63AD6521C8D81800B191FE /* TweetDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetDetailViewController.swift; sourceTree = "<group>"; };
+		3A74294321C8B48F0029C3C0 /* LoginProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProvider.swift; sourceTree = "<group>"; };
+		3A74294521C8B49E0029C3C0 /* SearchProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProvider.swift; sourceTree = "<group>"; };
+		3A74294721C8B4B10029C3C0 /* OAuthTwitterHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthTwitterHeader.swift; sourceTree = "<group>"; };
+		3A74294A21C8BF5E0029C3C0 /* TwitterCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCredentials.swift; sourceTree = "<group>"; };
+		3A74294D21C8BFC20029C3C0 /* String+PercentEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+PercentEncoding.swift"; sourceTree = "<group>"; };
+		3A74294F21C8BFD20029C3C0 /* String+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Random.swift"; sourceTree = "<group>"; };
+		3A74295121C8BFF20029C3C0 /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius.swift"; sourceTree = "<group>"; };
+		3A74295321C8C0290029C3C0 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		3A74295521C8C0420029C3C0 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		3A74295821C8C0780029C3C0 /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		3A74295A21C8C51C0029C3C0 /* SearchViewRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewRoutable.swift; sourceTree = "<group>"; };
+		3A74295C21C8C5470029C3C0 /* TweetDetailViewRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailViewRoutable.swift; sourceTree = "<group>"; };
 		3A9FFCD521896A63007E2B8C /* sparkle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sparkle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9FFCD821896A63007E2B8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A9FFCDA21896A63007E2B8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,9 +172,16 @@
 		3A9FFD1721896F10007E2B8C /* InfraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9FFD1E21896F10007E2B8C /* InfraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfraTests.swift; sourceTree = "<group>"; };
 		3A9FFD2021896F10007E2B8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AB5B629225DBD8E00894CCB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		3AB5B62C225DC32100894CCB /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		3AB5B62D225DC32100894CCB /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		3AB5B630225DC32100894CCB /* TweetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetCell.xib; sourceTree = "<group>"; };
+		3AB5B631225DC32100894CCB /* TweetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 		3AB8B723218AF40900C512C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3AB8B726218AF41300C512C4 /* GoogleService-Info-development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-development.plist"; sourceTree = "<group>"; };
 		3AB8B727218AF41300C512C4 /* GoogleService-Info-staging.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-staging.plist"; sourceTree = "<group>"; };
+		3AC7E4E821C8AA6200EA1AB8 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		3AD2059E225DBB6500200A27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AE8395D218AC1BA00391531 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		3AE83960218AC24000391531 /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
 		3AE83963218AC27700391531 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
@@ -185,6 +247,7 @@
 				3AE83962218AC25600391531 /* Actions */,
 				3AE8395F218AC22D00391531 /* Reducers */,
 				3AE8395C218AC1A800391531 /* States */,
+				3A0C69B521BF7B2D0077CE64 /* Redux.swift */,
 			);
 			path = Redux;
 			sourceTree = "<group>";
@@ -192,6 +255,9 @@
 		3A59C868219004FF000C4E86 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				3A74294321C8B48F0029C3C0 /* LoginProvider.swift */,
+				3A74294521C8B49E0029C3C0 /* SearchProvider.swift */,
+				3A74294721C8B4B10029C3C0 /* OAuthTwitterHeader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -201,15 +267,47 @@
 			children = (
 				3AE8EF4A21B4ED9C0098FE23 /* Router.swift */,
 				3AE8EF4C21B4EDEF0098FE23 /* SplashViewRoutable.swift */,
+				3A74295A21C8C51C0029C3C0 /* SearchViewRoutable.swift */,
 				3AE8EF4E21B4EE2A0098FE23 /* RootRoutable.swift */,
+				3A74295C21C8C5470029C3C0 /* TweetDetailViewRoutable.swift */,
 			);
 			path = Routes;
+			sourceTree = "<group>";
+		};
+		3A63AD6321C8D81800B191FE /* TweetDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3A63AD6421C8D81800B191FE /* TweetDetail.storyboard */,
+				3A63AD6521C8D81800B191FE /* TweetDetailViewController.swift */,
+			);
+			path = TweetDetail;
+			sourceTree = "<group>";
+		};
+		3A74294921C8BF490029C3C0 /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				3A74294A21C8BF5E0029C3C0 /* TwitterCredentials.swift */,
+				3A74295821C8C0780029C3C0 /* Sizes.swift */,
+				3A74295321C8C0290029C3C0 /* Errors.swift */,
+				3A74295521C8C0420029C3C0 /* Config.swift */,
+			);
+			path = Globals;
+			sourceTree = "<group>";
+		};
+		3A74294C21C8BFA60029C3C0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3A74294D21C8BFC20029C3C0 /* String+PercentEncoding.swift */,
+				3A74294F21C8BFD20029C3C0 /* String+Random.swift */,
+				3A74295121C8BFF20029C3C0 /* UIView+CornerRadius.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		3A9FFCCC21896A63007E2B8C = {
 			isa = PBXGroup;
 			children = (
-				3A6F918B21B8E963005C8B9E /* R.generated.swift */,
+				3AB5B629225DBD8E00894CCB /* R.generated.swift */,
 				3A9FFCD721896A63007E2B8C /* sparkle */,
 				3A9FFCEC21896A66007E2B8C /* sparkleTests */,
 				3A9FFCF721896A66007E2B8C /* sparkleUITests */,
@@ -236,6 +334,9 @@
 		3A9FFCD721896A63007E2B8C /* sparkle */ = {
 			isa = PBXGroup;
 			children = (
+				3A74294C21C8BFA60029C3C0 /* Extensions */,
+				3A74294921C8BF490029C3C0 /* Globals */,
+				3AC7E4E721C8AA4900EA1AB8 /* Model */,
 				3AE8EF5021B4F2560098FE23 /* Scenes */,
 				3A59C868219004FF000C4E86 /* Services */,
 				3AB8B726218AF41300C512C4 /* GoogleService-Info-development.plist */,
@@ -289,10 +390,56 @@
 			path = InfraTests;
 			sourceTree = "<group>";
 		};
+		3AB5B62B225DC32100894CCB /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				3AB5B62C225DC32100894CCB /* SearchViewController.swift */,
+				3AB5B62D225DC32100894CCB /* Search.storyboard */,
+				3AB5B62E225DC32100894CCB /* Views */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		3AB5B62E225DC32100894CCB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3AB5B62F225DC32100894CCB /* TweetCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3AB5B62F225DC32100894CCB /* TweetCell */ = {
+			isa = PBXGroup;
+			children = (
+				3AB5B630225DC32100894CCB /* TweetCell.xib */,
+				3AB5B631225DC32100894CCB /* TweetCell.swift */,
+			);
+			path = TweetCell;
+			sourceTree = "<group>";
+		};
+		3AC7E4E721C8AA4900EA1AB8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3AC7E4E821C8AA6200EA1AB8 /* Tweet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3AD2059C225DBB6500200A27 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3AD2059D225DBB6500200A27 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
 		3AE8395C218AC1A800391531 /* States */ = {
 			isa = PBXGroup;
 			children = (
 				3AE8395D218AC1BA00391531 /* AppState.swift */,
+				3A0C69B321BE6AC00077CE64 /* AuthState.swift */,
+				3A0C69BF21BF861C0077CE64 /* SearchState.swift */,
+				3A0C69C121BF864D0077CE64 /* TweetDetailState.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -301,6 +448,10 @@
 			isa = PBXGroup;
 			children = (
 				3AE83960218AC24000391531 /* CounterReducer.swift */,
+				3A0C69B721BF7B650077CE64 /* AppReducer.swift */,
+				3A0C69B921BF7B850077CE64 /* AuthReducer.swift */,
+				3A0C69BB21BF7B9C0077CE64 /* SearchReducer.swift */,
+				3A0C69BD21BF7BB50077CE64 /* TweetDetailReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -309,6 +460,9 @@
 			isa = PBXGroup;
 			children = (
 				3AE83963218AC27700391531 /* Actions.swift */,
+				3A0C69C321BF86770077CE64 /* SearchAction.swift */,
+				3A0C69C521BF869F0077CE64 /* TweetDetailAction.swift */,
+				3A0C69C721BF86BA0077CE64 /* AuthAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -316,6 +470,9 @@
 		3AE8EF5021B4F2560098FE23 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				3AB5B62B225DC32100894CCB /* Search */,
+				3A63AD6321C8D81800B191FE /* TweetDetail */,
+				3AD2059C225DBB6500200A27 /* LaunchScreen */,
 				3AE8EF5121B4F2680098FE23 /* Splash */,
 			);
 			path = Scenes;
@@ -324,6 +481,7 @@
 		3AE8EF5121B4F2680098FE23 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				3A0C69A321BA38440077CE64 /* Splash.storyboard */,
 				3AE8EF5221B4F2920098FE23 /* SplashViewController.swift */,
 			);
 			path = Splash;
@@ -378,7 +536,7 @@
 			buildConfigurationList = 3A9FFCFD21896A66007E2B8C /* Build configuration list for PBXNativeTarget "sparkle" */;
 			buildPhases = (
 				E5DB5C9E65A99929B3CCFC4F /* [CP] Check Pods Manifest.lock */,
-				3AE8EF5421B8E7D70098FE23 /* ShellScript */,
+				3AE8EF5421B8E7D70098FE23 /* Run Script */,
 				3A9FFCD121896A63007E2B8C /* Sources */,
 				3A9FFCD221896A63007E2B8C /* Frameworks */,
 				3A9FFCD321896A63007E2B8C /* Resources */,
@@ -441,7 +599,6 @@
 				3A9FFD0B21896F0F007E2B8C /* Frameworks */,
 				3A9FFD0C21896F0F007E2B8C /* Headers */,
 				3A9FFD0D21896F0F007E2B8C /* Resources */,
-				0E8257DDE5D1486CEBA630DF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -478,7 +635,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Takano Kenta";
 				TargetAttributes = {
 					3A9FFCD421896A63007E2B8C = {
@@ -529,11 +686,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AB8B72A218AF41400C512C4 /* GoogleService-Info-staging.plist in Resources */,
-				3A9FFCE321896A65007E2B8C /* LaunchScreen.storyboard in Resources */,
 				3AB8B724218AF40900C512C4 /* GoogleService-Info.plist in Resources */,
+				3AB5B634225DC32100894CCB /* TweetCell.xib in Resources */,
 				3AB8B728218AF41400C512C4 /* GoogleService-Info-development.plist in Resources */,
 				3A9FFCE021896A65007E2B8C /* Assets.xcassets in Resources */,
 				3A9FFCDE21896A63007E2B8C /* Main.storyboard in Resources */,
+				3A0C69A421BA38440077CE64 /* Splash.storyboard in Resources */,
+				3AB5B633225DC32100894CCB /* Search.storyboard in Resources */,
+				3A63AD6621C8D81800B191FE /* TweetDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,24 +731,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0E8257DDE5D1486CEBA630DF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Infra/Pods-Infra-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/gRPCCertificates.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Infra/Pods-Infra-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		25A41D084588AC56D16D9138 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -596,29 +738,32 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-sparkle/Pods-sparkle-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/gRPCCertificates.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sparkle/Pods-sparkle-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3AE8EF5421B8E7D70098FE23 /* ShellScript */ = {
+		3AE8EF5421B8E7D70098FE23 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
 			);
+			name = "Run Script";
 			outputPaths = (
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
 		7E4E1DC6ECCD08505797BE49 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -627,10 +772,24 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-sparkle/Pods-sparkle-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PullToRefreshKit/PullToRefreshKit.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/ReRxSwift/ReRxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ReSwiftRouter/ReSwiftRouter.framework",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
@@ -640,10 +799,24 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PullToRefreshKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReRxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwiftRouter.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
@@ -699,14 +872,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0C69BC21BF7B9C0077CE64 /* SearchReducer.swift in Sources */,
 				3AE83964218AC27700391531 /* Actions.swift in Sources */,
+				3A0C69C221BF864D0077CE64 /* TweetDetailState.swift in Sources */,
+				3A74295421C8C0290029C3C0 /* Errors.swift in Sources */,
+				3A74294E21C8BFC20029C3C0 /* String+PercentEncoding.swift in Sources */,
+				3A0C69C821BF86BA0077CE64 /* AuthAction.swift in Sources */,
+				3A0C69B621BF7B2D0077CE64 /* Redux.swift in Sources */,
+				3A63AD6721C8D81800B191FE /* TweetDetailViewController.swift in Sources */,
+				3A74294821C8B4B10029C3C0 /* OAuthTwitterHeader.swift in Sources */,
 				3AE8395E218AC1BA00391531 /* AppState.swift in Sources */,
+				3A74294B21C8BF5E0029C3C0 /* TwitterCredentials.swift in Sources */,
+				3AB5B62A225DBD8E00894CCB /* R.generated.swift in Sources */,
+				3A0C69C621BF869F0077CE64 /* TweetDetailAction.swift in Sources */,
 				3AE83961218AC24000391531 /* CounterReducer.swift in Sources */,
 				3AE8EF5321B4F2920098FE23 /* SplashViewController.swift in Sources */,
 				3AE8EF4D21B4EDEF0098FE23 /* SplashViewRoutable.swift in Sources */,
+				3A74295221C8BFF20029C3C0 /* UIView+CornerRadius.swift in Sources */,
+				3A0C69BE21BF7BB50077CE64 /* TweetDetailReducer.swift in Sources */,
+				3A0C69BA21BF7B850077CE64 /* AuthReducer.swift in Sources */,
+				3A74295B21C8C51C0029C3C0 /* SearchViewRoutable.swift in Sources */,
 				3A9FFCDB21896A63007E2B8C /* ViewController.swift in Sources */,
+				3A74295D21C8C5470029C3C0 /* TweetDetailViewRoutable.swift in Sources */,
+				3AC7E4E921C8AA6200EA1AB8 /* Tweet.swift in Sources */,
+				3A74294621C8B49E0029C3C0 /* SearchProvider.swift in Sources */,
+				3A0C69B821BF7B650077CE64 /* AppReducer.swift in Sources */,
+				3A74295021C8BFD20029C3C0 /* String+Random.swift in Sources */,
 				3AE8EF4B21B4ED9C0098FE23 /* Router.swift in Sources */,
-				3A6F918C21B8E963005C8B9E /* R.generated.swift in Sources */,
+				3A74295621C8C0420029C3C0 /* Config.swift in Sources */,
+				3A0C69C021BF861C0077CE64 /* SearchState.swift in Sources */,
+				3AB5B635225DC32100894CCB /* TweetCell.swift in Sources */,
+				3A0C69C421BF86770077CE64 /* SearchAction.swift in Sources */,
+				3AB5B632225DC32100894CCB /* SearchViewController.swift in Sources */,
+				3A74294421C8B48F0029C3C0 /* LoginProvider.swift in Sources */,
+				3A74295921C8C0780029C3C0 /* Sizes.swift in Sources */,
+				3A0C69B421BE6AC00077CE64 /* AuthState.swift in Sources */,
 				3A9FFCD921896A63007E2B8C /* AppDelegate.swift in Sources */,
 				3AE8EF4F21B4EE2A0098FE23 /* RootRoutable.swift in Sources */,
 			);
@@ -790,6 +990,14 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		3AD2059D225DBB6500200A27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AD2059E225DBB6500200A27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -842,12 +1050,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "-D DEVELOPMENT";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEVELOPMENT;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Development;
@@ -860,6 +1068,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6UZ5Y9MX86;
 				INFOPLIST_FILE = sparkle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1014,7 +1223,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = STAGING;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Staging;
@@ -1027,6 +1236,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6UZ5Y9MX86;
 				INFOPLIST_FILE = sparkle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1181,7 +1391,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -1242,7 +1452,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = RELEASE;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1255,6 +1465,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6UZ5Y9MX86;
 				INFOPLIST_FILE = sparkle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1274,6 +1485,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6UZ5Y9MX86;
 				INFOPLIST_FILE = sparkle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
