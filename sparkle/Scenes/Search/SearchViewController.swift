@@ -31,14 +31,14 @@ class SearchViewController: UIViewController, Routable {
   private var didChangeQuery: PublishSubject = PublishSubject<Void>()
   private var didChangeMaxId: PublishSubject = PublishSubject<Void>()
     
-  var ref: DatabaseReference! = Database.database().reference()
+  // var ref: DatabaseReference! = Database.database().reference()
   
   override func viewDidLoad() {
     super.viewDidLoad()
     configureCollectionView()
     configurePullToRefresh()
     
-    self.ref.child("users").child("user1").setValue(["name": "Alice"])
+//    self.ref.child("users").child("user1").setValue(["name": "Alice"])
     
     // When query or maxId changes, it is gonna reload data only once
     // this mechanism prevents reloading twice
@@ -118,7 +118,9 @@ class SearchViewController: UIViewController, Routable {
   }
   
   private func configureCollectionView() {
-    tweetsCollectionView.register(R.nib.tweetCell(), forCellWithReuseIdentifier: R.reuseIdentifier.tweetCell.identifier)
+    tweetsCollectionView.register( UINib(resource: R.nib.tweetCell), forCellWithReuseIdentifier: R.reuseIdentifier.tweetCell.identifier)
+    
+    
     if let flowLayout = tweetsCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
       if #available(iOS 10.0, *) {
         flowLayout.estimatedItemSize = UICollectionViewFlowLayoutAutomaticSize

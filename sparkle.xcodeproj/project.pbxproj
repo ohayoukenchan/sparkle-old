@@ -62,6 +62,7 @@
 		3AE8EF4D21B4EDEF0098FE23 /* SplashViewRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8EF4C21B4EDEF0098FE23 /* SplashViewRoutable.swift */; };
 		3AE8EF4F21B4EE2A0098FE23 /* RootRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8EF4E21B4EE2A0098FE23 /* RootRoutable.swift */; };
 		3AE8EF5321B4F2920098FE23 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8EF5221B4F2920098FE23 /* SplashViewController.swift */; };
+		3AEBD4AF226C1F54007C9917 /* LookUpState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEBD4AE226C1F54007C9917 /* LookUpState.swift */; };
 		896B93996A902B6F564E1176 /* Pods_Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB6DA32A590B926441E9616 /* Pods_Infra.framework */; };
 		DCA16536C954A215D22DE3EF /* Pods_sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3566284044564B61E735286 /* Pods_sparkle.framework */; };
 /* End PBXBuildFile section */
@@ -189,6 +190,7 @@
 		3AE8EF4C21B4EDEF0098FE23 /* SplashViewRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewRoutable.swift; sourceTree = "<group>"; };
 		3AE8EF4E21B4EE2A0098FE23 /* RootRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRoutable.swift; sourceTree = "<group>"; };
 		3AE8EF5221B4F2920098FE23 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		3AEBD4AE226C1F54007C9917 /* LookUpState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookUpState.swift; sourceTree = "<group>"; };
 		64C2BF903D6B65E9ED924F2F /* Pods-sparkle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sparkle/Pods-sparkle.debug.xcconfig"; sourceTree = "<group>"; };
 		8FB6DA32A590B926441E9616 /* Pods_Infra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		930E72AB52B9EC43418BB49E /* Pods-sparkle.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkle.staging.xcconfig"; path = "Pods/Target Support Files/Pods-sparkle/Pods-sparkle.staging.xcconfig"; sourceTree = "<group>"; };
@@ -241,6 +243,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A3A984E2264825100522A33 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3AB5B629225DBD8E00894CCB /* R.generated.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		3A59C867219003BE000C4E86 /* Redux */ = {
 			isa = PBXGroup;
 			children = (
@@ -307,7 +317,6 @@
 		3A9FFCCC21896A63007E2B8C = {
 			isa = PBXGroup;
 			children = (
-				3AB5B629225DBD8E00894CCB /* R.generated.swift */,
 				3A9FFCD721896A63007E2B8C /* sparkle */,
 				3A9FFCEC21896A66007E2B8C /* sparkleTests */,
 				3A9FFCF721896A66007E2B8C /* sparkleUITests */,
@@ -346,6 +355,7 @@
 				3A59C867219003BE000C4E86 /* Redux */,
 				3A9FFCD821896A63007E2B8C /* AppDelegate.swift */,
 				3A9FFCDA21896A63007E2B8C /* ViewController.swift */,
+				3A3A984E2264825100522A33 /* Resources */,
 				3A9FFCDC21896A63007E2B8C /* Main.storyboard */,
 				3A9FFCDF21896A65007E2B8C /* Assets.xcassets */,
 				3A9FFCE121896A65007E2B8C /* LaunchScreen.storyboard */,
@@ -440,6 +450,7 @@
 				3A0C69B321BE6AC00077CE64 /* AuthState.swift */,
 				3A0C69BF21BF861C0077CE64 /* SearchState.swift */,
 				3A0C69C121BF864D0077CE64 /* TweetDetailState.swift */,
+				3AEBD4AE226C1F54007C9917 /* LookUpState.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -881,6 +892,7 @@
 				3A0C69B621BF7B2D0077CE64 /* Redux.swift in Sources */,
 				3A63AD6721C8D81800B191FE /* TweetDetailViewController.swift in Sources */,
 				3A74294821C8B4B10029C3C0 /* OAuthTwitterHeader.swift in Sources */,
+				3AEBD4AF226C1F54007C9917 /* LookUpState.swift in Sources */,
 				3AE8395E218AC1BA00391531 /* AppState.swift in Sources */,
 				3A74294B21C8BF5E0029C3C0 /* TwitterCredentials.swift in Sources */,
 				3AB5B62A225DBD8E00894CCB /* R.generated.swift in Sources */,

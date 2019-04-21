@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         // subscribe to state changes
-        //mainStore.subscribe(self)
+       // mainStore.subscribe(self)
     }
 
     override func didReceiveMemoryWarning() {

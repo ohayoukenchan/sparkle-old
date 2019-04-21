@@ -8,5 +8,5 @@
 
 import Foundation
 
-let twitterConsumerKey: String = "aODKuSpE9qihCTIPA2gIOF6ku"
-let twitterConsumerSecret: String = "W9JSPbsiuZ12bsOYMaLHBOoW5bahJP0RxL2oDel8r5LVpuTtG0"
+let twitterConsumerKey: String = "EXuu5OCwa8WKTfEYDxIgKT6Ze"
+let twitterConsumerSecret: String = "c89ajspn4I4FyYNRMFQK5FmYhMIjdwX4Dx0DxdnVeoZsTOcTZO"

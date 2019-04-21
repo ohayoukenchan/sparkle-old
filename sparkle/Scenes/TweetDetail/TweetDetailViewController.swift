@@ -40,13 +40,13 @@ class TweetDetailViewController: UIViewController, StoreSubscriber, Routable {
   
   func newState(state: TweetDetailState) {
     if let tweet = state.tweet {
-//      if let imageUrl = URL(string: tweet.thumbnailUrl) {
-//        thumbnailView.kf.setImage(with: imageUrl)
-//      }
-//      
-//      if let tweetImageUrl = tweet.tweetImageUrl, let imageUrl = URL(string: tweetImageUrl) {
-//        tweetImageView.kf.setImage(with: imageUrl)
-//      }
+      if let imageUrl = URL(string: tweet.thumbnailUrl) {
+        thumbnailView.kf.setImage(with: imageUrl)
+      }
+      
+      if let tweetImageUrl = tweet.tweetImageUrl, let imageUrl = URL(string: tweetImageUrl) {
+        tweetImageView.kf.setImage(with: imageUrl)
+      }
       
       nameLabel.text = tweet.username
       messageLabel.text = tweet.text

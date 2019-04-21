@@ -59,6 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Twitter Config
         TWTRTwitter.sharedInstance().start(withConsumerKey: twitterConsumerKey, consumerSecret: twitterConsumerSecret)
+    
         
         // Setup Keyboard Manager
         IQKeyboardManager.shared.enable = true
