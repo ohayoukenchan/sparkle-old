@@ -20,12 +20,13 @@ class RootRoutable: Routable {
         return SplashViewRoutable()
     }
     
-//    func setToSearchViewController() -> Routable {
-//        self.window.rootViewController = R.storyboard.search.instantiateInitialViewController()
-//        
-//        return SearchViewRoutable(window.rootViewController!)
-//    }
     
+    func setToSearchViewController() -> Routable {
+        self.window.rootViewController = R.storyboard.search.instantiateInitialViewController()
+        
+        return SearchViewRoutable(window.rootViewController!)
+    }
+
     func changeRouteSegment(
         _ from: RouteElementIdentifier,
         to: RouteElementIdentifier,
@@ -35,7 +36,7 @@ class RootRoutable: Routable {
         
         if to == RouteNames.search {
             completionHandler()
-            return setToSplashViewController()
+            return setToSearchViewController()
         } else if to == RouteNames.splash {
             completionHandler()
             return setToSplashViewController()
@@ -52,7 +53,7 @@ class RootRoutable: Routable {
         
         if routeElementIdentifier == RouteNames.search {
             completionHandler()
-            return setToSplashViewController()
+            return setToSearchViewController()
         } else if routeElementIdentifier == RouteNames.splash {
             completionHandler()
             return setToSplashViewController()

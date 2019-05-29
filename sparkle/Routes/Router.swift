@@ -12,6 +12,7 @@ import ReSwiftRouter
 var router: Router<AppState>!
 
 struct RouteNames {
+    static let lookUp = "LookUp"
     static let splash = "Splash"
     static let search = "Search"
     static let tweetDetail = "TweetDetail"

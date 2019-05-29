@@ -10,6 +10,7 @@ import ReSwift
 import ReSwiftRouter
 
 struct AppState: StateType {
+    var lookUpState: LookUpState = LookUpState(test: false)
     var authState: AuthState = AuthState()
     var navigationState: NavigationState
     var searchState: SearchState = SearchState()
