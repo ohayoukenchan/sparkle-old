@@ -150,7 +150,7 @@ DEPENDENCIES:
   - TwitterKit
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - BoringSSL-GRPC
     - CryptoSwift
@@ -222,4 +222,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: d57964abec2e2b79de99943e930b78e6442f37a7
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
