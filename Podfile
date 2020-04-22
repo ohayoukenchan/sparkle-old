@@ -3,20 +3,21 @@ platform :ios, '11.4'
 use_frameworks!
 
 target 'Infra' do
-
   # Pods for sparkle
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'Firebase/Database'
 
   target 'sparkle' do
-    inherit! :search_paths
+    pod 'Firebase/Core'
+    pod 'Firebase/Firestore'
+    pod 'Firebase/Database'
 
     # Social
     pod 'TwitterKit'
 
     # Networking
-    pod 'Moya/RxSwift', '~> 11.0'
+    pod 'Moya/RxSwift'
 
     # Data
     pod 'Kingfisher'
@@ -36,37 +37,34 @@ target 'Infra' do
     # Redux
     pod 'ReSwift'
     pod 'ReSwiftRouter'
-    pod 'ReRxSwift', '~> 1.0'
+    pod 'ReRxSwift'
 
     # Reactive
-    pod 'RxSwift', '~> 4.0'
-    pod 'RxCocoa', '~> 4.0'
-    
-    # Utility
-    pod 'R.swift'
+    pod 'RxSwift'
+    pod 'RxCocoa'
 
   end
   
 #  target 'sparkle-development' do
 #      inherit! :search_paths
-#  end  
-#  
+#  end
+#
 #  target 'sparkle-staging' do
 #      inherit! :search_paths
 #  end
-#  
+#
 #  target 'sparkle-release' do
 #      inherit! :search_paths
 #  end
-  
-#  target 'sparkleTests' do
-#    inherit! :search_paths
-#    # Pods for testing
-#  end
 #
-#  target 'sparkleUITests' do
-#    inherit! :search_paths
-#    # Pods for testing
-#  end
+  target 'sparkleTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'sparkleUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
 
 end
