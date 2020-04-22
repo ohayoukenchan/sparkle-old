@@ -39,11 +39,13 @@ class SplashViewController: UIViewController, StoreSubscriber, Routable {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        fooButton.rx.tap.asDriver().drive(onNext: {() in
+        fooButton.rx.tap.asDriver().drive(onNext: { [weak self]() in
             print("HOOOOOOOO")
+            store.dispatch(SplashState.routesChange())
         }).disposed(by: self.disposeBag)
 //        if store.state.authState.loggedInState == .idle {
 //            store.dispatch(AuthState.authenticateUser())
+
 //        }
     }
     

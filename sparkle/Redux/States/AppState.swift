@@ -15,4 +15,5 @@ struct AppState: StateType {
     var navigationState: NavigationState
     var searchState: SearchState = SearchState()
     var tweetDetail: TweetDetailState = TweetDetailState()
+    var splashState: SplashState = SplashState()
 }

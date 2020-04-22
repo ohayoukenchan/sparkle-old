@@ -19,7 +19,7 @@ extension AuthState {
 //                store.dispatch(ReSwiftRouter.SetRouteAction([RouteNames.search]))
 //                return nil
 //            }
-            
+//
 //            LoginProvider.loginWithTwitter(completion: { session, error in
 //                if error != nil {
 //                    store.dispatch(ErrorAuthAction(error: error! as NSError))

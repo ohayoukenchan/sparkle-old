@@ -10,6 +10,9 @@
 		099F7AD92410A79C0091D4DD /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099F7AD82410A79C0091D4DD /* R.generated.swift */; };
 		09A529242450050E00D34620 /* SearchViewControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A529232450050E00D34620 /* SearchViewControlller.swift */; };
 		09A52926245005EC00D34620 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A52925245005EC00D34620 /* Search.storyboard */; };
+		09A5292824502AD400D34620 /* SplashAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A5292724502AD400D34620 /* SplashAction.swift */; };
+		09A5292A24502B2700D34620 /* SplashState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A5292924502B2700D34620 /* SplashState.swift */; };
+		09A5292C24502B5700D34620 /* SplashReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A5292B24502B5700D34620 /* SplashReducer.swift */; };
 		3A0C69A421BA38440077CE64 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0C69A321BA38440077CE64 /* Splash.storyboard */; };
 		3A0C69B421BE6AC00077CE64 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69B321BE6AC00077CE64 /* AuthState.swift */; };
 		3A0C69B621BF7B2D0077CE64 /* Redux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69B521BF7B2D0077CE64 /* Redux.swift */; };
@@ -129,6 +132,9 @@
 		099F7AD82410A79C0091D4DD /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		09A529232450050E00D34620 /* SearchViewControlller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControlller.swift; sourceTree = "<group>"; };
 		09A52925245005EC00D34620 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		09A5292724502AD400D34620 /* SplashAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAction.swift; sourceTree = "<group>"; };
+		09A5292924502B2700D34620 /* SplashState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashState.swift; sourceTree = "<group>"; };
+		09A5292B24502B5700D34620 /* SplashReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashReducer.swift; sourceTree = "<group>"; };
 		0C2C49CBD0EFE81BE05498F1 /* Pods-sparkleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleUITests.release.xcconfig"; path = "Target Support Files/Pods-sparkleUITests/Pods-sparkleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1A0502ADD776A7B8EE95044A /* Pods-sparkleTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleTests.development.xcconfig"; path = "Target Support Files/Pods-sparkleTests/Pods-sparkleTests.development.xcconfig"; sourceTree = "<group>"; };
 		26C6469418167D47338DF56A /* Pods-sparkleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleTests.release.xcconfig"; path = "Target Support Files/Pods-sparkleTests/Pods-sparkleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -486,6 +492,7 @@
 				3A0C69BF21BF861C0077CE64 /* SearchState.swift */,
 				3A0C69C121BF864D0077CE64 /* TweetDetailState.swift */,
 				3AEBD4AE226C1F54007C9917 /* LookUpState.swift */,
+				09A5292924502B2700D34620 /* SplashState.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -499,6 +506,7 @@
 				3A0C69B921BF7B850077CE64 /* AuthReducer.swift */,
 				3A0C69BB21BF7B9C0077CE64 /* SearchReducer.swift */,
 				3A0C69BD21BF7BB50077CE64 /* TweetDetailReducer.swift */,
+				09A5292B24502B5700D34620 /* SplashReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -511,6 +519,7 @@
 				3A0C69C321BF86770077CE64 /* SearchAction.swift */,
 				3A0C69C521BF869F0077CE64 /* TweetDetailAction.swift */,
 				3A0C69C721BF86BA0077CE64 /* AuthAction.swift */,
+				09A5292724502AD400D34620 /* SplashAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -960,8 +969,10 @@
 				3AE8395E218AC1BA00391531 /* AppState.swift in Sources */,
 				3A74294B21C8BF5E0029C3C0 /* TwitterCredentials.swift in Sources */,
 				3AEBD4B3226C2695007C9917 /* LookUpAction.swift in Sources */,
+				09A5292824502AD400D34620 /* SplashAction.swift in Sources */,
 				3A0C69C621BF869F0077CE64 /* TweetDetailAction.swift in Sources */,
 				3AE83961218AC24000391531 /* CounterReducer.swift in Sources */,
+				09A5292A24502B2700D34620 /* SplashState.swift in Sources */,
 				3AE8EF5321B4F2920098FE23 /* SplashViewController.swift in Sources */,
 				3AEBD4B1226C254D007C9917 /* LookUpReducer.swift in Sources */,
 				3AE8EF4D21B4EDEF0098FE23 /* SplashViewRoutable.swift in Sources */,
@@ -983,6 +994,7 @@
 				3A0C69C421BF86770077CE64 /* SearchAction.swift in Sources */,
 				3AB5B632225DC32100894CCB /* _SearchViewController.swift in Sources */,
 				3A74294421C8B48F0029C3C0 /* LoginProvider.swift in Sources */,
+				09A5292C24502B5700D34620 /* SplashReducer.swift in Sources */,
 				3A74295921C8C0780029C3C0 /* Sizes.swift in Sources */,
 				3A0C69B421BE6AC00077CE64 /* AuthState.swift in Sources */,
 				3A9FFCD921896A63007E2B8C /* AppDelegate.swift in Sources */,
