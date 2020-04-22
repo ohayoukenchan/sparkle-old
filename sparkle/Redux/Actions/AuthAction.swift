@@ -14,20 +14,20 @@ extension AuthState {
     public static func authenticateUser() -> Store<AppState>.ActionCreator {
         return { state, store in
             
-            if let lastSession = LoginProvider.getLastSession() {
-                store.dispatch(LoadAuthAction(session: lastSession))
-                store.dispatch(ReSwiftRouter.SetRouteAction([RouteNames.search]))
-                return nil
-            }
+//            if let lastSession = LoginProvider.getLastSession() {
+//                store.dispatch(LoadAuthAction(session: lastSession))
+//                store.dispatch(ReSwiftRouter.SetRouteAction([RouteNames.search]))
+//                return nil
+//            }
             
-            LoginProvider.loginWithTwitter(completion: { session, error in
-                if error != nil {
-                    store.dispatch(ErrorAuthAction(error: error! as NSError))
-                } else if session != nil {
-                    store.dispatch(LoadAuthAction(session: session!))
-                    store.dispatch(ReSwiftRouter.SetRouteAction([RouteNames.search]))
-                }
-            })
+//            LoginProvider.loginWithTwitter(completion: { session, error in
+//                if error != nil {
+//                    store.dispatch(ErrorAuthAction(error: error! as NSError))
+//                } else if session != nil {
+//                    store.dispatch(LoadAuthAction(session: session!))
+//                    store.dispatch(ReSwiftRouter.SetRouteAction([RouteNames.search]))
+//                }
+//            })
             
             return nil
         }

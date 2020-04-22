@@ -8,7 +8,6 @@
 
 import ReSwift
 import Moya
-import Result
 import ObjectMapper
 
 extension SearchState {

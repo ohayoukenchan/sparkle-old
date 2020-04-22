@@ -11,7 +11,6 @@ import ReSwift
 import ReSwiftRouter
 import RxCocoa
 import RxSwift
-import Result
 import PullToRefreshKit
 import ReRxSwift
 import FirebaseDatabase
@@ -59,19 +58,19 @@ class SearchViewController: UIViewController, Routable {
       }
     }
     
-    searchBar.rx.text
-      .orEmpty // Make it non-optional
-      .skip(1)
-      .debounce(0.5, scheduler: MainScheduler.instance) // Wait 0.5 for changes.
-      .distinctUntilChanged()
-      .subscribe(onNext: { [weak self] text in
-        if text != "" {
-          self?.actions.searchTweets(text)
-        } else {
-          self?.actions.resetSearch()
-        }
-      })
-      .disposed(by: disposeBag)
+//    (searchBar.rx.text
+//        .orEmpty // Make it non-optional
+//        .skip(1)
+//        .debounce(0.5, scheduler: MainScheduler.instance) // Wait 0.5 for changes.
+//        .distinctUntilChanged() as AnyObject)
+//      .subscribe(onNext: { [weak self] text in
+//        if text != "" {
+//          self?.actions.searchTweets(text)
+//        } else {
+//          self?.actions.resetSearch()
+//        }
+//      })
+//      .disposed(by: disposeBag)
   }
   
   private func updateData() {
@@ -123,7 +122,7 @@ class SearchViewController: UIViewController, Routable {
     
     if let flowLayout = tweetsCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
       if #available(iOS 10.0, *) {
-        flowLayout.estimatedItemSize = UICollectionViewFlowLayoutAutomaticSize
+        flowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
       }
       else {
         flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)

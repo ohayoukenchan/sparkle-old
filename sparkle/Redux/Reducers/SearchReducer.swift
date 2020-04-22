@@ -7,7 +7,6 @@
 //
 
 import ReSwift
-import Result
 
 func searchReducer(action: Action, state: SearchState?) -> SearchState {
     var state = state ?? SearchState()
@@ -22,11 +21,11 @@ func searchReducer(action: Action, state: SearchState?) -> SearchState {
         
         switch action.results {
         case let .success(tweets):
-            if var currentTweets = state.results!.value {
-                currentTweets.append(contentsOf: tweets)
-                
-                state.results = .success(currentTweets)
-            }
+//            if var currentTweets = state.results!.value {
+//                currentTweets.append(contentsOf: tweets)
+//                
+//                state.results = .success(currentTweets)
+//            }
             break
         case .failure(_):
             state.results = action.results

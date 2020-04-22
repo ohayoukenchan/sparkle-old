@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Result
 import ReSwift
 
 struct SearchState: StateType, Encodable {

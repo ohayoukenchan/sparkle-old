@@ -8,10 +8,11 @@
 
 import UIKit
 import Firebase
+import FirebaseAnalytics
 import FirebaseDatabase
+import Firebase
 import ReSwift
 import ReSwiftRouter
-import TwitterKit
 import IQKeyboardManagerSwift
 
 
@@ -28,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let firebasePlistName = "GoogleService-Info"
     #endif
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         
         guard let filePath = Bundle.main.path(forResource: firebasePlistName, ofType: "plist") else {
@@ -43,8 +44,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure(options: options)
     
         
-        
-        
         // Set a dummy view controller to satisfy UIKit
         window?.rootViewController = UIViewController()
         
@@ -57,8 +56,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         
-        // Twitter Config
-        TWTRTwitter.sharedInstance().start(withConsumerKey: twitterConsumerKey, consumerSecret: twitterConsumerSecret)
+//        // Twitter Config
+//        TWTRTwitter.sharedInstance().start(withConsumerKey: twitterConsumerKey, consumerSecret: twitterConsumerSecret)
     
         
         // Setup Keyboard Manager
@@ -74,8 +73,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
 
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-        return TWTRTwitter.sharedInstance().application(app, open: url, options: options)
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+//        return TWTRTwitter.sharedInstance().application(app, open: url, options: options)
+        return false
     }
 
 }
