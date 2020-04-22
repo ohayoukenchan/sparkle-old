@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09743BBF240FDC2D0044442F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09743BBE240FDC2D0044442F /* R.generated.swift */; };
+		099F7AD92410A79C0091D4DD /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099F7AD82410A79C0091D4DD /* R.generated.swift */; };
 		3A0C69A421BA38440077CE64 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0C69A321BA38440077CE64 /* Splash.storyboard */; };
 		3A0C69B421BE6AC00077CE64 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69B321BE6AC00077CE64 /* AuthState.swift */; };
 		3A0C69B621BF7B2D0077CE64 /* Redux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69B521BF7B2D0077CE64 /* Redux.swift */; };
@@ -44,7 +44,6 @@
 		3A9FFD1F21896F10007E2B8C /* InfraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9FFD1E21896F10007E2B8C /* InfraTests.swift */; };
 		3A9FFD2121896F10007E2B8C /* Infra.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A9FFD1121896F10007E2B8C /* Infra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A9FFD2521896F10007E2B8C /* Infra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9FFD0F21896F0F007E2B8C /* Infra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3AB5B62A225DBD8E00894CCB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5B629225DBD8E00894CCB /* R.generated.swift */; };
 		3AB5B632225DC32100894CCB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5B62C225DC32100894CCB /* SearchViewController.swift */; };
 		3AB5B633225DC32100894CCB /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB5B62D225DC32100894CCB /* Search.storyboard */; };
 		3AB5B634225DC32100894CCB /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB5B630225DC32100894CCB /* TweetCell.xib */; };
@@ -66,8 +65,10 @@
 		3AEBD4AF226C1F54007C9917 /* LookUpState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEBD4AE226C1F54007C9917 /* LookUpState.swift */; };
 		3AEBD4B1226C254D007C9917 /* LookUpReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEBD4B0226C254D007C9917 /* LookUpReducer.swift */; };
 		3AEBD4B3226C2695007C9917 /* LookUpAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEBD4B2226C2695007C9917 /* LookUpAction.swift */; };
-		896B93996A902B6F564E1176 /* Pods_Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB6DA32A590B926441E9616 /* Pods_Infra.framework */; };
-		DCA16536C954A215D22DE3EF /* Pods_sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3566284044564B61E735286 /* Pods_sparkle.framework */; };
+		43E7AB3C3134507E022F40C6 /* Pods_Infra_sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C972DC47EBC102A7F316B2 /* Pods_Infra_sparkle.framework */; };
+		5EA398CFC191322CE1BA26D0 /* Pods_sparkleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C395BE0544AD20D80E4989EA /* Pods_sparkleUITests.framework */; };
+		7584F23E0BC893193222FF42 /* Pods_Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67939BB680227091415441A0 /* Pods_Infra.framework */; };
+		E275B072C365303DB8BFF80E /* Pods_sparkleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E10EEEDDE03C4C9ABA704CC9 /* Pods_sparkleTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,9 +124,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		09743BBE240FDC2D0044442F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = sparkle/Resources/R.generated.swift; sourceTree = SOURCE_ROOT; };
-		1694320975257083FD3ED969 /* Pods-Infra.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infra.staging.xcconfig"; path = "Pods/Target Support Files/Pods-Infra/Pods-Infra.staging.xcconfig"; sourceTree = "<group>"; };
-		3433B256797CE5D48A3CEF57 /* Pods-Infra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infra.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infra/Pods-Infra.debug.xcconfig"; sourceTree = "<group>"; };
+		099F7AD82410A79C0091D4DD /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		0C2C49CBD0EFE81BE05498F1 /* Pods-sparkleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleUITests.release.xcconfig"; path = "Target Support Files/Pods-sparkleUITests/Pods-sparkleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1A0502ADD776A7B8EE95044A /* Pods-sparkleTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleTests.development.xcconfig"; path = "Target Support Files/Pods-sparkleTests/Pods-sparkleTests.development.xcconfig"; sourceTree = "<group>"; };
+		26C6469418167D47338DF56A /* Pods-sparkleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleTests.release.xcconfig"; path = "Target Support Files/Pods-sparkleTests/Pods-sparkleTests.release.xcconfig"; sourceTree = "<group>"; };
+		2753711983FCEB434CE1A838 /* Pods-Infra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infra.debug.xcconfig"; path = "Target Support Files/Pods-Infra/Pods-Infra.debug.xcconfig"; sourceTree = "<group>"; };
+		2C8870CCC847455AECCF24C7 /* Pods-sparkleTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleTests.staging.xcconfig"; path = "Target Support Files/Pods-sparkleTests/Pods-sparkleTests.staging.xcconfig"; sourceTree = "<group>"; };
+		3874CB43D240DA0ECE1C5EB6 /* Pods-sparkle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkle.debug.xcconfig"; path = "Target Support Files/Pods-sparkle/Pods-sparkle.debug.xcconfig"; sourceTree = "<group>"; };
 		3A0C69A321BA38440077CE64 /* Splash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		3A0C69B321BE6AC00077CE64 /* AuthState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
 		3A0C69B521BF7B2D0077CE64 /* Redux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redux.swift; sourceTree = "<group>"; };
@@ -177,7 +182,6 @@
 		3A9FFD1721896F10007E2B8C /* InfraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9FFD1E21896F10007E2B8C /* InfraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfraTests.swift; sourceTree = "<group>"; };
 		3A9FFD2021896F10007E2B8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3AB5B629225DBD8E00894CCB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		3AB5B62C225DC32100894CCB /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		3AB5B62D225DC32100894CCB /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		3AB5B630225DC32100894CCB /* TweetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetCell.xib; sourceTree = "<group>"; };
@@ -197,14 +201,24 @@
 		3AEBD4AE226C1F54007C9917 /* LookUpState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookUpState.swift; sourceTree = "<group>"; };
 		3AEBD4B0226C254D007C9917 /* LookUpReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookUpReducer.swift; sourceTree = "<group>"; };
 		3AEBD4B2226C2695007C9917 /* LookUpAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookUpAction.swift; sourceTree = "<group>"; };
-		64C2BF903D6B65E9ED924F2F /* Pods-sparkle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sparkle/Pods-sparkle.debug.xcconfig"; sourceTree = "<group>"; };
-		8FB6DA32A590B926441E9616 /* Pods_Infra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		930E72AB52B9EC43418BB49E /* Pods-sparkle.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkle.staging.xcconfig"; path = "Pods/Target Support Files/Pods-sparkle/Pods-sparkle.staging.xcconfig"; sourceTree = "<group>"; };
-		96118E14C6A7C4BBC22FDDD5 /* Pods-Infra.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infra.development.xcconfig"; path = "Pods/Target Support Files/Pods-Infra/Pods-Infra.development.xcconfig"; sourceTree = "<group>"; };
-		A63C3E0269155AEF156273B6 /* Pods-Infra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infra.release.xcconfig"; path = "Pods/Target Support Files/Pods-Infra/Pods-Infra.release.xcconfig"; sourceTree = "<group>"; };
-		B1301F194911B4E89257B914 /* Pods-sparkle.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkle.development.xcconfig"; path = "Pods/Target Support Files/Pods-sparkle/Pods-sparkle.development.xcconfig"; sourceTree = "<group>"; };
-		B7329B1B693F2A865C2D2634 /* Pods-sparkle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkle.release.xcconfig"; path = "Pods/Target Support Files/Pods-sparkle/Pods-sparkle.release.xcconfig"; sourceTree = "<group>"; };
-		F3566284044564B61E735286 /* Pods_sparkle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparkle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47851536B2A0A20DEE815DFF /* Pods-Infra-sparkle.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infra-sparkle.development.xcconfig"; path = "Target Support Files/Pods-Infra-sparkle/Pods-Infra-sparkle.development.xcconfig"; sourceTree = "<group>"; };
+		492ED4020C747B90A7030DCD /* Pods-sparkle.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkle.development.xcconfig"; path = "Target Support Files/Pods-sparkle/Pods-sparkle.development.xcconfig"; sourceTree = "<group>"; };
+		4FF2E9DE8195C3CD33FAD025 /* Pods-Infra-sparkle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infra-sparkle.release.xcconfig"; path = "Target Support Files/Pods-Infra-sparkle/Pods-Infra-sparkle.release.xcconfig"; sourceTree = "<group>"; };
+		5C9D796A1FD97F7041357146 /* Pods-sparkle.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkle.staging.xcconfig"; path = "Target Support Files/Pods-sparkle/Pods-sparkle.staging.xcconfig"; sourceTree = "<group>"; };
+		67939BB680227091415441A0 /* Pods_Infra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67A5B6DC24195EDEEBA78B51 /* Pods-sparkleUITests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleUITests.staging.xcconfig"; path = "Target Support Files/Pods-sparkleUITests/Pods-sparkleUITests.staging.xcconfig"; sourceTree = "<group>"; };
+		6E82507E519C4364CB30E533 /* Pods-Infra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infra.release.xcconfig"; path = "Target Support Files/Pods-Infra/Pods-Infra.release.xcconfig"; sourceTree = "<group>"; };
+		7DB2457AA13176415BE706C4 /* Pods-Infra.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infra.development.xcconfig"; path = "Target Support Files/Pods-Infra/Pods-Infra.development.xcconfig"; sourceTree = "<group>"; };
+		A2C972DC47EBC102A7F316B2 /* Pods_Infra_sparkle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infra_sparkle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C395BE0544AD20D80E4989EA /* Pods_sparkleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparkleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D072F9D57B83B588644D4C13 /* Pods-sparkleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleTests.debug.xcconfig"; path = "Target Support Files/Pods-sparkleTests/Pods-sparkleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D269B65EAE3E1B2A25B87864 /* Pods-Infra-sparkle.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infra-sparkle.staging.xcconfig"; path = "Target Support Files/Pods-Infra-sparkle/Pods-Infra-sparkle.staging.xcconfig"; sourceTree = "<group>"; };
+		D2BCAA08732DA05F1760201B /* Pods-sparkleUITests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleUITests.development.xcconfig"; path = "Target Support Files/Pods-sparkleUITests/Pods-sparkleUITests.development.xcconfig"; sourceTree = "<group>"; };
+		DB257FD8029DA0C9252FD50A /* Pods-sparkle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkle.release.xcconfig"; path = "Target Support Files/Pods-sparkle/Pods-sparkle.release.xcconfig"; sourceTree = "<group>"; };
+		E10EEEDDE03C4C9ABA704CC9 /* Pods_sparkleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparkleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E60AED799C470B4AA20D12B0 /* Pods-sparkleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleUITests.debug.xcconfig"; path = "Target Support Files/Pods-sparkleUITests/Pods-sparkleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EDC0DB88FE643E661298ECED /* Pods-Infra-sparkle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infra-sparkle.debug.xcconfig"; path = "Target Support Files/Pods-Infra-sparkle/Pods-Infra-sparkle.debug.xcconfig"; sourceTree = "<group>"; };
+		FC61C1C6527A40B8DA231D31 /* Pods-Infra.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infra.staging.xcconfig"; path = "Target Support Files/Pods-Infra/Pods-Infra.staging.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,7 +226,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCA16536C954A215D22DE3EF /* Pods_sparkle.framework in Frameworks */,
+				43E7AB3C3134507E022F40C6 /* Pods_Infra_sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +234,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E275B072C365303DB8BFF80E /* Pods_sparkleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +242,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EA398CFC191322CE1BA26D0 /* Pods_sparkleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +250,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				896B93996A902B6F564E1176 /* Pods_Infra.framework in Frameworks */,
+				7584F23E0BC893193222FF42 /* Pods_Infra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,8 +268,7 @@
 		3A3A984E2264825100522A33 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				09743BBE240FDC2D0044442F /* R.generated.swift */,
-				3AB5B629225DBD8E00894CCB /* R.generated.swift */,
+				099F7AD82410A79C0091D4DD /* R.generated.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -331,7 +346,7 @@
 				3A9FFD1D21896F10007E2B8C /* InfraTests */,
 				3A9FFCD621896A63007E2B8C /* Products */,
 				9CD7E9287758AAC3B683B753 /* Frameworks */,
-				3D8FBA8375E2782AC28CE569 /* Pods */,
+				B6403A4FC8FE2B358B234704 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -507,21 +522,6 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
-		3D8FBA8375E2782AC28CE569 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3433B256797CE5D48A3CEF57 /* Pods-Infra.debug.xcconfig */,
-				A63C3E0269155AEF156273B6 /* Pods-Infra.release.xcconfig */,
-				96118E14C6A7C4BBC22FDDD5 /* Pods-Infra.development.xcconfig */,
-				1694320975257083FD3ED969 /* Pods-Infra.staging.xcconfig */,
-				64C2BF903D6B65E9ED924F2F /* Pods-sparkle.debug.xcconfig */,
-				B7329B1B693F2A865C2D2634 /* Pods-sparkle.release.xcconfig */,
-				B1301F194911B4E89257B914 /* Pods-sparkle.development.xcconfig */,
-				930E72AB52B9EC43418BB49E /* Pods-sparkle.staging.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		9CD7E9287758AAC3B683B753 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -531,10 +531,39 @@
 				3A11A97621898B4C0097EE84 /* FirebaseCore.framework */,
 				3A11A97821898B4C0097EE84 /* GoogleUtilities.framework */,
 				3A11A97A21898B4C0097EE84 /* nanopb.framework */,
-				8FB6DA32A590B926441E9616 /* Pods_Infra.framework */,
-				F3566284044564B61E735286 /* Pods_sparkle.framework */,
+				67939BB680227091415441A0 /* Pods_Infra.framework */,
+				E10EEEDDE03C4C9ABA704CC9 /* Pods_sparkleTests.framework */,
+				C395BE0544AD20D80E4989EA /* Pods_sparkleUITests.framework */,
+				A2C972DC47EBC102A7F316B2 /* Pods_Infra_sparkle.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6403A4FC8FE2B358B234704 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2753711983FCEB434CE1A838 /* Pods-Infra.debug.xcconfig */,
+				6E82507E519C4364CB30E533 /* Pods-Infra.release.xcconfig */,
+				7DB2457AA13176415BE706C4 /* Pods-Infra.development.xcconfig */,
+				FC61C1C6527A40B8DA231D31 /* Pods-Infra.staging.xcconfig */,
+				3874CB43D240DA0ECE1C5EB6 /* Pods-sparkle.debug.xcconfig */,
+				DB257FD8029DA0C9252FD50A /* Pods-sparkle.release.xcconfig */,
+				492ED4020C747B90A7030DCD /* Pods-sparkle.development.xcconfig */,
+				5C9D796A1FD97F7041357146 /* Pods-sparkle.staging.xcconfig */,
+				D072F9D57B83B588644D4C13 /* Pods-sparkleTests.debug.xcconfig */,
+				26C6469418167D47338DF56A /* Pods-sparkleTests.release.xcconfig */,
+				1A0502ADD776A7B8EE95044A /* Pods-sparkleTests.development.xcconfig */,
+				2C8870CCC847455AECCF24C7 /* Pods-sparkleTests.staging.xcconfig */,
+				E60AED799C470B4AA20D12B0 /* Pods-sparkleUITests.debug.xcconfig */,
+				0C2C49CBD0EFE81BE05498F1 /* Pods-sparkleUITests.release.xcconfig */,
+				D2BCAA08732DA05F1760201B /* Pods-sparkleUITests.development.xcconfig */,
+				67A5B6DC24195EDEEBA78B51 /* Pods-sparkleUITests.staging.xcconfig */,
+				EDC0DB88FE643E661298ECED /* Pods-Infra-sparkle.debug.xcconfig */,
+				4FF2E9DE8195C3CD33FAD025 /* Pods-Infra-sparkle.release.xcconfig */,
+				47851536B2A0A20DEE815DFF /* Pods-Infra-sparkle.development.xcconfig */,
+				D269B65EAE3E1B2A25B87864 /* Pods-Infra-sparkle.staging.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -555,14 +584,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A9FFCFD21896A66007E2B8C /* Build configuration list for PBXNativeTarget "sparkle" */;
 			buildPhases = (
-				E5DB5C9E65A99929B3CCFC4F /* [CP] Check Pods Manifest.lock */,
+				414572D447CCB3E641572D8A /* [CP] Check Pods Manifest.lock */,
 				3AE8EF5421B8E7D70098FE23 /* Run Script */,
 				3A9FFCD121896A63007E2B8C /* Sources */,
 				3A9FFCD221896A63007E2B8C /* Frameworks */,
 				3A9FFCD321896A63007E2B8C /* Resources */,
 				3A9FFD2921896F10007E2B8C /* Embed Frameworks */,
-				7E4E1DC6ECCD08505797BE49 /* [CP] Embed Pods Frameworks */,
-				25A41D084588AC56D16D9138 /* [CP] Copy Pods Resources */,
+				A8594C845284FBF4994ABE3A /* [CP] Embed Pods Frameworks */,
+				07D6C399D86A63FE9F6367BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -578,6 +607,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A9FFD0021896A66007E2B8C /* Build configuration list for PBXNativeTarget "sparkleTests" */;
 			buildPhases = (
+				2C46F5A2648F7050DCB9F92B /* [CP] Check Pods Manifest.lock */,
 				3A9FFCE521896A66007E2B8C /* Sources */,
 				3A9FFCE621896A66007E2B8C /* Frameworks */,
 				3A9FFCE721896A66007E2B8C /* Resources */,
@@ -596,6 +626,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A9FFD0321896A66007E2B8C /* Build configuration list for PBXNativeTarget "sparkleUITests" */;
 			buildPhases = (
+				9520B22103631F80A3CBCCE1 /* [CP] Check Pods Manifest.lock */,
 				3A9FFCF021896A66007E2B8C /* Sources */,
 				3A9FFCF121896A66007E2B8C /* Frameworks */,
 				3A9FFCF221896A66007E2B8C /* Resources */,
@@ -614,7 +645,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A9FFD2621896F10007E2B8C /* Build configuration list for PBXNativeTarget "Infra" */;
 			buildPhases = (
-				DB150DD4FF21A8B327927053 /* [CP] Check Pods Manifest.lock */,
+				429E54D4117AC4A26C293683 /* [CP] Check Pods Manifest.lock */,
 				3A9FFD0A21896F0F007E2B8C /* Sources */,
 				3A9FFD0B21896F0F007E2B8C /* Frameworks */,
 				3A9FFD0C21896F0F007E2B8C /* Headers */,
@@ -655,18 +686,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Takano Kenta";
 				TargetAttributes = {
 					3A9FFCD421896A63007E2B8C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1130;
 					};
 					3A9FFCE821896A66007E2B8C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = 3A9FFCD421896A63007E2B8C;
 					};
 					3A9FFCF321896A66007E2B8C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = 3A9FFCD421896A63007E2B8C;
 					};
 					3A9FFD0E21896F0F007E2B8C = {
@@ -674,6 +708,7 @@
 					};
 					3A9FFD1621896F10007E2B8C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = 3A9FFCD421896A63007E2B8C;
 					};
 				};
@@ -751,21 +786,43 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		25A41D084588AC56D16D9138 /* [CP] Copy Pods Resources */ = {
+		07D6C399D86A63FE9F6367BA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sparkle/Pods-sparkle-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Infra-sparkle/Pods-Infra-sparkle-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sparkle/Pods-sparkle-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Infra-sparkle/Pods-Infra-sparkle-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sparkle/Pods-sparkle-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Infra-sparkle/Pods-Infra-sparkle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C46F5A2648F7050DCB9F92B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sparkleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3AE8EF5421B8E7D70098FE23 /* Run Script */ = {
@@ -778,39 +835,48 @@
 			);
 			name = "Run Script";
 			outputPaths = (
-				$SRCROOT/R.generated.swift,
+				"$SRCROOT/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
-		7E4E1DC6ECCD08505797BE49 /* [CP] Embed Pods Frameworks */ = {
+		414572D447CCB3E641572D8A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sparkle/Pods-sparkle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sparkle/Pods-sparkle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sparkle/Pods-sparkle-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DB150DD4FF21A8B327927053 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Infra-sparkle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		429E54D4117AC4A26C293683 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Infra-checkManifestLockResult.txt",
 			);
@@ -819,22 +885,43 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E5DB5C9E65A99929B3CCFC4F /* [CP] Check Pods Manifest.lock */ = {
+		9520B22103631F80A3CBCCE1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-sparkle-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-sparkleUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8594C845284FBF4994ABE3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Infra-sparkle/Pods-Infra-sparkle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Infra-sparkle/Pods-Infra-sparkle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Infra-sparkle/Pods-Infra-sparkle-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -844,7 +931,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09743BBF240FDC2D0044442F /* R.generated.swift in Sources */,
 				3A0C69BC21BF7B9C0077CE64 /* SearchReducer.swift in Sources */,
 				3AE83964218AC27700391531 /* Actions.swift in Sources */,
 				3A0C69C221BF864D0077CE64 /* TweetDetailState.swift in Sources */,
@@ -857,7 +943,6 @@
 				3AEBD4AF226C1F54007C9917 /* LookUpState.swift in Sources */,
 				3AE8395E218AC1BA00391531 /* AppState.swift in Sources */,
 				3A74294B21C8BF5E0029C3C0 /* TwitterCredentials.swift in Sources */,
-				3AB5B62A225DBD8E00894CCB /* R.generated.swift in Sources */,
 				3AEBD4B3226C2695007C9917 /* LookUpAction.swift in Sources */,
 				3A0C69C621BF869F0077CE64 /* TweetDetailAction.swift in Sources */,
 				3AE83961218AC24000391531 /* CounterReducer.swift in Sources */,
@@ -873,6 +958,7 @@
 				3AC7E4E921C8AA6200EA1AB8 /* Tweet.swift in Sources */,
 				3A74294621C8B49E0029C3C0 /* SearchProvider.swift in Sources */,
 				3A0C69B821BF7B650077CE64 /* AppReducer.swift in Sources */,
+				099F7AD92410A79C0091D4DD /* R.generated.swift in Sources */,
 				3A74295021C8BFD20029C3C0 /* String+Random.swift in Sources */,
 				3AE8EF4B21B4ED9C0098FE23 /* Router.swift in Sources */,
 				3A74295621C8C0420029C3C0 /* Config.swift in Sources */,
@@ -1024,13 +1110,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "-D DEVELOPMENT";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEVELOPMENT;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1038,11 +1123,11 @@
 		};
 		3A0093C02189717C00CB3680 /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1301F194911B4E89257B914 /* Pods-sparkle.development.xcconfig */;
+			baseConfigurationReference = 47851536B2A0A20DEE815DFF /* Pods-Infra-sparkle.development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KV543JV76H;
+				DEVELOPMENT_TEAM = L248HZDU6R;
 				INFOPLIST_FILE = sparkle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1051,18 +1136,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ohayoukenchan.enter.sparkle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Development;
 		};
 		3A0093C12189717C00CB3680 /* Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A0502ADD776A7B8EE95044A /* Pods-sparkleTests.development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6UZ5Y9MX86;
+				DEVELOPMENT_TEAM = L248HZDU6R;
 				INFOPLIST_FILE = sparkleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1071,7 +1157,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = OhayouKenchan.sparkleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sparkle.app/sparkle";
 			};
@@ -1079,10 +1165,11 @@
 		};
 		3A0093C22189717C00CB3680 /* Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2BCAA08732DA05F1760201B /* Pods-sparkleUITests.development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6UZ5Y9MX86;
+				DEVELOPMENT_TEAM = L248HZDU6R;
 				INFOPLIST_FILE = sparkleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1091,7 +1178,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = OhayouKenchan.sparkleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = sparkle;
 			};
@@ -1099,13 +1186,13 @@
 		};
 		3A0093C32189717C00CB3680 /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96118E14C6A7C4BBC22FDDD5 /* Pods-Infra.development.xcconfig */;
+			baseConfigurationReference = 7DB2457AA13176415BE706C4 /* Pods-Infra.development.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6UZ5Y9MX86;
+				DEVELOPMENT_TEAM = L248HZDU6R;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1131,7 +1218,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6UZ5Y9MX86;
+				DEVELOPMENT_TEAM = L248HZDU6R;
 				INFOPLIST_FILE = InfraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1140,7 +1227,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = OhayouKenchan.InfraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sparkle.app/sparkle";
 			};
@@ -1183,6 +1270,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "STAGING=1";
@@ -1192,13 +1280,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "-D STAGING";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = STAGING;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1206,11 +1293,11 @@
 		};
 		3A0093C62189718E00CB3680 /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 930E72AB52B9EC43418BB49E /* Pods-sparkle.staging.xcconfig */;
+			baseConfigurationReference = D269B65EAE3E1B2A25B87864 /* Pods-Infra-sparkle.staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KV543JV76H;
+				DEVELOPMENT_TEAM = L248HZDU6R;
 				INFOPLIST_FILE = sparkle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1219,18 +1306,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ohayoukenchan.enter.sparkle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Staging;
 		};
 		3A0093C72189718E00CB3680 /* Staging */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C8870CCC847455AECCF24C7 /* Pods-sparkleTests.staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6UZ5Y9MX86;
+				DEVELOPMENT_TEAM = L248HZDU6R;
 				INFOPLIST_FILE = sparkleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1239,7 +1327,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = OhayouKenchan.sparkleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sparkle.app/sparkle";
 			};
@@ -1247,10 +1335,11 @@
 		};
 		3A0093C82189718E00CB3680 /* Staging */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67A5B6DC24195EDEEBA78B51 /* Pods-sparkleUITests.staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6UZ5Y9MX86;
+				DEVELOPMENT_TEAM = L248HZDU6R;
 				INFOPLIST_FILE = sparkleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1259,7 +1348,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = OhayouKenchan.sparkleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = sparkle;
 			};
@@ -1267,13 +1356,13 @@
 		};
 		3A0093C92189718E00CB3680 /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1694320975257083FD3ED969 /* Pods-Infra.staging.xcconfig */;
+			baseConfigurationReference = FC61C1C6527A40B8DA231D31 /* Pods-Infra.staging.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6UZ5Y9MX86;
+				DEVELOPMENT_TEAM = L248HZDU6R;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1299,7 +1388,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6UZ5Y9MX86;
+				DEVELOPMENT_TEAM = L248HZDU6R;
 				INFOPLIST_FILE = InfraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1308,7 +1397,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = OhayouKenchan.InfraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sparkle.app/sparkle";
 			};
@@ -1348,7 +1437,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1365,7 +1454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
@@ -1412,6 +1501,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
@@ -1421,13 +1511,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "-D RELEASE";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = RELEASE;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1435,11 +1524,11 @@
 		};
 		3A9FFCFE21896A66007E2B8C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64C2BF903D6B65E9ED924F2F /* Pods-sparkle.debug.xcconfig */;
+			baseConfigurationReference = EDC0DB88FE643E661298ECED /* Pods-Infra-sparkle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KV543JV76H;
+				DEVELOPMENT_TEAM = L248HZDU6R;
 				INFOPLIST_FILE = sparkle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1448,18 +1537,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ohayoukenchan.enter.sparkle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		3A9FFCFF21896A66007E2B8C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7329B1B693F2A865C2D2634 /* Pods-sparkle.release.xcconfig */;
+			baseConfigurationReference = 4FF2E9DE8195C3CD33FAD025 /* Pods-Infra-sparkle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KV543JV76H;
+				DEVELOPMENT_TEAM = L248HZDU6R;
 				INFOPLIST_FILE = sparkle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1468,18 +1557,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ohayoukenchan.enter.sparkle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		3A9FFD0121896A66007E2B8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D072F9D57B83B588644D4C13 /* Pods-sparkleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6UZ5Y9MX86;
+				DEVELOPMENT_TEAM = L248HZDU6R;
 				INFOPLIST_FILE = sparkleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1488,7 +1578,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = OhayouKenchan.sparkleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sparkle.app/sparkle";
 			};
@@ -1496,11 +1586,12 @@
 		};
 		3A9FFD0221896A66007E2B8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26C6469418167D47338DF56A /* Pods-sparkleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6UZ5Y9MX86;
+				DEVELOPMENT_TEAM = L248HZDU6R;
 				INFOPLIST_FILE = sparkleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1509,7 +1600,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = OhayouKenchan.sparkleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sparkle.app/sparkle";
 			};
@@ -1517,10 +1608,11 @@
 		};
 		3A9FFD0421896A66007E2B8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E60AED799C470B4AA20D12B0 /* Pods-sparkleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6UZ5Y9MX86;
+				DEVELOPMENT_TEAM = L248HZDU6R;
 				INFOPLIST_FILE = sparkleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1529,7 +1621,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = OhayouKenchan.sparkleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = sparkle;
 			};
@@ -1537,10 +1629,11 @@
 		};
 		3A9FFD0521896A66007E2B8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C2C49CBD0EFE81BE05498F1 /* Pods-sparkleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6UZ5Y9MX86;
+				DEVELOPMENT_TEAM = L248HZDU6R;
 				INFOPLIST_FILE = sparkleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1549,7 +1642,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = OhayouKenchan.sparkleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = sparkle;
 			};
@@ -1557,13 +1650,13 @@
 		};
 		3A9FFD2721896F10007E2B8C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3433B256797CE5D48A3CEF57 /* Pods-Infra.debug.xcconfig */;
+			baseConfigurationReference = 2753711983FCEB434CE1A838 /* Pods-Infra.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6UZ5Y9MX86;
+				DEVELOPMENT_TEAM = L248HZDU6R;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1586,13 +1679,13 @@
 		};
 		3A9FFD2821896F10007E2B8C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A63C3E0269155AEF156273B6 /* Pods-Infra.release.xcconfig */;
+			baseConfigurationReference = 6E82507E519C4364CB30E533 /* Pods-Infra.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6UZ5Y9MX86;
+				DEVELOPMENT_TEAM = L248HZDU6R;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1618,7 +1711,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6UZ5Y9MX86;
+				DEVELOPMENT_TEAM = L248HZDU6R;
 				INFOPLIST_FILE = InfraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1627,7 +1720,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = OhayouKenchan.InfraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sparkle.app/sparkle";
 			};
@@ -1638,7 +1731,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6UZ5Y9MX86;
+				DEVELOPMENT_TEAM = L248HZDU6R;
 				INFOPLIST_FILE = InfraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1647,7 +1740,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = OhayouKenchan.InfraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sparkle.app/sparkle";
 			};

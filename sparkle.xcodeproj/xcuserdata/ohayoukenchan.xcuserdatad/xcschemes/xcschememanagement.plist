@@ -7,12 +7,50 @@
 		<key>Infra.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>37</integer>
+			<integer>47</integer>
+		</dict>
+		<key>sparkle-development.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>sparkle-release.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>sparkle-staging.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>sparkle.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>36</integer>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>3A9FFCD421896A63007E2B8C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3A9FFCE821896A66007E2B8C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3A9FFCF321896A66007E2B8C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3A9FFD1621896F10007E2B8C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import sparkle
+//@testable import sparkle
 
 class sparkleTests: XCTestCase {
     
