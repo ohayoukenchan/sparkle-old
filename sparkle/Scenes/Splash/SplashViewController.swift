@@ -10,8 +10,16 @@ import UIKit
 import TwitterKit
 import ReSwift
 import ReSwiftRouter
+import RxSwift
+import RxCocoa
 
 class SplashViewController: UIViewController, StoreSubscriber, Routable {
+    @IBOutlet weak var dummyButton: UILabel!
+
+    @IBOutlet weak var fooButton: UIButton!
+
+    private let disposeBag = DisposeBag()
+
     typealias StoreSubscriberStateType = AuthState
     
     override func viewDidLoad() {
@@ -30,10 +38,13 @@ class SplashViewController: UIViewController, StoreSubscriber, Routable {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        if store.state.authState.loggedInState == .idle {
-            store.dispatch(AuthState.authenticateUser())
-        }
+
+        fooButton.rx.tap.asDriver().drive(onNext: {() in
+            print("HOOOOOOOO")
+        }).disposed(by: self.disposeBag)
+//        if store.state.authState.loggedInState == .idle {
+//            store.dispatch(AuthState.authenticateUser())
+//        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
