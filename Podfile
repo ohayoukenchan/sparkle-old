@@ -17,7 +17,8 @@ target 'Infra' do
     pod 'TwitterKit'
 
     # Networking
-    pod 'Moya/RxSwift'
+    #pod 'Moya/RxSwift', '~> 14.0.0'
+    pod 'SparkleClient', :git => 'https://github.com/ohayoukenchan/sparkle-api-ios.git'
 
     # Data
     pod 'Kingfisher'
@@ -40,7 +41,7 @@ target 'Infra' do
     pod 'ReRxSwift'
 
     # Reactive
-    pod 'RxSwift'
+    pod 'RxSwift', '~> 5.0.0'
     pod 'RxCocoa'
 
   end
