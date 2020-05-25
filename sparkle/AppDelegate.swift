@@ -15,7 +15,6 @@ import ReSwift
 import ReSwiftRouter
 import IQKeyboardManagerSwift
 
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -55,6 +54,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 $0.navigationState
             }
         }
+
+
         
 //        // Twitter Config
 //        TWTRTwitter.sharedInstance().start(withConsumerKey: twitterConsumerKey, consumerSecret: twitterConsumerSecret)

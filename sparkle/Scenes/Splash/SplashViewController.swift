@@ -12,6 +12,7 @@ import ReSwift
 import ReSwiftRouter
 import RxSwift
 import RxCocoa
+import SparkleClient
 
 class SplashViewController: UIViewController, StoreSubscriber, Routable {
     @IBOutlet weak var dummyButton: UILabel!
@@ -38,6 +39,39 @@ class SplashViewController: UIViewController, StoreSubscriber, Routable {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+
+        let text = "text_example"
+        DefaultAPI.addMessagePost(text: text, apiResponseQueue:  DispatchQueue.main).subscribe(onNext: { (response) in
+                print(response)
+            },
+            onError: {(error) in
+                print("Check Near Job search Error")
+            })
+
+//        UsersAPI.getMessagesGet().subscribe(onNext: {
+//            (response) in
+//                print(response)
+//            },
+//            onError: {(error) in
+//                print("ssssss")
+//            })
+
+
+//        DefaultAPI.addBooksPost().subscribe(onNext: {
+//        (response) in
+//            print(response)
+//        },
+//        onError: {(error) in
+//            print("ssssss")
+//        })
+
+        BooksAPI.getBooksGet().subscribe(onNext: {
+        (response) in
+            print(response)
+        },
+        onError: {(error) in
+            print("ssssss")
+        })
 
         fooButton.rx.tap.asDriver().drive(onNext: { [weak self]() in
             print("HOOOOOOOO")
