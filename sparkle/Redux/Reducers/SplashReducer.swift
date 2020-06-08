@@ -10,7 +10,7 @@ import Foundation
 import ReSwift
 
 func splashReducer(action: Action, state: SplashState?) -> SplashState {
-    var state = state ?? SplashState(test: false)
+    var state = state ?? SplashState()
 
     switch action {
     case _ as SplashState:

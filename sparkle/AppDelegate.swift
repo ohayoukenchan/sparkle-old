@@ -42,7 +42,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure(options: options)
     
-        
         // Set a dummy view controller to satisfy UIKit
         window?.rootViewController = UIViewController()
         

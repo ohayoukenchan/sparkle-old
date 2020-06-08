@@ -10,7 +10,6 @@ import ReSwift
 import ReSwiftRouter
 
 extension SplashState {
-    //let test: Any?
 
     public static func routesChange() -> Store<AppState>.ActionCreator {
         return { state, store in
