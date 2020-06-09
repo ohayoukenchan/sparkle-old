@@ -14,7 +14,7 @@ import RxSwift
 import RxCocoa
 import SparkleClient
 
-class SplashViewController: UIViewController, StoreSubscriber, Routable {
+class SplashViewController: UIViewController, Routable {
 
     @IBOutlet weak var dummyButton: UILabel!
 
@@ -24,9 +24,8 @@ class SplashViewController: UIViewController, StoreSubscriber, Routable {
     @IBOutlet weak var counterLabel: UILabel!
 
     @IBOutlet weak var counterDownButton: UIButton!
+    @IBOutlet weak var currentViewStateLabel: UILabel!
     private let disposeBag = DisposeBag()
-
-    typealias StoreSubscriberStateType = CounterState
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,11 +35,7 @@ class SplashViewController: UIViewController, StoreSubscriber, Routable {
         super.viewWillAppear(animated)
         
         store.subscribe(self)
-        {
-            $0.select {
-                $0.counterState
-            }
-        }
+        store.dispatch(fetch)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -59,6 +54,7 @@ class SplashViewController: UIViewController, StoreSubscriber, Routable {
             store.dispatch(SplashState.routesChange())
         }).disposed(by: self.disposeBag)
 
+
         counterUpButton.rx.tap.asDriver().drive(onNext: { [weak self]() in
             print("SSSSSSS")
             store.dispatch(increase)
@@ -70,11 +66,6 @@ class SplashViewController: UIViewController, StoreSubscriber, Routable {
             //store.dispatch(CounterState.counterActionDecrease())
             store.dispatch(decrease)
         }).disposed(by: self.disposeBag)
-
-//        if store.state.authState.loggedInState == .idle {
-//            store.dispatch(AuthState.authenticateUser())
-
-//        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -82,21 +73,16 @@ class SplashViewController: UIViewController, StoreSubscriber, Routable {
         
         store.unsubscribe(self)
     }
-    
-    func newState(state: CounterState) {
 
+}
 
-        counterLabel.text = "\(state.counter)"
+extension SplashViewController: StoreSubscriber {
 
-//        if state.loggedInState == .notLoggedIn {
-//
-//            let alert = UIAlertController(title: "Error", message: state.error!.localizedDescription, preferredStyle: .alert)
-//
-//            alert.addAction(UIAlertAction(title: "Try Again", style: .cancel, handler: { _ in
-//                store.dispatch(AuthState.authenticateUser())
-//            }))
-//
-//            present(alert, animated: true)
-//        }
+    typealias StoreSubscriberStateType = AppState
+
+    func newState(state: AppState) {
+
+        currentViewStateLabel.text = "\(state.viewState.currentViewState.description)"
+        counterLabel.text = "\(state.counterState.counter)"
     }
 }

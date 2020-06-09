@@ -14,6 +14,7 @@ func appReducer(action: Action, state: AppState?) -> AppState {
         searchState: searchReducer(action: action, state: state?.searchState),
         tweetDetail: tweetDetailReducer(action: action, state: state?.tweetDetail),
         splashState: splashReducer(action: action, state: state?.splashState),
-        counterState: counterReducer(action: action, state: state?.counterState)
+        counterState: counterReducer(action: action, state: state?.counterState),
+        viewState: viewReducer(action: action, state: state?.viewState)
     )
 }

@@ -13,9 +13,9 @@ func counterReducer(action: Action, state: CounterState?) -> CounterState {
     // 引数で受け取ったactionを判定し、処理を行う
 
     switch action {
-    case let action as CounterActionIncreaseAction:
+    case _ as CounterActionIncreaseAction:
         state.counter += 1 // AppStateにはInt型の変数Counterを定義している
-    case let action as CounterActionDecreaseAction:
+    case _ as CounterActionDecreaseAction:
         state.counter -= 1
     default:
         break

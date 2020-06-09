@@ -1,19 +1,20 @@
 //
-//  ExampleAction.swift
+//  ViewAction.swift
 //  sparkle
 //
-//  Created by  ohayoukenchan on 2020/06/08.
+//  Created by  ohayoukenchan on 2020/06/09.
 //  Copyright © 2020 Takano Kenta. All rights reserved.
 //
 
 import ReSwift
 import ReSwiftThunk
 
-let increase = Thunk<AppState> { dispatch, getState in
+let fetch = Thunk<AppState> { dispatch, getState in
 //    if getState!.loading {
 //        return
 //    }
-    dispatch(CounterActionIncreaseAction())
+    print("HHHHHHHOOOOOOOOOOOOOOOOOBBBBBBB")
+    dispatch(RequestSuccess())
 //    api.getSomething() { something in
 //        if something != nil {
 //            dispatch(RequestSuccess(something))
@@ -23,10 +24,5 @@ let increase = Thunk<AppState> { dispatch, getState in
 //    }
 }
 
-let decrease = Thunk<AppState> { dispatch, getState in
-
-    dispatch(CounterActionDecreaseAction())
-}
-
-struct CounterActionIncreaseAction: Action {}
-struct CounterActionDecreaseAction: Action {}
+struct RequestSuccess: Action {}
+struct RequestError: Action {}

@@ -22,6 +22,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JV1-5d-4vS">
+                                <rect key="frame" x="172.5" y="388" width="30" height="30"/>
+                                <state key="normal" title="Foo"/>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nxx-gn-6x2">
                                 <rect key="frame" x="167" y="279.5" width="41" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -36,10 +40,12 @@
                                 <rect key="frame" x="147" y="199.5" width="81" height="30"/>
                                 <state key="normal" title="count down"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JV1-5d-4vS">
-                                <rect key="frame" x="172.5" y="388" width="30" height="30"/>
-                                <state key="normal" title="Foo"/>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBU-kV-1g6">
+                                <rect key="frame" x="166.5" y="144" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -48,8 +54,10 @@
                             <constraint firstItem="JV1-5d-4vS" firstAttribute="top" secondItem="YTN-fO-Aoy" secondAttribute="bottom" constant="41" id="4aW-Fj-Xii"/>
                             <constraint firstItem="Nxx-gn-6x2" firstAttribute="centerX" secondItem="5p3-Fm-on9" secondAttribute="centerX" id="6Fx-Bm-gBo"/>
                             <constraint firstItem="If8-Zp-iD5" firstAttribute="top" secondItem="zFg-H7-hbJ" secondAttribute="bottom" constant="10" id="8AE-4K-UFX"/>
+                            <constraint firstItem="zFg-H7-hbJ" firstAttribute="top" secondItem="hBU-kV-1g6" secondAttribute="bottom" constant="34.5" id="Dx2-La-7Ch"/>
                             <constraint firstItem="zFg-H7-hbJ" firstAttribute="centerX" secondItem="5p3-Fm-on9" secondAttribute="centerX" id="GcP-HY-uRC"/>
                             <constraint firstItem="YTN-fO-Aoy" firstAttribute="centerX" secondItem="5p3-Fm-on9" secondAttribute="centerX" id="TV5-xA-kBI"/>
+                            <constraint firstItem="hBU-kV-1g6" firstAttribute="centerX" secondItem="5p3-Fm-on9" secondAttribute="centerX" id="Xf4-VQ-038"/>
                             <constraint firstItem="Nxx-gn-6x2" firstAttribute="top" secondItem="If8-Zp-iD5" secondAttribute="bottom" constant="10" id="bFa-yt-BMH"/>
                             <constraint firstItem="YTN-fO-Aoy" firstAttribute="centerY" secondItem="5p3-Fm-on9" secondAttribute="centerY" id="lcg-YG-mH2"/>
                             <constraint firstItem="JV1-5d-4vS" firstAttribute="centerX" secondItem="5p3-Fm-on9" secondAttribute="centerX" id="rS9-Hd-0J8"/>
@@ -60,6 +68,7 @@
                         <outlet property="counterDownButton" destination="zFg-H7-hbJ" id="Cuh-wg-YWY"/>
                         <outlet property="counterLabel" destination="Nxx-gn-6x2" id="byw-P2-xTU"/>
                         <outlet property="counterUpButton" destination="If8-Zp-iD5" id="y2v-Ve-coi"/>
+                        <outlet property="currentViewStateLabel" destination="hBU-kV-1g6" id="yPf-dH-WSt"/>
                         <outlet property="dummyButton" destination="YTN-fO-Aoy" id="m8s-E2-xzt"/>
                         <outlet property="fooButton" destination="JV1-5d-4vS" id="rJf-B4-zRS"/>
                         <segue destination="Ep3-SN-flT" kind="show" identifier="showSearch" animates="NO" id="1da-m8-HVC"/>

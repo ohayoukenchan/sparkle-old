@@ -16,4 +16,5 @@ struct AppState: StateType {
     var tweetDetail: TweetDetailState = TweetDetailState()
     var splashState: SplashState = SplashState()
     var counterState: CounterState = CounterState()
+    var viewState: ViewState = ViewState()
 }

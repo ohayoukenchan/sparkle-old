@@ -15,6 +15,9 @@
 		09A5292C24502B5700D34620 /* SplashReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A5292B24502B5700D34620 /* SplashReducer.swift */; };
 		09DB071C248DEE5D00FF6D5D /* CounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB071B248DEE5D00FF6D5D /* CounterAction.swift */; };
 		09DB071E248DF0CB00FF6D5D /* CounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB071D248DF0CB00FF6D5D /* CounterState.swift */; };
+		09DB0720248F3E8800FF6D5D /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB071F248F3E8800FF6D5D /* ViewState.swift */; };
+		09DB0724248F435C00FF6D5D /* ViewReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB0723248F435C00FF6D5D /* ViewReducer.swift */; };
+		09DB0728248F43CE00FF6D5D /* ViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB0727248F43CE00FF6D5D /* ViewAction.swift */; };
 		3A0C69A421BA38440077CE64 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0C69A321BA38440077CE64 /* Splash.storyboard */; };
 		3A0C69B421BE6AC00077CE64 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69B321BE6AC00077CE64 /* AuthState.swift */; };
 		3A0C69B621BF7B2D0077CE64 /* Redux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69B521BF7B2D0077CE64 /* Redux.swift */; };
@@ -64,7 +67,6 @@
 		3AC7E4E921C8AA6200EA1AB8 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC7E4E821C8AA6200EA1AB8 /* Tweet.swift */; };
 		3AE8395E218AC1BA00391531 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8395D218AC1BA00391531 /* AppState.swift */; };
 		3AE83961218AC24000391531 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE83960218AC24000391531 /* CounterReducer.swift */; };
-		3AE83964218AC27700391531 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE83963218AC27700391531 /* Actions.swift */; };
 		3AE8EF4B21B4ED9C0098FE23 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8EF4A21B4ED9C0098FE23 /* Router.swift */; };
 		3AE8EF4D21B4EDEF0098FE23 /* SplashViewRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8EF4C21B4EDEF0098FE23 /* SplashViewRoutable.swift */; };
 		3AE8EF4F21B4EE2A0098FE23 /* RootRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8EF4E21B4EE2A0098FE23 /* RootRoutable.swift */; };
@@ -136,6 +138,9 @@
 		09A5292B24502B5700D34620 /* SplashReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashReducer.swift; sourceTree = "<group>"; };
 		09DB071B248DEE5D00FF6D5D /* CounterAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAction.swift; sourceTree = "<group>"; };
 		09DB071D248DF0CB00FF6D5D /* CounterState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterState.swift; sourceTree = "<group>"; };
+		09DB071F248F3E8800FF6D5D /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		09DB0723248F435C00FF6D5D /* ViewReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReducer.swift; sourceTree = "<group>"; };
+		09DB0727248F43CE00FF6D5D /* ViewAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAction.swift; sourceTree = "<group>"; };
 		0C2C49CBD0EFE81BE05498F1 /* Pods-sparkleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleUITests.release.xcconfig"; path = "Target Support Files/Pods-sparkleUITests/Pods-sparkleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1A0502ADD776A7B8EE95044A /* Pods-sparkleTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleTests.development.xcconfig"; path = "Target Support Files/Pods-sparkleTests/Pods-sparkleTests.development.xcconfig"; sourceTree = "<group>"; };
 		26C6469418167D47338DF56A /* Pods-sparkleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleTests.release.xcconfig"; path = "Target Support Files/Pods-sparkleTests/Pods-sparkleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -204,7 +209,6 @@
 		3AD2059E225DBB6500200A27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AE8395D218AC1BA00391531 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		3AE83960218AC24000391531 /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
-		3AE83963218AC27700391531 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 		3AE8EF4A21B4ED9C0098FE23 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		3AE8EF4C21B4EDEF0098FE23 /* SplashViewRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewRoutable.swift; sourceTree = "<group>"; };
 		3AE8EF4E21B4EE2A0098FE23 /* RootRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRoutable.swift; sourceTree = "<group>"; };
@@ -491,6 +495,7 @@
 				3A0C69C121BF864D0077CE64 /* TweetDetailState.swift */,
 				09A5292924502B2700D34620 /* SplashState.swift */,
 				09DB071D248DF0CB00FF6D5D /* CounterState.swift */,
+				09DB071F248F3E8800FF6D5D /* ViewState.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -504,6 +509,7 @@
 				3A0C69BB21BF7B9C0077CE64 /* SearchReducer.swift */,
 				3A0C69BD21BF7BB50077CE64 /* TweetDetailReducer.swift */,
 				09A5292B24502B5700D34620 /* SplashReducer.swift */,
+				09DB0723248F435C00FF6D5D /* ViewReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -511,12 +517,12 @@
 		3AE83962218AC25600391531 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
-				3AE83963218AC27700391531 /* Actions.swift */,
 				3A0C69C321BF86770077CE64 /* SearchAction.swift */,
 				3A0C69C521BF869F0077CE64 /* TweetDetailAction.swift */,
 				3A0C69C721BF86BA0077CE64 /* AuthAction.swift */,
 				09A5292724502AD400D34620 /* SplashAction.swift */,
 				09DB071B248DEE5D00FF6D5D /* CounterAction.swift */,
+				09DB0727248F43CE00FF6D5D /* ViewAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -874,7 +880,7 @@
 			);
 			name = "Run Script";
 			outputPaths = (
-				"$SRCROOT/R.generated.swift",
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -971,7 +977,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A0C69BC21BF7B9C0077CE64 /* SearchReducer.swift in Sources */,
-				3AE83964218AC27700391531 /* Actions.swift in Sources */,
 				3A0C69C221BF864D0077CE64 /* TweetDetailState.swift in Sources */,
 				3A74295421C8C0290029C3C0 /* Errors.swift in Sources */,
 				3A74294E21C8BFC20029C3C0 /* String+PercentEncoding.swift in Sources */,
@@ -983,7 +988,9 @@
 				09A529242450050E00D34620 /* SearchViewControlller.swift in Sources */,
 				3AE8395E218AC1BA00391531 /* AppState.swift in Sources */,
 				3A74294B21C8BF5E0029C3C0 /* TwitterCredentials.swift in Sources */,
+				09DB0724248F435C00FF6D5D /* ViewReducer.swift in Sources */,
 				09A5292824502AD400D34620 /* SplashAction.swift in Sources */,
+				09DB0720248F3E8800FF6D5D /* ViewState.swift in Sources */,
 				3A0C69C621BF869F0077CE64 /* TweetDetailAction.swift in Sources */,
 				3AE83961218AC24000391531 /* CounterReducer.swift in Sources */,
 				09A5292A24502B2700D34620 /* SplashState.swift in Sources */,
@@ -997,6 +1004,7 @@
 				3A74295D21C8C5470029C3C0 /* TweetDetailViewRoutable.swift in Sources */,
 				3AC7E4E921C8AA6200EA1AB8 /* Tweet.swift in Sources */,
 				3A74294621C8B49E0029C3C0 /* SearchProvider.swift in Sources */,
+				09DB0728248F43CE00FF6D5D /* ViewAction.swift in Sources */,
 				3A0C69B821BF7B650077CE64 /* AppReducer.swift in Sources */,
 				099F7AD92410A79C0091D4DD /* R.generated.swift in Sources */,
 				3A74295021C8BFD20029C3C0 /* String+Random.swift in Sources */,
