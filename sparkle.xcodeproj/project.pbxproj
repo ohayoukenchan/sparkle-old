@@ -13,6 +13,8 @@
 		09A5292824502AD400D34620 /* SplashAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A5292724502AD400D34620 /* SplashAction.swift */; };
 		09A5292A24502B2700D34620 /* SplashState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A5292924502B2700D34620 /* SplashState.swift */; };
 		09A5292C24502B5700D34620 /* SplashReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A5292B24502B5700D34620 /* SplashReducer.swift */; };
+		09DB071C248DEE5D00FF6D5D /* CounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB071B248DEE5D00FF6D5D /* CounterAction.swift */; };
+		09DB071E248DF0CB00FF6D5D /* CounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB071D248DF0CB00FF6D5D /* CounterState.swift */; };
 		3A0C69A421BA38440077CE64 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0C69A321BA38440077CE64 /* Splash.storyboard */; };
 		3A0C69B421BE6AC00077CE64 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69B321BE6AC00077CE64 /* AuthState.swift */; };
 		3A0C69B621BF7B2D0077CE64 /* Redux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69B521BF7B2D0077CE64 /* Redux.swift */; };
@@ -67,9 +69,6 @@
 		3AE8EF4D21B4EDEF0098FE23 /* SplashViewRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8EF4C21B4EDEF0098FE23 /* SplashViewRoutable.swift */; };
 		3AE8EF4F21B4EE2A0098FE23 /* RootRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8EF4E21B4EE2A0098FE23 /* RootRoutable.swift */; };
 		3AE8EF5321B4F2920098FE23 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8EF5221B4F2920098FE23 /* SplashViewController.swift */; };
-		3AEBD4AF226C1F54007C9917 /* LookUpState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEBD4AE226C1F54007C9917 /* LookUpState.swift */; };
-		3AEBD4B1226C254D007C9917 /* LookUpReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEBD4B0226C254D007C9917 /* LookUpReducer.swift */; };
-		3AEBD4B3226C2695007C9917 /* LookUpAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEBD4B2226C2695007C9917 /* LookUpAction.swift */; };
 		43E7AB3C3134507E022F40C6 /* Pods_Infra_sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C972DC47EBC102A7F316B2 /* Pods_Infra_sparkle.framework */; };
 		5EA398CFC191322CE1BA26D0 /* Pods_sparkleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C395BE0544AD20D80E4989EA /* Pods_sparkleUITests.framework */; };
 		7584F23E0BC893193222FF42 /* Pods_Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67939BB680227091415441A0 /* Pods_Infra.framework */; };
@@ -135,6 +134,8 @@
 		09A5292724502AD400D34620 /* SplashAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAction.swift; sourceTree = "<group>"; };
 		09A5292924502B2700D34620 /* SplashState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashState.swift; sourceTree = "<group>"; };
 		09A5292B24502B5700D34620 /* SplashReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashReducer.swift; sourceTree = "<group>"; };
+		09DB071B248DEE5D00FF6D5D /* CounterAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAction.swift; sourceTree = "<group>"; };
+		09DB071D248DF0CB00FF6D5D /* CounterState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterState.swift; sourceTree = "<group>"; };
 		0C2C49CBD0EFE81BE05498F1 /* Pods-sparkleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleUITests.release.xcconfig"; path = "Target Support Files/Pods-sparkleUITests/Pods-sparkleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1A0502ADD776A7B8EE95044A /* Pods-sparkleTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleTests.development.xcconfig"; path = "Target Support Files/Pods-sparkleTests/Pods-sparkleTests.development.xcconfig"; sourceTree = "<group>"; };
 		26C6469418167D47338DF56A /* Pods-sparkleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleTests.release.xcconfig"; path = "Target Support Files/Pods-sparkleTests/Pods-sparkleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -208,9 +209,6 @@
 		3AE8EF4C21B4EDEF0098FE23 /* SplashViewRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewRoutable.swift; sourceTree = "<group>"; };
 		3AE8EF4E21B4EE2A0098FE23 /* RootRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRoutable.swift; sourceTree = "<group>"; };
 		3AE8EF5221B4F2920098FE23 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		3AEBD4AE226C1F54007C9917 /* LookUpState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookUpState.swift; sourceTree = "<group>"; };
-		3AEBD4B0226C254D007C9917 /* LookUpReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookUpReducer.swift; sourceTree = "<group>"; };
-		3AEBD4B2226C2695007C9917 /* LookUpAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookUpAction.swift; sourceTree = "<group>"; };
 		47851536B2A0A20DEE815DFF /* Pods-Infra-sparkle.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infra-sparkle.development.xcconfig"; path = "Target Support Files/Pods-Infra-sparkle/Pods-Infra-sparkle.development.xcconfig"; sourceTree = "<group>"; };
 		492ED4020C747B90A7030DCD /* Pods-sparkle.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkle.development.xcconfig"; path = "Target Support Files/Pods-sparkle/Pods-sparkle.development.xcconfig"; sourceTree = "<group>"; };
 		4FF2E9DE8195C3CD33FAD025 /* Pods-Infra-sparkle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infra-sparkle.release.xcconfig"; path = "Target Support Files/Pods-Infra-sparkle/Pods-Infra-sparkle.release.xcconfig"; sourceTree = "<group>"; };
@@ -491,8 +489,8 @@
 				3A0C69B321BE6AC00077CE64 /* AuthState.swift */,
 				3A0C69BF21BF861C0077CE64 /* SearchState.swift */,
 				3A0C69C121BF864D0077CE64 /* TweetDetailState.swift */,
-				3AEBD4AE226C1F54007C9917 /* LookUpState.swift */,
 				09A5292924502B2700D34620 /* SplashState.swift */,
+				09DB071D248DF0CB00FF6D5D /* CounterState.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -501,7 +499,6 @@
 			isa = PBXGroup;
 			children = (
 				3AE83960218AC24000391531 /* CounterReducer.swift */,
-				3AEBD4B0226C254D007C9917 /* LookUpReducer.swift */,
 				3A0C69B721BF7B650077CE64 /* AppReducer.swift */,
 				3A0C69B921BF7B850077CE64 /* AuthReducer.swift */,
 				3A0C69BB21BF7B9C0077CE64 /* SearchReducer.swift */,
@@ -515,11 +512,11 @@
 			isa = PBXGroup;
 			children = (
 				3AE83963218AC27700391531 /* Actions.swift */,
-				3AEBD4B2226C2695007C9917 /* LookUpAction.swift */,
 				3A0C69C321BF86770077CE64 /* SearchAction.swift */,
 				3A0C69C521BF869F0077CE64 /* TweetDetailAction.swift */,
 				3A0C69C721BF86BA0077CE64 /* AuthAction.swift */,
 				09A5292724502AD400D34620 /* SplashAction.swift */,
+				09DB071B248DEE5D00FF6D5D /* CounterAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -634,6 +631,7 @@
 				3A9FFCE521896A66007E2B8C /* Sources */,
 				3A9FFCE621896A66007E2B8C /* Frameworks */,
 				3A9FFCE721896A66007E2B8C /* Resources */,
+				28E0828BB7C5179046F71C8B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -827,6 +825,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Infra-sparkle/Pods-Infra-sparkle-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		28E0828BB7C5179046F71C8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sparkleTests/Pods-sparkleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sparkleTests/Pods-sparkleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sparkleTests/Pods-sparkleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2C46F5A2648F7050DCB9F92B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -859,7 +874,7 @@
 			);
 			name = "Run Script";
 			outputPaths = (
-				$SRCROOT/R.generated.swift,
+				"$SRCROOT/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -960,21 +975,19 @@
 				3A0C69C221BF864D0077CE64 /* TweetDetailState.swift in Sources */,
 				3A74295421C8C0290029C3C0 /* Errors.swift in Sources */,
 				3A74294E21C8BFC20029C3C0 /* String+PercentEncoding.swift in Sources */,
+				09DB071E248DF0CB00FF6D5D /* CounterState.swift in Sources */,
 				3A0C69C821BF86BA0077CE64 /* AuthAction.swift in Sources */,
 				3A0C69B621BF7B2D0077CE64 /* Redux.swift in Sources */,
 				3A63AD6721C8D81800B191FE /* TweetDetailViewController.swift in Sources */,
 				3A74294821C8B4B10029C3C0 /* OAuthTwitterHeader.swift in Sources */,
 				09A529242450050E00D34620 /* SearchViewControlller.swift in Sources */,
-				3AEBD4AF226C1F54007C9917 /* LookUpState.swift in Sources */,
 				3AE8395E218AC1BA00391531 /* AppState.swift in Sources */,
 				3A74294B21C8BF5E0029C3C0 /* TwitterCredentials.swift in Sources */,
-				3AEBD4B3226C2695007C9917 /* LookUpAction.swift in Sources */,
 				09A5292824502AD400D34620 /* SplashAction.swift in Sources */,
 				3A0C69C621BF869F0077CE64 /* TweetDetailAction.swift in Sources */,
 				3AE83961218AC24000391531 /* CounterReducer.swift in Sources */,
 				09A5292A24502B2700D34620 /* SplashState.swift in Sources */,
 				3AE8EF5321B4F2920098FE23 /* SplashViewController.swift in Sources */,
-				3AEBD4B1226C254D007C9917 /* LookUpReducer.swift in Sources */,
 				3AE8EF4D21B4EDEF0098FE23 /* SplashViewRoutable.swift in Sources */,
 				3A74295221C8BFF20029C3C0 /* UIView+CornerRadius.swift in Sources */,
 				3A0C69BE21BF7BB50077CE64 /* TweetDetailReducer.swift in Sources */,
@@ -992,6 +1005,7 @@
 				3A0C69C021BF861C0077CE64 /* SearchState.swift in Sources */,
 				3AB5B635225DC32100894CCB /* TweetCell.swift in Sources */,
 				3A0C69C421BF86770077CE64 /* SearchAction.swift in Sources */,
+				09DB071C248DEE5D00FF6D5D /* CounterAction.swift in Sources */,
 				3AB5B632225DC32100894CCB /* _SearchViewController.swift in Sources */,
 				3A74294421C8B48F0029C3C0 /* LoginProvider.swift in Sources */,
 				09A5292C24502B5700D34620 /* SplashReducer.swift in Sources */,

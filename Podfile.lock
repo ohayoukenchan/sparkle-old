@@ -351,6 +351,14 @@ PODS:
   - ReSwift (5.0.0)
   - ReSwiftRouter (0.7.1):
     - ReSwift (~> 5.0.0)
+  - ReSwiftThunk (1.2.0):
+    - ReSwift (~> 5.0)
+    - ReSwiftThunk/Core (= 1.2.0)
+  - ReSwiftThunk/Core (1.2.0):
+    - ReSwift (~> 5.0)
+  - ReSwiftThunk/ExpectThunk (1.2.0):
+    - ReSwift (~> 5.0)
+    - ReSwiftThunk/Core
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -378,6 +386,8 @@ DEPENDENCIES:
   - ReRxSwift
   - ReSwift
   - ReSwiftRouter
+  - ReSwiftThunk
+  - ReSwiftThunk/ExpectThunk
   - RxCocoa
   - RxSwift (~> 5.0.0)
   - SnapKit
@@ -417,6 +427,7 @@ SPEC REPOS:
     - ReRxSwift
     - ReSwift
     - ReSwiftRouter
+    - ReSwiftThunk
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -465,6 +476,7 @@ SPEC CHECKSUMS:
   ReRxSwift: 75e479463af300147c0a940967378a08305202c6
   ReSwift: 628f1a9b3ee52e3b3ca2a644435472fd77afafe1
   ReSwiftRouter: 916d8f940dbecc1d32dc1912b8f1891c7bcc7836
+  ReSwiftThunk: 23c8ea9092d9dc94b72005f19352dbd37fa42533
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
@@ -473,6 +485,6 @@ SPEC CHECKSUMS:
   TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
   TwitterKit: 5e4f41d70b9abdb41df5467f52d7aa2c0fd26ebb
 
-PODFILE CHECKSUM: 053f906b247e6575823539bbb10c224b4c2aaf9e
+PODFILE CHECKSUM: aaf718a2ad99046a118e246841547ec325c8ffe9
 
 COCOAPODS: 1.9.0

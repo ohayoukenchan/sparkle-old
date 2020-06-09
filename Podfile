@@ -39,6 +39,7 @@ target 'Infra' do
     pod 'ReSwift'
     pod 'ReSwiftRouter'
     pod 'ReRxSwift'
+    pod 'ReSwiftThunk'
 
     # Reactive
     pod 'RxSwift', '~> 5.0.0'
@@ -61,6 +62,7 @@ target 'Infra' do
   target 'sparkleTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'ReSwiftThunk/ExpectThunk'
   end
 
   target 'sparkleUITests' do
