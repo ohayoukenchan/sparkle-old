@@ -7,8 +7,10 @@
 //
 
 import ReSwift
+import ReSwiftThunk
 //import Moya
 import ObjectMapper
+
 
 extension SearchState {
     public static func searchTweets(query: String) -> SearchTweets {

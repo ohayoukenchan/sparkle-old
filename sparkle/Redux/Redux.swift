@@ -7,5 +7,9 @@
 //
 
 import ReSwift
+import ReSwiftThunk
 
-var store: Store<AppState> = Store<AppState>(reducer: appReducer, state: nil)
+let thunkMiddleware: Middleware<AppState> = createThunkMiddleware()
+
+// Note that it can perfectly live with other middleware in the chain.
+let store = Store<AppState>(reducer: appReducer, state: nil, middleware: [thunkMiddleware])

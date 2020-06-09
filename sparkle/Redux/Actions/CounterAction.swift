@@ -7,44 +7,27 @@
 //
 
 import ReSwift
+import ReSwiftThunk
 
-//struct ExampleAction: Action {
-//    let counter: Counter?
-//}
-extension CounterState {
-
-    public static func counterActionIncrease() -> Store<AppState>.ActionCreator {
-        return { state, store in
-            store.dispatch(CounterActionIncreaseAction())
-
-            return nil
-        }
-    }
-
-    public static func counterActionDecrease() -> Store<AppState>.ActionCreator {
-    return { state, store in
-        store.dispatch(CounterActionDecreaseAction())
-
-        return nil
-    }
-
-    }
+let increase = Thunk<AppState> { dispatch, getState in
+//    if getState!.loading {
+//        return
+//    }
+    print("HHHHHHHOOOOOOOOOOOOOOOOOBBBBBBB")
+    dispatch(CounterActionIncreaseAction())
+//    api.getSomething() { something in
+//        if something != nil {
+//            dispatch(RequestSuccess(something))
+//        } else {
+//            dispatch(RequestError())
+//        }
+//    }
 }
 
-struct CounterActionIncrease: Action {}
-struct CounterActionDecrease: Action {}
+let decrease = Thunk<AppState> { dispatch, getState in
+
+    dispatch(CounterActionDecreaseAction())
+}
+
 struct CounterActionIncreaseAction: Action {}
 struct CounterActionDecreaseAction: Action {}
-//Actions
-//struct SearchTweetsActionsAction: Action {
-//    let query: String
-//    let results: Result<[Tweet], TwitterAPIError>
-//    let maxId: String?
-//}
-//
-//struct LoadMoreTweetsAction: Action {
-//    let results: Result<[Tweet], TwitterAPIError>
-//    let maxId: String?
-//}
-//
-//struct ResetSearchAction: Action {}

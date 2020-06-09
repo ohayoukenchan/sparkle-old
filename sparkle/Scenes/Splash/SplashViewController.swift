@@ -60,12 +60,15 @@ class SplashViewController: UIViewController, StoreSubscriber, Routable {
         }).disposed(by: self.disposeBag)
 
         counterUpButton.rx.tap.asDriver().drive(onNext: { [weak self]() in
-            store.dispatch(CounterState.counterActionIncrease())
+            print("SSSSSSS")
+            store.dispatch(increase)
+            //store.dispatch(CounterState.counterActionIncrease())
         }).disposed(by: self.disposeBag)
 
 
         counterDownButton.rx.tap.asDriver().drive(onNext: { [weak self]() in
-            store.dispatch(CounterState.counterActionDecrease())
+            //store.dispatch(CounterState.counterActionDecrease())
+            store.dispatch(decrease)
         }).disposed(by: self.disposeBag)
 
 //        if store.state.authState.loggedInState == .idle {
