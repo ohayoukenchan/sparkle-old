@@ -14,6 +14,8 @@ import Firebase
 import ReSwift
 import ReSwiftRouter
 import IQKeyboardManagerSwift
+import SwiftyBeaver
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -53,6 +55,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 $0.navigationState
             }
         }
+
+        // SwiftyBeaverよるロギングの開始
+        let logger = SwiftyBeaver.self
+
+        let console = ConsoleDestination()
+        logger.addDestination(console)
+
+        logger.verbose("verboseログだよ")
+        logger.debug("debugログだよ")
+        logger.info("infoログだよ")
+        logger.warning("warningログだよ")
+        logger.error("errorログだよ")
 
 
         

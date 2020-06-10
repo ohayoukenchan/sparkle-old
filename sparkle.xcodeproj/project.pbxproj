@@ -18,6 +18,8 @@
 		09DB0720248F3E8800FF6D5D /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB071F248F3E8800FF6D5D /* ViewState.swift */; };
 		09DB0724248F435C00FF6D5D /* ViewReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB0723248F435C00FF6D5D /* ViewReducer.swift */; };
 		09DB0728248F43CE00FF6D5D /* ViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB0727248F43CE00FF6D5D /* ViewAction.swift */; };
+		09DB072B24907CC300FF6D5D /* SplashViewMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB072A24907CC300FF6D5D /* SplashViewMiddleware.swift */; };
+		09DB072D24907FDE00FF6D5D /* BookSearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB072C24907FDE00FF6D5D /* BookSearchProvider.swift */; };
 		3A0C69A421BA38440077CE64 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0C69A321BA38440077CE64 /* Splash.storyboard */; };
 		3A0C69B421BE6AC00077CE64 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69B321BE6AC00077CE64 /* AuthState.swift */; };
 		3A0C69B621BF7B2D0077CE64 /* Redux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69B521BF7B2D0077CE64 /* Redux.swift */; };
@@ -141,6 +143,8 @@
 		09DB071F248F3E8800FF6D5D /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 		09DB0723248F435C00FF6D5D /* ViewReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReducer.swift; sourceTree = "<group>"; };
 		09DB0727248F43CE00FF6D5D /* ViewAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAction.swift; sourceTree = "<group>"; };
+		09DB072A24907CC300FF6D5D /* SplashViewMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewMiddleware.swift; sourceTree = "<group>"; };
+		09DB072C24907FDE00FF6D5D /* BookSearchProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchProvider.swift; sourceTree = "<group>"; };
 		0C2C49CBD0EFE81BE05498F1 /* Pods-sparkleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleUITests.release.xcconfig"; path = "Target Support Files/Pods-sparkleUITests/Pods-sparkleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1A0502ADD776A7B8EE95044A /* Pods-sparkleTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleTests.development.xcconfig"; path = "Target Support Files/Pods-sparkleTests/Pods-sparkleTests.development.xcconfig"; sourceTree = "<group>"; };
 		26C6469418167D47338DF56A /* Pods-sparkleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleTests.release.xcconfig"; path = "Target Support Files/Pods-sparkleTests/Pods-sparkleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -286,6 +290,14 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		09DB072924907C6A00FF6D5D /* MiddleWares */ = {
+			isa = PBXGroup;
+			children = (
+				09DB072A24907CC300FF6D5D /* SplashViewMiddleware.swift */,
+			);
+			path = MiddleWares;
+			sourceTree = "<group>";
+		};
 		3A3A984E2264825100522A33 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +309,7 @@
 		3A59C867219003BE000C4E86 /* Redux */ = {
 			isa = PBXGroup;
 			children = (
+				09DB072924907C6A00FF6D5D /* MiddleWares */,
 				3AE83962218AC25600391531 /* Actions */,
 				3AE8395F218AC22D00391531 /* Reducers */,
 				3AE8395C218AC1A800391531 /* States */,
@@ -311,6 +324,7 @@
 				3A74294321C8B48F0029C3C0 /* LoginProvider.swift */,
 				3A74294521C8B49E0029C3C0 /* SearchProvider.swift */,
 				3A74294721C8B4B10029C3C0 /* OAuthTwitterHeader.swift */,
+				09DB072C24907FDE00FF6D5D /* BookSearchProvider.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -979,6 +993,7 @@
 				3A0C69BC21BF7B9C0077CE64 /* SearchReducer.swift in Sources */,
 				3A0C69C221BF864D0077CE64 /* TweetDetailState.swift in Sources */,
 				3A74295421C8C0290029C3C0 /* Errors.swift in Sources */,
+				09DB072D24907FDE00FF6D5D /* BookSearchProvider.swift in Sources */,
 				3A74294E21C8BFC20029C3C0 /* String+PercentEncoding.swift in Sources */,
 				09DB071E248DF0CB00FF6D5D /* CounterState.swift in Sources */,
 				3A0C69C821BF86BA0077CE64 /* AuthAction.swift in Sources */,
@@ -999,6 +1014,7 @@
 				3A74295221C8BFF20029C3C0 /* UIView+CornerRadius.swift in Sources */,
 				3A0C69BE21BF7BB50077CE64 /* TweetDetailReducer.swift in Sources */,
 				3A0C69BA21BF7B850077CE64 /* AuthReducer.swift in Sources */,
+				09DB072B24907CC300FF6D5D /* SplashViewMiddleware.swift in Sources */,
 				3A74295B21C8C51C0029C3C0 /* SearchViewRoutable.swift in Sources */,
 				3A9FFCDB21896A63007E2B8C /* ViewController.swift in Sources */,
 				3A74295D21C8C5470029C3C0 /* TweetDetailViewRoutable.swift in Sources */,

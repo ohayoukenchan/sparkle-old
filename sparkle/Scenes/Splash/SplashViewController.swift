@@ -65,7 +65,7 @@ class SplashViewController: UIViewController, Routable {
         counterDownButton.rx.tap.asDriver().drive(onNext: { [weak self]() in
             //store.dispatch(CounterState.counterActionDecrease())
             store.dispatch(decrease)
-        }).disposed(by: self.disposeBag)
+        }).disposed(by: self.disposeBag)    
     }
     
     override func viewWillDisappear(_ animated: Bool) {

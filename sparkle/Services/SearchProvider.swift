@@ -29,17 +29,17 @@ import Foundation
 //
 //    var sampleData: Data { return Data() }
 //
-////    var task: Task {
-////        switch self {
-////        case .searchTweets(let query, let maxId):
-////            var parameters: [String: Any] = ["q" : query]
-////            if maxId != nil {
-////                parameters["max_id"] = maxId!
-////            }
-////
-////            return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
-////        }
-////    }
+//    var task: Task {
+//        switch self {
+//        case .searchTweets(let query, let maxId):
+//            var parameters: [String: Any] = ["q" : query]
+//            if maxId != nil {
+//                parameters["max_id"] = maxId!
+//            }
+//
+//            return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
+//        }
+//    }
 //
 //    var headers: [String : String]? {
 //        let url: String = "\(baseURL)\(self.path)"

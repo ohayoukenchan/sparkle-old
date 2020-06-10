@@ -45,6 +45,9 @@ target 'Infra' do
     pod 'RxSwift', '~> 5.0.0'
     pod 'RxCocoa'
 
+    # Logging
+    pod 'SwiftyBeaver'
+
   end
   
 #  target 'sparkle-development' do
