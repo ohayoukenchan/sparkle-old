@@ -6,7 +6,9 @@
 //  Copyright © 2020 Takano Kenta. All rights reserved.
 //
 
+import RxSwift
 import ReSwift
+import SparkleClient
 
 struct RequestSuccess: Action {}
 struct RequestError: Action {}

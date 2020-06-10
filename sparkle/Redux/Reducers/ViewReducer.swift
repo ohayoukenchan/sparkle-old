@@ -14,9 +14,6 @@ func viewReducer(action: Action, state: ViewState?) -> ViewState {
     switch action {
     case _ as RequestSuccess:
         state.currentViewState = .Requesting
-        print(state.currentViewState)
-        print("DJJJJJDJJDJDJJDJD")
-//        state.counter += 1 // AppStateにはInt型の変数Counterを定義している
     default:
         break
     }

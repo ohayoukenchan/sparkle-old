@@ -20,6 +20,7 @@
 		09DB0728248F43CE00FF6D5D /* ViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB0727248F43CE00FF6D5D /* ViewAction.swift */; };
 		09DB072B24907CC300FF6D5D /* SplashViewMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB072A24907CC300FF6D5D /* SplashViewMiddleware.swift */; };
 		09DB072D24907FDE00FF6D5D /* BookSearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB072C24907FDE00FF6D5D /* BookSearchProvider.swift */; };
+		09DB072F24908A2A00FF6D5D /* SearchBooksAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB072E24908A2A00FF6D5D /* SearchBooksAction.swift */; };
 		3A0C69A421BA38440077CE64 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0C69A321BA38440077CE64 /* Splash.storyboard */; };
 		3A0C69B421BE6AC00077CE64 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69B321BE6AC00077CE64 /* AuthState.swift */; };
 		3A0C69B621BF7B2D0077CE64 /* Redux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C69B521BF7B2D0077CE64 /* Redux.swift */; };
@@ -145,6 +146,7 @@
 		09DB0727248F43CE00FF6D5D /* ViewAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAction.swift; sourceTree = "<group>"; };
 		09DB072A24907CC300FF6D5D /* SplashViewMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewMiddleware.swift; sourceTree = "<group>"; };
 		09DB072C24907FDE00FF6D5D /* BookSearchProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchProvider.swift; sourceTree = "<group>"; };
+		09DB072E24908A2A00FF6D5D /* SearchBooksAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksAction.swift; sourceTree = "<group>"; };
 		0C2C49CBD0EFE81BE05498F1 /* Pods-sparkleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleUITests.release.xcconfig"; path = "Target Support Files/Pods-sparkleUITests/Pods-sparkleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1A0502ADD776A7B8EE95044A /* Pods-sparkleTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleTests.development.xcconfig"; path = "Target Support Files/Pods-sparkleTests/Pods-sparkleTests.development.xcconfig"; sourceTree = "<group>"; };
 		26C6469418167D47338DF56A /* Pods-sparkleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleTests.release.xcconfig"; path = "Target Support Files/Pods-sparkleTests/Pods-sparkleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -537,6 +539,7 @@
 				09A5292724502AD400D34620 /* SplashAction.swift */,
 				09DB071B248DEE5D00FF6D5D /* CounterAction.swift */,
 				09DB0727248F43CE00FF6D5D /* ViewAction.swift */,
+				09DB072E24908A2A00FF6D5D /* SearchBooksAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -994,6 +997,7 @@
 				3A0C69C221BF864D0077CE64 /* TweetDetailState.swift in Sources */,
 				3A74295421C8C0290029C3C0 /* Errors.swift in Sources */,
 				09DB072D24907FDE00FF6D5D /* BookSearchProvider.swift in Sources */,
+				09DB072F24908A2A00FF6D5D /* SearchBooksAction.swift in Sources */,
 				3A74294E21C8BFC20029C3C0 /* String+PercentEncoding.swift in Sources */,
 				09DB071E248DF0CB00FF6D5D /* CounterState.swift in Sources */,
 				3A0C69C821BF86BA0077CE64 /* AuthAction.swift in Sources */,

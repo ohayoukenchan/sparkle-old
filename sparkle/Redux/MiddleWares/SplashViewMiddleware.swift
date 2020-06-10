@@ -9,18 +9,19 @@
 import Foundation
 import ReSwift
 import ReSwiftThunk
+import SparkleClient
 
 let fetch = Thunk<AppState> { dispatch, getState in
-//    if getState!.loading {
-//        return
-//    }
-    print("HHHHHHHOOOOOOOOOOOOOOOOOBBBBBBB")
-    dispatch(RequestSuccess())
-//    api.getSomething() { something in
-//        if something != nil {
-//            dispatch(RequestSuccess(something))
-//        } else {
-//            dispatch(RequestError())
-//        }
-//    }
+    //    if getState!.loading {
+    //        return
+    //    }
+
+    BooksAPI.getBooksGet().subscribe(onNext: {
+    (response) in
+        print(response)
+        dispatch(RequestBookSearchSuccess(response: response))
+    },
+    onError: {(error) in
+        dispatch(RequestBookSearchError())
+    })
 }

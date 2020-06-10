@@ -41,14 +41,6 @@ class SplashViewController: UIViewController, Routable {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        BooksAPI.getBooksGet().subscribe(onNext: {
-        (response) in
-            print(response)
-        },
-        onError: {(error) in
-            print("ssssss")
-        })
-
         fooButton.rx.tap.asDriver().drive(onNext: { [weak self]() in
             print("HOOOOOOOO")
             store.dispatch(SplashState.routesChange())
@@ -65,7 +57,7 @@ class SplashViewController: UIViewController, Routable {
         counterDownButton.rx.tap.asDriver().drive(onNext: { [weak self]() in
             //store.dispatch(CounterState.counterActionDecrease())
             store.dispatch(decrease)
-        }).disposed(by: self.disposeBag)    
+        }).disposed(by: self.disposeBag)
     }
     
     override func viewWillDisappear(_ animated: Bool) {

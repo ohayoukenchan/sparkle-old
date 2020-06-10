@@ -6,4 +6,11 @@
 //  Copyright © 2020 Takano Kenta. All rights reserved.
 //
 
-import Foundation
+import RxSwift
+import ReSwift
+import SparkleClient
+
+struct RequestBookSearchSuccess: Action {
+    let response: [Book]
+}
+struct RequestBookSearchError: Action {}
