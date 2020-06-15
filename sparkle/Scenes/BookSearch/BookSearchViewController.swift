@@ -1,9 +1,9 @@
 //
-//  SplashViewController.swift
+//  BookSearchViewController.swift
 //  sparkle
 //
-//  Created by Takano Kenta on 2018/12/03.
-//  Copyright © 2018年 Takano Kenta. All rights reserved.
+//  Created by  ohayoukenchan on 2020/06/12.
+//  Copyright © 2020 Takano Kenta. All rights reserved.
 //
 
 import UIKit
@@ -17,11 +17,10 @@ import SparkleClient
 import SVProgressHUD
 
 
-final class SplashViewController: UIViewController, HasWeakStateDisposeBag {
+final class BookSearchViewController: UIViewController, HasWeakStateDisposeBag {
     let reduxStore: RxReduxStore
     let state: Observable<AuthenticationState>
     weak var weakStateDisposeBag: RxSwift.DisposeBag? // For HasWeakStateDisposeBag
-    let label = UILabel()
 
     private let disposeBag = DisposeBag()
 
@@ -43,22 +42,13 @@ final class SplashViewController: UIViewController, HasWeakStateDisposeBag {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = "Hello World"
-        label.textAlignment = .center
-        view.backgroundColor = UIColor.white
-        view.addSubview(label)
-        state.map { $0.isAuthenticated }
-            .distinctUntilChanged()
-            .bind(to: Binder(self) { $0.changeAuthenticated($1) })
-            .disposed(by: disposeBag)
+//        state.map { $0.isAuthenticated }
+//            .distinctUntilChanged()
+//            .bind(to: Binder(self) { $0.changeAuthenticated($1) })
+//            .disposed(by: disposeBag)
     }
 
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        label.frame = view.bounds
-    }
-
-    func changeAuthenticated(_ isAuthenticated: Bool) {
+//    func changeAuthenticated(_ isAuthenticated: Bool) {
 //        children.forEach {
 //            $0.view.removeFromSuperview()
 //            $0.removeFromParent()
@@ -66,7 +56,7 @@ final class SplashViewController: UIViewController, HasWeakStateDisposeBag {
 //        let routingPage: Routing.Page = .main//isAuthenticated ? .main : .main
 //        let vc = Router.controller(reduxStore, routingPage: routingPage)
 //        addChildHelper(vc)
-    }
+//    }
 }
 
 
