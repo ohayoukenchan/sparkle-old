@@ -15,7 +15,28 @@
                     <view key="view" contentMode="scaleToFill" id="0Sh-SP-UEQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ああああ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usU-LA-vzG">
+                                <rect key="frame" x="172" y="269" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_sparkle" translatesAutoresizingMaskIntoConstraints="NO" id="Hvc-DM-RQB">
+                                <rect key="frame" x="79" y="320" width="256" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="0HU-o2-pvK"/>
+                                    <constraint firstAttribute="width" constant="256" id="siw-8k-aOI"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Hvc-DM-RQB" firstAttribute="top" secondItem="usU-LA-vzG" secondAttribute="bottom" constant="30" id="Fg1-gp-kZl"/>
+                            <constraint firstItem="Hvc-DM-RQB" firstAttribute="centerX" secondItem="0Sh-SP-UEQ" secondAttribute="centerX" id="Nwg-cW-fIO"/>
+                            <constraint firstItem="Hvc-DM-RQB" firstAttribute="centerY" secondItem="0Sh-SP-UEQ" secondAttribute="centerY" id="fck-ZK-ypj"/>
+                            <constraint firstItem="usU-LA-vzG" firstAttribute="centerX" secondItem="0Sh-SP-UEQ" secondAttribute="centerX" id="u6x-Dz-6ko"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="M1G-w3-j6m"/>
                     </view>
                 </viewController>
@@ -24,4 +45,7 @@
             <point key="canvasLocation" x="-459" y="-38"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_sparkle" width="256" height="256"/>
+    </resources>
 </document>
