@@ -19,9 +19,13 @@ import SVProgressHUD
 
 final class BookSearchViewController: UIViewController, HasWeakStateDisposeBag {
     let reduxStore: RxReduxStore
-    let state: Observable<AuthenticationState>
+    typealias ThisState = PublicRepositoriesState
+   // let state: Observable<AuthenticationState>
+    let state: Observable<ThisState>
     weak var weakStateDisposeBag: RxSwift.DisposeBag? // For HasWeakStateDisposeBag
 
+    let collectionView: UICollectionView = .init(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+    var didSetupConstraints = false
     private let disposeBag = DisposeBag()
 
     init(reduxStore: RxReduxStore, state: Observable<AuthenticationState>, disposeBag: RxSwift.DisposeBag) {
@@ -42,21 +46,8 @@ final class BookSearchViewController: UIViewController, HasWeakStateDisposeBag {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        state.map { $0.isAuthenticated }
-//            .distinctUntilChanged()
-//            .bind(to: Binder(self) { $0.changeAuthenticated($1) })
-//            .disposed(by: disposeBag)
-    }
 
-//    func changeAuthenticated(_ isAuthenticated: Bool) {
-//        children.forEach {
-//            $0.view.removeFromSuperview()
-//            $0.removeFromParent()
-//        }
-//        let routingPage: Routing.Page = .main//isAuthenticated ? .main : .main
-//        let vc = Router.controller(reduxStore, routingPage: routingPage)
-//        addChildHelper(vc)
-//    }
+    }
 }
 
 

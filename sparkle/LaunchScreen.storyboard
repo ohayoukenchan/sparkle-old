@@ -34,6 +34,8 @@
                         <constraints>
                             <constraint firstItem="Hvc-DM-RQB" firstAttribute="top" secondItem="usU-LA-vzG" secondAttribute="bottom" constant="30" id="Fg1-gp-kZl"/>
                             <constraint firstItem="Hvc-DM-RQB" firstAttribute="centerX" secondItem="0Sh-SP-UEQ" secondAttribute="centerX" id="Nwg-cW-fIO"/>
+                            <constraint firstItem="usU-LA-vzG" firstAttribute="centerX" secondItem="0Sh-SP-UEQ" secondAttribute="centerX" id="a7C-MU-I90"/>
+                            <constraint firstItem="Hvc-DM-RQB" firstAttribute="top" secondItem="usU-LA-vzG" secondAttribute="bottom" constant="30" id="bcV-ni-dPc"/>
                             <constraint firstItem="Hvc-DM-RQB" firstAttribute="centerY" secondItem="0Sh-SP-UEQ" secondAttribute="centerY" id="fck-ZK-ypj"/>
                             <constraint firstItem="usU-LA-vzG" firstAttribute="centerX" secondItem="0Sh-SP-UEQ" secondAttribute="centerX" id="u6x-Dz-6ko"/>
                         </constraints>
@@ -42,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Grc-BB-iCY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-459" y="-38"/>
+            <point key="canvasLocation" x="-459.4202898550725" y="-38.169642857142854"/>
         </scene>
     </scenes>
     <resources>
