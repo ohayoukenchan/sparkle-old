@@ -37,7 +37,7 @@ public struct Routing {
             switch (lhs, rhs) {
             case (.main, .main):
                 return true
-            case (.bookSearch, .bookSearch):
+            case (.books, .books):
                 return true
 //            case (.userRepositories, .userRepositories):
 //                return true
@@ -61,7 +61,7 @@ public struct Routing {
         }
 
         case main
-        case bookSearch
+        case books
 //        case userRepositories
 //        case publicRepositories
 //        //case repository(RepositoryState.Input)

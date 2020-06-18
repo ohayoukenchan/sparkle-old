@@ -69,7 +69,7 @@ public func appReducer(action: Action, state: AppState?) -> AppState {
     state.routingState = RoutingState.reducer(action: action, state: state.routingState)
     state.authenticationState = AuthenticationState.reducer(action: action, state: state.authenticationState)
     //state.favoritesState = FavoritesState.reducer(action: action, state: state.favoritesState)
-    state.settingState = SettingState.reducer(action: action, state: state.settingState)
+//    state.settingState = SettingState.reducer(action: action, state: state.settingState)
     return state
 }
 

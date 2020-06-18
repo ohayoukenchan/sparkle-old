@@ -373,7 +373,7 @@ PODS:
     - RxSwift (~> 5)
   - RxSwift (5.0.1)
   - SnapKit (5.0.1)
-  - SparkleClient (0.0.2):
+  - SparkleClient (0.0.3):
     - Alamofire (~> 4.9.1)
     - RxSwift (~> 5.0.0)
   - SVProgressHUD (2.2.5)
@@ -462,7 +462,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SparkleClient:
-    :commit: 8415a47ec7eae47eecc77f2c81b70d12323ef1d0
+    :commit: fbc61a033e48abf6af8ffe8a55f960bb0df4454c
     :git: https://github.com/ohayoukenchan/sparkle-api-ios.git
 
 SPEC CHECKSUMS:
@@ -506,7 +506,7 @@ SPEC CHECKSUMS:
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  SparkleClient: 764ea86d817f797cddd9aed02d7b6689d3a71bc2
+  SparkleClient: 5a74ca7aa513ff87c73ae7201a03c851f4d1c018
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyBeaver: a1f5691458561414bcfab51874b2b7445451602b
   TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c

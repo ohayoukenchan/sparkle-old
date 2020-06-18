@@ -1,7 +1,7 @@
 //
 //  BookSearchViewController.swift
 //  sparkle
-//
+//45`
 //  Created by  ohayoukenchan on 2020/06/12.
 //  Copyright © 2020 Takano Kenta. All rights reserved.
 //
@@ -17,9 +17,9 @@ import SparkleClient
 import SVProgressHUD
 
 
-final class BookSearchViewController: UIViewController, HasWeakStateDisposeBag {
+final class BooksViewController: UIViewController, HasWeakStateDisposeBag {
     let reduxStore: RxReduxStore
-    typealias ThisState = PublicRepositoriesState
+    typealias ThisState = BooksState
    // let state: Observable<AuthenticationState>
     let state: Observable<ThisState>
     weak var weakStateDisposeBag: RxSwift.DisposeBag? // For HasWeakStateDisposeBag
@@ -28,7 +28,7 @@ final class BookSearchViewController: UIViewController, HasWeakStateDisposeBag {
     var didSetupConstraints = false
     private let disposeBag = DisposeBag()
 
-    init(reduxStore: RxReduxStore, state: Observable<AuthenticationState>, disposeBag: RxSwift.DisposeBag) {
+    init(reduxStore: RxReduxStore, state: Observable<ThisState>, disposeBag: RxSwift.DisposeBag) {
         self.reduxStore = reduxStore
         self.state = state
         self.weakStateDisposeBag = disposeBag

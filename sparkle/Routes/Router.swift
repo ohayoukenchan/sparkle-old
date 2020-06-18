@@ -145,10 +145,10 @@ final class Router: Routerable, Transitionable {
                 disposeBag: disposeBag
             )
             return vc
-        case .bookSearch:
+        case .books:
             let state = mapToState(reduxStore, transform: { $0.authenticationState })
             let disposeBag = reduxStore.state.disposeBag
-            let vc = BookSearchViewController(
+            let vc = BooksViewController(
                 reduxStore: reduxStore,
                 state: state,
                 disposeBag: disposeBag

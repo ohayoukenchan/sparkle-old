@@ -63,7 +63,7 @@ final class SplashViewController: UIViewController, HasWeakStateDisposeBag {
             $0.view.removeFromSuperview()
             $0.removeFromParent()
         }
-        let routingPage: Routing.Page = .bookSearch//isAuthenticated ? .main : .main
+        let routingPage: Routing.Page = .books//isAuthenticated ? .main : .main
         let vc = Router.controller(reduxStore, routingPage: routingPage)
         addChildHelper(vc)
     }

@@ -8,14 +8,14 @@
 
 import ReSwift
 
-func searchBooksReducer(action: Action, state: SearchBooksState?) -> SearchBooksState {
-    var state = state ?? SearchBooksState()
-
-    switch action {
-    case let action as RequestBookSearchSuccess:
-        state.books = action.response
-    default:
-        break
-    }
-    return state
-}
+//func searchBooksReducer(action: Action, state: SearchBooksState?) -> SearchBooksState {
+//    var state = state ?? SearchBooksState()
+//
+//    switch action {
+//    case let action as RequestBookSearchSuccess:
+//        state.books = action.response
+//    default:
+//        break
+//    }
+//    return state
+//}

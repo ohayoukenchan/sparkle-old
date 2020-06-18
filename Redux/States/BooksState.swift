@@ -10,14 +10,15 @@ import Foundation
 import ReSwift
 import RxSwift
 import API
+import SparkleClient
 //import GitHubAPI
 
 //////////////////////////////////////////////////////////////////////////////////////////
 // MARK: - State
 ///////////////////////////////////////////////s///////////////////////////////////////////
-public struct SearchBooksState: ReSwift.StateType, HasDisposeBag, HasDataSourceElements {
-    public typealias ThisState = SearchBooksState
-    public typealias Response = API.Response<[]>//GitHubAPI.PublicRepo]>
+public struct BooksState: ReSwift.StateType, HasDisposeBag, HasDataSourceElements {
+    public typealias ThisState = BooksState
+    public typealias Response = API.Response<[BooksAPI.Book]>//GitHubAPI.PublicRepo]>
     public let disposeBag: RxSwift.DisposeBag = .init() // For HasDisposeBag
     private var requestState: RequestState<Response> = .init()
     private var apiDomainError: APIDomainError? {
@@ -63,7 +64,7 @@ public struct SearchBooksState: ReSwift.StateType, HasDisposeBag, HasDataSourceE
 //////////////////////////////////////////////////////////////////////////////////////////
 // MARK: - Action
 //////////////////////////////////////////////////////////////////////////////////////////
-extension SearchBooksState {
+extension BooksState {
     public enum Action: ReSwift.Action {
         case requestStart(connectionType: ConnectionType)
         case requestSuccess(response: Response)
@@ -79,8 +80,8 @@ extension SearchBooksState {
             return { (_: AppState, store: DispatchingStoreType) in
                 store.dispatch(Action.requestStart(connectionType: connectionType))
                 return ThunkAction(
-                    GitHubAPI.DefaultAPI
-                        .publicReposGetSingle(perPage: perPage)
+                    BooksAPI
+                        .getBooksGet()//(perPage: perPage)
                         .map { Action.requestSuccess(response: $0) }
                         .mapError { Action.requestError(error: $0) },
                     disposeBag: disposeBag
@@ -93,7 +94,7 @@ extension SearchBooksState {
 //////////////////////////////////////////////////////////////////////////////////////////
 // MARK: - Reducer
 //////////////////////////////////////////////////////////////////////////////////////////
-extension SearchBooksState {
+extension BooksState {
     public static func reducer(action: ReSwift.Action, state: ThisState) -> ThisState {
         var state = state
         switch action {

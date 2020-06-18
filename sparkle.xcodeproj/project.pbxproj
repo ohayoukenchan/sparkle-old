@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		095F761E2493638800ADFC66 /* UIViewController+EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095F761D2493638800ADFC66 /* UIViewController+EX.swift */; };
-		095F7621249367CB00ADFC66 /* BookSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095F7620249367CB00ADFC66 /* BookSearchViewController.swift */; };
+		095F7621249367CB00ADFC66 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095F7620249367CB00ADFC66 /* BooksViewController.swift */; };
 		095F76292493727800ADFC66 /* UIView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095F76222493727600ADFC66 /* UIView+Rx.swift */; };
 		095F762B2493727800ADFC66 /* NSObject+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095F76242493727700ADFC66 /* NSObject+Ex.swift */; };
 		095F762C2493727800ADFC66 /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095F76252493727700ADFC66 /* UIView+Ex.swift */; };
@@ -55,10 +55,11 @@
 		097B10FB24922F3D003CD691 /* SplashState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A5292924502B2700D34620 /* SplashState.swift */; };
 		097B10FC24922F3D003CD691 /* CounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB071D248DF0CB00FF6D5D /* CounterState.swift */; };
 		097B10FD24922F3D003CD691 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB071F248F3E8800FF6D5D /* ViewState.swift */; };
-		097B10FE24922F3D003CD691 /* SearchBooksState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB07322490C58900FF6D5D /* SearchBooksState.swift */; };
+		097B10FE24922F3D003CD691 /* BooksState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB07322490C58900FF6D5D /* BooksState.swift */; };
 		097B10FF24922F3D003CD691 /* RequestState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB074C24920EF800FF6D5D /* RequestState.swift */; };
 		097B110024922F3D003CD691 /* RoutingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB0754249212DB00FF6D5D /* RoutingState.swift */; };
 		097B110124922F3D003CD691 /* AuthenticationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB07562492131E00FF6D5D /* AuthenticationState.swift */; };
+		09952F72249AD71C0049919F /* SettingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09952F71249AD71C0049919F /* SettingState.swift */; };
 		099F7AD92410A79C0091D4DD /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099F7AD82410A79C0091D4DD /* R.generated.swift */; };
 		09A5292824502AD400D34620 /* SplashAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A5292724502AD400D34620 /* SplashAction.swift */; };
 		09A5292A24502B2700D34620 /* SplashState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A5292924502B2700D34620 /* SplashState.swift */; };
@@ -70,7 +71,7 @@
 		09DB0728248F43CE00FF6D5D /* ViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB0727248F43CE00FF6D5D /* ViewAction.swift */; };
 		09DB072F24908A2A00FF6D5D /* SearchBooksAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB072E24908A2A00FF6D5D /* SearchBooksAction.swift */; };
 		09DB07312490C53900FF6D5D /* SearchBooksReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB07302490C53900FF6D5D /* SearchBooksReducer.swift */; };
-		09DB07332490C58900FF6D5D /* SearchBooksState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB07322490C58900FF6D5D /* SearchBooksState.swift */; };
+		09DB07332490C58900FF6D5D /* BooksState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB07322490C58900FF6D5D /* BooksState.swift */; };
 		09DB07352490CE9700FF6D5D /* SVProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB07342490CE9700FF6D5D /* SVProgressHUD.swift */; };
 		09DB073B2491F2AB00FF6D5D /* DumpState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB073A2491F2AB00FF6D5D /* DumpState.swift */; };
 		09DB074724920AAB00FF6D5D /* IGListKitDiffalable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB074624920AAB00FF6D5D /* IGListKitDiffalable.swift */; };
@@ -82,7 +83,6 @@
 		09ECECD7249310A70028CDBA /* FavoriteState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ECECCE249310A60028CDBA /* FavoriteState.swift */; };
 		09ECECD9249310A70028CDBA /* GlobalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ECECD0249310A60028CDBA /* GlobalState.swift */; };
 		09ECECDA249310A70028CDBA /* CommonElements in Resources */ = {isa = PBXBuildFile; fileRef = 09ECECD1249310A60028CDBA /* CommonElements */; };
-		09ECECDB249310A70028CDBA /* SettingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ECECD2249310A60028CDBA /* SettingState.swift */; };
 		09ECECDC249310A70028CDBA /* RepositoryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ECECD3249310A70028CDBA /* RepositoryState.swift */; };
 		09ECECE024931B6F0028CDBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9FFCD821896A63007E2B8C /* AppDelegate.swift */; };
 		09ECECE224932E8E0028CDBA /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ECECE124932E8E0028CDBA /* Global.swift */; };
@@ -232,7 +232,7 @@
 		091618602495A37C0077334B /* FBLPromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBLPromises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		091618622495A3D30077334B /* FBLPromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBLPromises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		095F761D2493638800ADFC66 /* UIViewController+EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+EX.swift"; sourceTree = "<group>"; };
-		095F7620249367CB00ADFC66 /* BookSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchViewController.swift; sourceTree = "<group>"; };
+		095F7620249367CB00ADFC66 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 		095F76222493727600ADFC66 /* UIView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Rx.swift"; sourceTree = "<group>"; };
 		095F76242493727700ADFC66 /* NSObject+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Ex.swift"; sourceTree = "<group>"; };
 		095F76252493727700ADFC66 /* UIView+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ex.swift"; sourceTree = "<group>"; };
@@ -260,6 +260,7 @@
 		097B1110249231E6003CD691 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		097B1113249231EC003CD691 /* RxOptional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxOptional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		097B111624923200003CD691 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyBeaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09952F71249AD71C0049919F /* SettingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingState.swift; sourceTree = "<group>"; };
 		099F7AD82410A79C0091D4DD /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		09A5292724502AD400D34620 /* SplashAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAction.swift; sourceTree = "<group>"; };
 		09A5292924502B2700D34620 /* SplashState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashState.swift; sourceTree = "<group>"; };
@@ -272,7 +273,7 @@
 		09DB072A24907CC300FF6D5D /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
 		09DB072E24908A2A00FF6D5D /* SearchBooksAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksAction.swift; sourceTree = "<group>"; };
 		09DB07302490C53900FF6D5D /* SearchBooksReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksReducer.swift; sourceTree = "<group>"; };
-		09DB07322490C58900FF6D5D /* SearchBooksState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksState.swift; sourceTree = "<group>"; };
+		09DB07322490C58900FF6D5D /* BooksState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksState.swift; sourceTree = "<group>"; };
 		09DB07342490CE9700FF6D5D /* SVProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVProgressHUD.swift; sourceTree = "<group>"; };
 		09DB07362491E95E00FF6D5D /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		09DB073A2491F2AB00FF6D5D /* DumpState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumpState.swift; sourceTree = "<group>"; };
@@ -295,7 +296,6 @@
 		09ECECCE249310A60028CDBA /* FavoriteState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoriteState.swift; path = ../../../iOS_architecture_samplecode/15/Redux/State/FavoriteState.swift; sourceTree = "<group>"; };
 		09ECECD0249310A60028CDBA /* GlobalState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalState.swift; path = ../../../iOS_architecture_samplecode/15/Redux/State/GlobalState.swift; sourceTree = "<group>"; };
 		09ECECD1249310A60028CDBA /* CommonElements */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CommonElements; path = ../../../iOS_architecture_samplecode/15/Redux/State/CommonElements; sourceTree = "<group>"; };
-		09ECECD2249310A60028CDBA /* SettingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingState.swift; path = ../../../iOS_architecture_samplecode/15/Redux/State/SettingState.swift; sourceTree = "<group>"; };
 		09ECECD3249310A70028CDBA /* RepositoryState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepositoryState.swift; path = ../../../iOS_architecture_samplecode/15/Redux/State/RepositoryState.swift; sourceTree = "<group>"; };
 		09ECECE124932E8E0028CDBA /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		09F65AD02493410400A87B01 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
@@ -479,7 +479,7 @@
 		095F761F249367B300ADFC66 /* BookSearch */ = {
 			isa = PBXGroup;
 			children = (
-				095F7620249367CB00ADFC66 /* BookSearchViewController.swift */,
+				095F7620249367CB00ADFC66 /* BooksViewController.swift */,
 			);
 			path = BookSearch;
 			sourceTree = "<group>";
@@ -718,15 +718,15 @@
 				09ECECD0249310A60028CDBA /* GlobalState.swift */,
 				09ECECCD249310A60028CDBA /* Repositories */,
 				09ECECD3249310A70028CDBA /* RepositoryState.swift */,
-				09ECECD2249310A60028CDBA /* SettingState.swift */,
 				3AE8395D218AC1BA00391531 /* AppState.swift */,
 				3A0C69B321BE6AC00077CE64 /* AuthState.swift */,
 				3A0C69BF21BF861C0077CE64 /* SearchState.swift */,
+				09952F71249AD71C0049919F /* SettingState.swift */,
 				3A0C69C121BF864D0077CE64 /* TweetDetailState.swift */,
 				09A5292924502B2700D34620 /* SplashState.swift */,
 				09DB071D248DF0CB00FF6D5D /* CounterState.swift */,
 				09DB071F248F3E8800FF6D5D /* ViewState.swift */,
-				09DB07322490C58900FF6D5D /* SearchBooksState.swift */,
+				09DB07322490C58900FF6D5D /* BooksState.swift */,
 				09DB074C24920EF800FF6D5D /* RequestState.swift */,
 				09DB0754249212DB00FF6D5D /* RoutingState.swift */,
 				09DB07562492131E00FF6D5D /* AuthenticationState.swift */,
@@ -1436,9 +1436,9 @@
 				097B10F124922F3C003CD691 /* AuthReducer.swift in Sources */,
 				097B10F224922F3C003CD691 /* SearchReducer.swift in Sources */,
 				097B10F324922F3C003CD691 /* TweetDetailReducer.swift in Sources */,
-				09ECECDB249310A70028CDBA /* SettingState.swift in Sources */,
 				097B10F424922F3C003CD691 /* SplashReducer.swift in Sources */,
 				09ECECDC249310A70028CDBA /* RepositoryState.swift in Sources */,
+				09952F72249AD71C0049919F /* SettingState.swift in Sources */,
 				097B10F524922F3D003CD691 /* ViewReducer.swift in Sources */,
 				097B10F624922F3D003CD691 /* SearchBooksReducer.swift in Sources */,
 				097B10F724922F3D003CD691 /* AppState.swift in Sources */,
@@ -1450,7 +1450,7 @@
 				097B10FC24922F3D003CD691 /* CounterState.swift in Sources */,
 				097B10FD24922F3D003CD691 /* ViewState.swift in Sources */,
 				09ECECCA24930E9C0028CDBA /* KeychainStore.swift in Sources */,
-				097B10FE24922F3D003CD691 /* SearchBooksState.swift in Sources */,
+				097B10FE24922F3D003CD691 /* BooksState.swift in Sources */,
 				097B10FF24922F3D003CD691 /* RequestState.swift in Sources */,
 				097B110024922F3D003CD691 /* RoutingState.swift in Sources */,
 				09ECECCC249310310028CDBA /* AppStateReducer.swift in Sources */,
@@ -1491,9 +1491,9 @@
 				09DB074B24920E7900FF6D5D /* DataSourceElements.swift in Sources */,
 				3AE8395E218AC1BA00391531 /* AppState.swift in Sources */,
 				09ECECE024931B6F0028CDBA /* AppDelegate.swift in Sources */,
-				09DB07332490C58900FF6D5D /* SearchBooksState.swift in Sources */,
+				09DB07332490C58900FF6D5D /* BooksState.swift in Sources */,
 				09DB0724248F435C00FF6D5D /* ViewReducer.swift in Sources */,
-				095F7621249367CB00ADFC66 /* BookSearchViewController.swift in Sources */,
+				095F7621249367CB00ADFC66 /* BooksViewController.swift in Sources */,
 				09A5292824502AD400D34620 /* SplashAction.swift in Sources */,
 				09DB0720248F3E8800FF6D5D /* ViewState.swift in Sources */,
 				095F762C2493727800ADFC66 /* UIView+Ex.swift in Sources */,
