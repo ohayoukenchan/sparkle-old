@@ -18,7 +18,7 @@ import SparkleClient
 ///////////////////////////////////////////////s///////////////////////////////////////////
 public struct BooksState: ReSwift.StateType, HasDisposeBag, HasDataSourceElements {
     public typealias ThisState = BooksState
-    public typealias Response = API.Response<[BooksAPI.Book]>//GitHubAPI.PublicRepo]>
+    public typealias Response = API.Response<[Book]>//GitHubAPI.PublicRepo]>
     public let disposeBag: RxSwift.DisposeBag = .init() // For HasDisposeBag
     private var requestState: RequestState<Response> = .init()
     private var apiDomainError: APIDomainError? {

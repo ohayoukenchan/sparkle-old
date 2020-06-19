@@ -79,7 +79,7 @@ extension SettingState {
             return { (_: AppState, store: DispatchingStoreType, accessToken: AccessToken) in
                 store.dispatch(Action.requestStart(connectionType: connectionType))
                 return ThunkAction(
-                    GitHubAPI.DefaultAPI.userGetSingle(accessToken: accessToken)
+                    UsersAPI.userGetSingle(accessToken: accessToken)
                         .map { Action.requestSuccess(response: $0) }
                         .mapError { Action.requestError(error: $0) },
                     disposeBag: disposeBag)

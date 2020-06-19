@@ -8,20 +8,20 @@
 
 import Foundation
 import Alamofire
-//mport GitHubAPI
+import SparkleClient
 
 // swiftlint:disable identifier_name
-//let Unreachable = "UnreachableCode"
+let Unreachable = "UnreachableCode"
 // swiftlint:enable identifier_name
 
-//extension GitHubAPI.ErrorResponse {
-//    public var responseError: ResponseError? {
-//        if case .error(let statusCode, let data, let error) = self {
-//            return ResponseError(statusCode: statusCode, data: data, error: error)
-//        }
-//        return nil
-//    }
-//}
+extension SparkleClient.ErrorResponse {
+    public var responseError: ResponseError? {
+        if case .error(let statusCode, let data, let error) = self {
+            return ResponseError(statusCode: statusCode, data: data, error: error)
+        }
+        return nil
+    }
+}
 
 public enum APIDomainError: Error, Equatable {
     public static func == (lhs: APIDomainError, rhs: APIDomainError) -> Bool {
