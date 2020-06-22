@@ -30,7 +30,7 @@ public struct BooksState: ReSwift.StateType, HasDisposeBag, HasDataSourceElement
     private var shouldShowMoreRepository: Bool = false
     private var shouldShowAdvertising: Bool = true
     private var lastNoticeCount: Int = 0 // Use same notice count when tapped show all repository
-    private var favoriteIds: [] = []//RepositoryId] = []
+    private var favoriteIds: [RepositoryId] = []
     public private(set) var dataSourceElements: DataSourceElements = .init() // For HasDataSourceElements
     public private(set) var shouldRequestTrigger: ShouldRequestTrigger?
 

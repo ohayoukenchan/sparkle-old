@@ -53,8 +53,8 @@ public struct Routing {
 //                return true
 //            case (.login, .login):
 //                return true
-//            case (let .webView(url1), let .webView(url2)):
-//                return url1.absoluteString == url2.absoluteString
+            case (let .webView(url1), let .webView(url2)):
+                return url1.absoluteString == url2.absoluteString
             default:
                 return false
             }
@@ -69,6 +69,6 @@ public struct Routing {
 //        case serviceUnavailable
 //        case setting
 //        case login
-//        case webView(url: URL)
+        case webView(url: URL)
     }
 }

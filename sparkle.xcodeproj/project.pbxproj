@@ -64,6 +64,9 @@
 		09A5292824502AD400D34620 /* SplashAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A5292724502AD400D34620 /* SplashAction.swift */; };
 		09A5292A24502B2700D34620 /* SplashState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A5292924502B2700D34620 /* SplashState.swift */; };
 		09A5292C24502B5700D34620 /* SplashReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A5292B24502B5700D34620 /* SplashReducer.swift */; };
+		09B8A45D24A03666003EA4A9 /* Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8A45C24A03666003EA4A9 /* Elements.swift */; };
+		09B8A45F24A0395D003EA4A9 /* FavoriteState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8A45E24A0395D003EA4A9 /* FavoriteState.swift */; };
+		09B8A46224A039C8003EA4A9 /* TitleElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8A46124A039C8003EA4A9 /* TitleElement.swift */; };
 		09DB071C248DEE5D00FF6D5D /* CounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB071B248DEE5D00FF6D5D /* CounterAction.swift */; };
 		09DB071E248DF0CB00FF6D5D /* CounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB071D248DF0CB00FF6D5D /* CounterState.swift */; };
 		09DB0720248F3E8800FF6D5D /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB071F248F3E8800FF6D5D /* ViewState.swift */; };
@@ -79,10 +82,7 @@
 		09DB074D24920EF800FF6D5D /* RequestState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB074C24920EF800FF6D5D /* RequestState.swift */; };
 		09ECECCA24930E9C0028CDBA /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB07442492082600FF6D5D /* KeychainStore.swift */; };
 		09ECECCC249310310028CDBA /* AppStateReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ECECCB249310310028CDBA /* AppStateReducer.swift */; };
-		09ECECD6249310A70028CDBA /* Repositories in Resources */ = {isa = PBXBuildFile; fileRef = 09ECECCD249310A60028CDBA /* Repositories */; };
-		09ECECD7249310A70028CDBA /* FavoriteState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ECECCE249310A60028CDBA /* FavoriteState.swift */; };
 		09ECECD9249310A70028CDBA /* GlobalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ECECD0249310A60028CDBA /* GlobalState.swift */; };
-		09ECECDA249310A70028CDBA /* CommonElements in Resources */ = {isa = PBXBuildFile; fileRef = 09ECECD1249310A60028CDBA /* CommonElements */; };
 		09ECECDC249310A70028CDBA /* RepositoryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ECECD3249310A70028CDBA /* RepositoryState.swift */; };
 		09ECECE024931B6F0028CDBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9FFCD821896A63007E2B8C /* AppDelegate.swift */; };
 		09ECECE224932E8E0028CDBA /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ECECE124932E8E0028CDBA /* Global.swift */; };
@@ -265,6 +265,9 @@
 		09A5292724502AD400D34620 /* SplashAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAction.swift; sourceTree = "<group>"; };
 		09A5292924502B2700D34620 /* SplashState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashState.swift; sourceTree = "<group>"; };
 		09A5292B24502B5700D34620 /* SplashReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashReducer.swift; sourceTree = "<group>"; };
+		09B8A45C24A03666003EA4A9 /* Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elements.swift; sourceTree = "<group>"; };
+		09B8A45E24A0395D003EA4A9 /* FavoriteState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteState.swift; sourceTree = "<group>"; };
+		09B8A46124A039C8003EA4A9 /* TitleElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleElement.swift; sourceTree = "<group>"; };
 		09DB071B248DEE5D00FF6D5D /* CounterAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAction.swift; sourceTree = "<group>"; };
 		09DB071D248DF0CB00FF6D5D /* CounterState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterState.swift; sourceTree = "<group>"; };
 		09DB071F248F3E8800FF6D5D /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
@@ -292,10 +295,7 @@
 		09DB07562492131E00FF6D5D /* AuthenticationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationState.swift; sourceTree = "<group>"; };
 		09DB0758249217B000FF6D5D /* Redux */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Redux; sourceTree = "<group>"; };
 		09ECECCB249310310028CDBA /* AppStateReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateReducer.swift; sourceTree = "<group>"; };
-		09ECECCD249310A60028CDBA /* Repositories */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Repositories; path = ../../../iOS_architecture_samplecode/15/Redux/State/Repositories; sourceTree = "<group>"; };
-		09ECECCE249310A60028CDBA /* FavoriteState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoriteState.swift; path = ../../../iOS_architecture_samplecode/15/Redux/State/FavoriteState.swift; sourceTree = "<group>"; };
 		09ECECD0249310A60028CDBA /* GlobalState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalState.swift; path = ../../../iOS_architecture_samplecode/15/Redux/State/GlobalState.swift; sourceTree = "<group>"; };
-		09ECECD1249310A60028CDBA /* CommonElements */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CommonElements; path = ../../../iOS_architecture_samplecode/15/Redux/State/CommonElements; sourceTree = "<group>"; };
 		09ECECD3249310A70028CDBA /* RepositoryState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepositoryState.swift; path = ../../../iOS_architecture_samplecode/15/Redux/State/RepositoryState.swift; sourceTree = "<group>"; };
 		09ECECE124932E8E0028CDBA /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		09F65AD02493410400A87B01 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
@@ -516,6 +516,14 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		09B8A46024A039B7003EA4A9 /* CommonElements */ = {
+			isa = PBXGroup;
+			children = (
+				09B8A46124A039C8003EA4A9 /* TitleElement.swift */,
+			);
+			path = CommonElements;
+			sourceTree = "<group>";
+		};
 		09DB072924907C6A00FF6D5D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -713,10 +721,8 @@
 		3AE8395C218AC1A800391531 /* States */ = {
 			isa = PBXGroup;
 			children = (
-				09ECECD1249310A60028CDBA /* CommonElements */,
-				09ECECCE249310A60028CDBA /* FavoriteState.swift */,
+				09B8A46024A039B7003EA4A9 /* CommonElements */,
 				09ECECD0249310A60028CDBA /* GlobalState.swift */,
-				09ECECCD249310A60028CDBA /* Repositories */,
 				09ECECD3249310A70028CDBA /* RepositoryState.swift */,
 				3AE8395D218AC1BA00391531 /* AppState.swift */,
 				3A0C69B321BE6AC00077CE64 /* AuthState.swift */,
@@ -730,6 +736,8 @@
 				09DB074C24920EF800FF6D5D /* RequestState.swift */,
 				09DB0754249212DB00FF6D5D /* RoutingState.swift */,
 				09DB07562492131E00FF6D5D /* AuthenticationState.swift */,
+				09B8A45C24A03666003EA4A9 /* Elements.swift */,
+				09B8A45E24A0395D003EA4A9 /* FavoriteState.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -1118,8 +1126,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09ECECDA249310A70028CDBA /* CommonElements in Resources */,
-				09ECECD6249310A70028CDBA /* Repositories in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1423,6 +1429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				097B10E324922F3C003CD691 /* DumpState.swift in Sources */,
+				09B8A46224A039C8003EA4A9 /* TitleElement.swift in Sources */,
 				097B10E424922F3C003CD691 /* Middleware.swift in Sources */,
 				097B10E524922F3C003CD691 /* Framework.swift in Sources */,
 				097B10E624922F3C003CD691 /* IGListKitDiffalable.swift in Sources */,
@@ -1454,12 +1461,13 @@
 				097B10FF24922F3D003CD691 /* RequestState.swift in Sources */,
 				097B110024922F3D003CD691 /* RoutingState.swift in Sources */,
 				09ECECCC249310310028CDBA /* AppStateReducer.swift in Sources */,
+				09B8A45D24A03666003EA4A9 /* Elements.swift in Sources */,
 				097B110124922F3D003CD691 /* AuthenticationState.swift in Sources */,
 				097B10B72492297F003CD691 /* Routing.swift in Sources */,
 				097B10B82492297F003CD691 /* ReponseErrorConcern.swift in Sources */,
-				09ECECD7249310A70028CDBA /* FavoriteState.swift in Sources */,
 				097B10B92492297F003CD691 /* ReduxStoreType.swift in Sources */,
 				097B10B62492297F003CD691 /* Global.swift in Sources */,
+				09B8A45F24A0395D003EA4A9 /* FavoriteState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
