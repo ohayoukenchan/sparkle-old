@@ -131,6 +131,18 @@ extension AlamofireRequestBuilder {
 #endif
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//// MARK: - SparkleClient.BookAPI
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+extension SparkleClient.BooksAPI {
+    public class func getBooksGet() -> Single<Response<[Book]>> {
+        let rb = getBooksGetWithRequestBuilder()
+        //let rb = userGetWithRequestBuilder()
+        //rb.addAuthorizationHeader(<#AccessToken#>)
+        return requestAsSingle(requestBuilder: rb)
+    }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //// MARK: - GitHubAPI.DefaultAPI
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -250,26 +262,6 @@ private func requestAsSingleNoContent(requestBuilder rb: RequestBuilder<Void>) -
                 }
             }
         }
-//        rb.execute { (response, error) -> Void in
-//            if let error = error {
-//                loggerError(urlRequest, error: error)
-//                if let responseError = (error as? SparkleClient.ErrorResponse)?.responseError {
-//                    if let networkError = responseError.networkError {
-//                        observer(.error(APIDomainError.network(error: networkError)))
-//                    } else {
-//                        observer(.error(APIDomainError.response(error: responseError)))
-//                    }
-//                } else {
-//                    observer(.error(APIDomainError.unknownError(error: error)))
-//                }
-//
-//            } else if let response = response, response.statusCode == noContent { // For 204 NoContent
-//                let response = Response(content: NoContent(), urlRequest: urlRequest)
-//                observer(.success(response))
-//            } else {
-//                observer(.error(APIDomainError.unreachable))
-//            }
-//        }
         return Disposables.create()
     }
 }
