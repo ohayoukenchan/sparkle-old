@@ -70,34 +70,42 @@ public struct AdvertisingElement: Diffable {
 public typealias RepositoryId = Int
 public struct RepositoryElement: Diffable {
     public let identifier: Identifier
-    public let id: RepositoryId
-    public let updatedAt: String
-    public let owner: String
-    public let name: String
-    public let descriptionForRepository: String
-    public let launguage: String
-    public let openIssuesCount: String
-    public let forkCount: String
-    public let watchersCount: String
+    public let isbn: Double
+    public let title: String
+    public let publisher: String
+    public let price: String
+//    public let id: RepositoryId
+//    public let updatedAt: String
+//    public let owner: String
+//    public let name: String
+//    public let descriptionForRepository: String
+//    public let launguage: String
+//    public let openIssuesCount: String
+//    public let forkCount: String
+//    public let watchersCount: String
     public let routingPage: Routing.Page
     public let isFavorite: Bool
-    public var favorite: Favorite {
-        return Favorite(id: self.id, owner: self.owner, name: self.name, descriptionForRepository: self.descriptionForRepository)
-    }
-    public var fullName: String { return "\(owner)/\(name)" }
+//    public var favorite: Favorite {
+//        return Favorite(id: self.id, owner: self.owner, name: self.name, descriptionForRepository: self.descriptionForRepository)
+//    }
+//    public var fullName: String { return "\(owner)/\(name)" }
 
-    init(_ repo: GitHubAPI.Repo, isFavorite: Bool) {
-        self.identifier = .init("\(String(describing: RepositoryElement.self))-\(repo._id)")
-        self.id = repo._id
-        self.updatedAt = repo.updatedAt
-        self.owner = repo.owner.login
-        self.name = repo.name
-        self.descriptionForRepository = repo._description ?? ""
-        self.launguage = repo.language ?? "N/A"
-        self.openIssuesCount = String(describing: repo.openIssuesCount)
-        self.forkCount = String(describing: repo.forksCount)
-        self.watchersCount = String(describing: repo.watchersCount)
-        self.routingPage = .repository((owner: repo.owner.login, repo: repo.name))
+    init(_ book: Book, isFavorite: Bool) {
+        self.identifier = .init("\(String(describing: RepositoryElement.self))-\(book.isbn)")
+        self.isbn = book.isbn
+        self.title = book.title ?? ""
+        self.publisher = book.publisher ?? ""
+        self.price = book.price ?? ""
+//        self.id = repo._id
+//        self.updatedAt = repo.updatedAt
+//        self.owner = repo.owner.login
+//        self.name = repo.name
+//        self.descriptionForRepository = repo._description ?? ""
+//        self.launguage = repo.language ?? "N/A"
+//        self.openIssuesCount = String(describing: repo.openIssuesCount)
+//        self.forkCount = String(describing: repo.forksCount)
+//        self.watchersCount = String(describing: repo.watchersCount)
+        self.routingPage = .repository((owner: book.title, repo: book.title))
         self.isFavorite = isFavorite
     }
 
@@ -109,24 +117,39 @@ public struct RepositoryElement: Diffable {
 public typealias PublicRepositoryId = Int
 public struct PublicRepositoryElement: Diffable {
     public let identifier: Identifier
-    public let id: RepositoryId
-    public let owner: String
-    public let name: String
-    public let descriptionForRepository: String
+    public let isbn: Double
+    public let title: String
+    public let publisher: String
+    public let price: String
+//    public let identifier: Identifier
+//    public let id: RepositoryId
+//    public let owner: String
+//    public let name: String
+//    public let descriptionForRepository: String
     public let routingPage: Routing.Page
     public let isFavorite: Bool
-    public var favorite: Favorite {
-        return Favorite(id: self.id, owner: self.owner, name: self.name, descriptionForRepository: self.descriptionForRepository)
-    }
-    public var fullName: String { return "\(owner)/\(name)" }
+//    public var favorite: Favorite {
+//        return Favorite(id: self.id, owner: self.owner, name: self.name, descriptionForRepository: self.descriptionForRepository)
+//    }
+//    public var fullName: String { return "\(owner)/\(name)" }
+//
+//    init(_ repo: GitHubAPI.PublicRepo, isFavorite: Bool) {
+//        self.identifier = .init("\(String(describing: PublicRepositoryElement.self))-\(repo._id)")
+//        self.id = repo._id
+//        self.owner = repo.owner.login
+//        self.name = repo.name
+//        self.descriptionForRepository = repo._description ?? ""
+//        self.routingPage = .repository((owner: repo.owner.login, repo: repo.name))
+//        self.isFavorite = isFavorite
+//    }
 
-    init(_ repo: GitHubAPI.PublicRepo, isFavorite: Bool) {
-        self.identifier = .init("\(String(describing: PublicRepositoryElement.self))-\(repo._id)")
-        self.id = repo._id
-        self.owner = repo.owner.login
-        self.name = repo.name
-        self.descriptionForRepository = repo._description ?? ""
-        self.routingPage = .repository((owner: repo.owner.login, repo: repo.name))
+    init(_ book: Book, isFavorite: Bool) {
+        self.identifier = .init("\(String(describing: PublicRepositoryElement.self))-\(book.isbn)")
+        self.isbn = book.isbn
+        self.title = book.title ?? ""
+        self.publisher = book.publisher ?? ""
+        self.price = book.price ?? ""
+        self.routingPage = .repository((owner: book.title, repo: book.title))
         self.isFavorite = isFavorite
     }
 

@@ -67,6 +67,8 @@
 		09B8A45D24A03666003EA4A9 /* Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8A45C24A03666003EA4A9 /* Elements.swift */; };
 		09B8A45F24A0395D003EA4A9 /* FavoriteState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8A45E24A0395D003EA4A9 /* FavoriteState.swift */; };
 		09B8A46224A039C8003EA4A9 /* TitleElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8A46124A039C8003EA4A9 /* TitleElement.swift */; };
+		09B8A46424A44C8C003EA4A9 /* RepositoryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8A46324A44C8C003EA4A9 /* RepositoryState.swift */; };
+		09B8A46624A44E35003EA4A9 /* UserDefaults+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8A46524A44E35003EA4A9 /* UserDefaults+Ex.swift */; };
 		09DB071C248DEE5D00FF6D5D /* CounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB071B248DEE5D00FF6D5D /* CounterAction.swift */; };
 		09DB071E248DF0CB00FF6D5D /* CounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB071D248DF0CB00FF6D5D /* CounterState.swift */; };
 		09DB0720248F3E8800FF6D5D /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB071F248F3E8800FF6D5D /* ViewState.swift */; };
@@ -83,7 +85,6 @@
 		09ECECCA24930E9C0028CDBA /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB07442492082600FF6D5D /* KeychainStore.swift */; };
 		09ECECCC249310310028CDBA /* AppStateReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ECECCB249310310028CDBA /* AppStateReducer.swift */; };
 		09ECECD9249310A70028CDBA /* GlobalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ECECD0249310A60028CDBA /* GlobalState.swift */; };
-		09ECECDC249310A70028CDBA /* RepositoryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ECECD3249310A70028CDBA /* RepositoryState.swift */; };
 		09ECECE024931B6F0028CDBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9FFCD821896A63007E2B8C /* AppDelegate.swift */; };
 		09ECECE224932E8E0028CDBA /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ECECE124932E8E0028CDBA /* Global.swift */; };
 		09F65AD12493410400A87B01 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F65AD02493410400A87B01 /* Protocols.swift */; };
@@ -268,6 +269,8 @@
 		09B8A45C24A03666003EA4A9 /* Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elements.swift; sourceTree = "<group>"; };
 		09B8A45E24A0395D003EA4A9 /* FavoriteState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteState.swift; sourceTree = "<group>"; };
 		09B8A46124A039C8003EA4A9 /* TitleElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleElement.swift; sourceTree = "<group>"; };
+		09B8A46324A44C8C003EA4A9 /* RepositoryState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryState.swift; sourceTree = "<group>"; };
+		09B8A46524A44E35003EA4A9 /* UserDefaults+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ex.swift"; sourceTree = "<group>"; };
 		09DB071B248DEE5D00FF6D5D /* CounterAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAction.swift; sourceTree = "<group>"; };
 		09DB071D248DF0CB00FF6D5D /* CounterState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterState.swift; sourceTree = "<group>"; };
 		09DB071F248F3E8800FF6D5D /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
@@ -296,7 +299,6 @@
 		09DB0758249217B000FF6D5D /* Redux */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Redux; sourceTree = "<group>"; };
 		09ECECCB249310310028CDBA /* AppStateReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateReducer.swift; sourceTree = "<group>"; };
 		09ECECD0249310A60028CDBA /* GlobalState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalState.swift; path = ../../../iOS_architecture_samplecode/15/Redux/State/GlobalState.swift; sourceTree = "<group>"; };
-		09ECECD3249310A70028CDBA /* RepositoryState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepositoryState.swift; path = ../../../iOS_architecture_samplecode/15/Redux/State/RepositoryState.swift; sourceTree = "<group>"; };
 		09ECECE124932E8E0028CDBA /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		09F65AD02493410400A87B01 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		09F65AD32493416F00A87B01 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -547,6 +549,7 @@
 			isa = PBXGroup;
 			children = (
 				09DB07442492082600FF6D5D /* KeychainStore.swift */,
+				09B8A46524A44E35003EA4A9 /* UserDefaults+Ex.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -723,8 +726,8 @@
 			children = (
 				09B8A46024A039B7003EA4A9 /* CommonElements */,
 				09ECECD0249310A60028CDBA /* GlobalState.swift */,
-				09ECECD3249310A70028CDBA /* RepositoryState.swift */,
 				3AE8395D218AC1BA00391531 /* AppState.swift */,
+				09B8A46324A44C8C003EA4A9 /* RepositoryState.swift */,
 				3A0C69B321BE6AC00077CE64 /* AuthState.swift */,
 				3A0C69BF21BF861C0077CE64 /* SearchState.swift */,
 				09952F71249AD71C0049919F /* SettingState.swift */,
@@ -1444,7 +1447,6 @@
 				097B10F224922F3C003CD691 /* SearchReducer.swift in Sources */,
 				097B10F324922F3C003CD691 /* TweetDetailReducer.swift in Sources */,
 				097B10F424922F3C003CD691 /* SplashReducer.swift in Sources */,
-				09ECECDC249310A70028CDBA /* RepositoryState.swift in Sources */,
 				09952F72249AD71C0049919F /* SettingState.swift in Sources */,
 				097B10F524922F3D003CD691 /* ViewReducer.swift in Sources */,
 				097B10F624922F3D003CD691 /* SearchBooksReducer.swift in Sources */,
@@ -1456,10 +1458,12 @@
 				097B10FB24922F3D003CD691 /* SplashState.swift in Sources */,
 				097B10FC24922F3D003CD691 /* CounterState.swift in Sources */,
 				097B10FD24922F3D003CD691 /* ViewState.swift in Sources */,
+				09B8A46424A44C8C003EA4A9 /* RepositoryState.swift in Sources */,
 				09ECECCA24930E9C0028CDBA /* KeychainStore.swift in Sources */,
 				097B10FE24922F3D003CD691 /* BooksState.swift in Sources */,
 				097B10FF24922F3D003CD691 /* RequestState.swift in Sources */,
 				097B110024922F3D003CD691 /* RoutingState.swift in Sources */,
+				09B8A46624A44E35003EA4A9 /* UserDefaults+Ex.swift in Sources */,
 				09ECECCC249310310028CDBA /* AppStateReducer.swift in Sources */,
 				09B8A45D24A03666003EA4A9 /* Elements.swift in Sources */,
 				097B110124922F3D003CD691 /* AuthenticationState.swift in Sources */,

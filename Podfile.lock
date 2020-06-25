@@ -462,7 +462,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SparkleClient:
-    :commit: fbc61a033e48abf6af8ffe8a55f960bb0df4454c
+    :commit: d5f6dc1018988b5c8fa4985cba78608b090c469f
     :git: https://github.com/ohayoukenchan/sparkle-api-ios.git
 
 SPEC CHECKSUMS:
