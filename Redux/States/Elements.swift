@@ -83,7 +83,7 @@ public struct RepositoryElement: Diffable {
 //    public let openIssuesCount: String
 //    public let forkCount: String
 //    public let watchersCount: String
-    public let routingPage: Routing.Page
+//    public let routingPage: Routing.Page
     public let isFavorite: Bool
 //    public var favorite: Favorite {
 //        return Favorite(id: self.id, owner: self.owner, name: self.name, descriptionForRepository: self.descriptionForRepository)
@@ -105,13 +105,13 @@ public struct RepositoryElement: Diffable {
 //        self.openIssuesCount = String(describing: repo.openIssuesCount)
 //        self.forkCount = String(describing: repo.forksCount)
 //        self.watchersCount = String(describing: repo.watchersCount)
-        self.routingPage = .repository((owner: book.title, repo: book.title))
+//        self.routingPage = .repository((owner: book.title, repo: book.title))
         self.isFavorite = isFavorite
     }
 
-    public static func == (lhs: RepositoryElement, rhs: RepositoryElement) -> Bool {
-        return lhs.updatedAt == rhs.updatedAt && lhs.isFavorite == rhs.isFavorite
-    }
+//    public static func == (lhs: RepositoryElement, rhs: RepositoryElement) -> Bool {
+//        return lhs.updatedAt == rhs.updatedAt && lhs.isFavorite == rhs.isFavorite
+//    }
 }
 
 public typealias PublicRepositoryId = Int
@@ -126,7 +126,7 @@ public struct PublicRepositoryElement: Diffable {
 //    public let owner: String
 //    public let name: String
 //    public let descriptionForRepository: String
-    public let routingPage: Routing.Page
+//   public let routingPage: Routing.Page
     public let isFavorite: Bool
 //    public var favorite: Favorite {
 //        return Favorite(id: self.id, owner: self.owner, name: self.name, descriptionForRepository: self.descriptionForRepository)
@@ -149,7 +149,7 @@ public struct PublicRepositoryElement: Diffable {
         self.title = book.title ?? ""
         self.publisher = book.publisher ?? ""
         self.price = book.price ?? ""
-        self.routingPage = .repository((owner: book.title, repo: book.title))
+        // self.routingPage = .repository((owner: book.title, repo: book.title))
         self.isFavorite = isFavorite
     }
 
@@ -166,9 +166,9 @@ public struct ShowMoreRepositoryElement: Diffable {
         public var action: ReSwift.Action {
             switch self {
             case .repositoryType(let isShowMore):
-                return UserRepositoriesState.Action.showMoreRepository(isShowMore: isShowMore)
+                return BooksState.Action.showMoreRepository(isShowMore: isShowMore)
             case .publicRepositoryType(let isShowMore):
-                return PublicRepositoriesState.Action.showMoreRepository(isShowMore: isShowMore)
+                return BooksState.Action.showMoreRepository(isShowMore: isShowMore)
             }
         }
     }

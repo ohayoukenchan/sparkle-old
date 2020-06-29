@@ -43,8 +43,8 @@ public struct Routing {
 //                return true
 //            case (.publicRepositories, .publicRepositories):
 //                return true
-//            //case (let .repository(input1), let .repository(input2)):
-//            //    return input1 == input2
+//            case (let .repository(input1), let .repository(input2)):
+//                return input1 == input2
 //            case (.favorites, .favorites):
 //                return true
 //            case (.serviceUnavailable, .serviceUnavailable):
@@ -64,7 +64,7 @@ public struct Routing {
         case books
 //        case userRepositories
 //        case publicRepositories
-//        //case repository(RepositoryState.Input)
+//        case repository(RepositoryState.Input)
 //        case favorites
 //        case serviceUnavailable
 //        case setting

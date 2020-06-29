@@ -89,16 +89,16 @@ public let debugDelayRequestMiddleware: ReSwift.Middleware<AppState> = { dispatc
 #endif
 
 
-let fetch = Thunk<AppState> { dispatch, getState in
-    dispatch(Requesting())
-    BooksAPI.getBooksGet().subscribe(onNext: {
-        (response) in
-        print(response)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-            dispatch(RequestBookSearchSuccess(response: response))
-            dispatch(RequestSuccess())
-        }
-    },onError: {(error) in
-        dispatch(RequestBookSearchError())
-    })
-}
+//let fetch = Thunk<AppState> { dispatch, getState in
+//    dispatch(Requesting())
+//    BooksAPI.getBooksGet().subscribe(onNext: {
+//        (response) in
+//        print(response)
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+//            dispatch(RequestBookSearchSuccess(response: response))
+//            dispatch(RequestSuccess())
+//        }
+//    },onError: {(error) in
+//        dispatch(RequestBookSearchError())
+//    })
+//}

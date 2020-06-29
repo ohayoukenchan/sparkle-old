@@ -128,14 +128,14 @@ public struct FavoriteElement: Diffable {
     public let id: RepositoryId
     public let name: String
     public let descriptionForRepository: String
-    public let routingPage: Routing.Page
+ //   public let routingPage: Routing.Page
 
     init(_ favorite: Favorite) {
         self.identifier = .init("\(String(describing: FavoriteElement.self))-\(favorite.id)")
         self.id = favorite.id
         self.name = favorite.name
         self.descriptionForRepository = favorite.descriptionForRepository
-        self.routingPage = .repository((owner: favorite.owner, repo: favorite.name))
+//        self.routingPage = .repository((owner: favorite.owner, repo: favorite.name))
     }
 }
 

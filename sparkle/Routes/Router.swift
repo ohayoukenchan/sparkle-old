@@ -146,7 +146,7 @@ final class Router: Routerable, Transitionable {
             )
             return vc
         case .books:
-            let state = mapToState(reduxStore, transform: { $0.authenticationState })
+            let state = mapToState(reduxStore, transform: { $0.booksState })
             let disposeBag = reduxStore.state.disposeBag
             let vc = BooksViewController(
                 reduxStore: reduxStore,
@@ -215,6 +215,9 @@ final class Router: Routerable, Transitionable {
 //        case .webView(let url):
 //            let vc = WebViewController(reduxStore: reduxStore, url: url)
 //            return vc
+        case .webView(let url):
+            let vc = WebViewController(reduxStore: reduxStore, url: url)
+            return vc
         }
     }
     // swiftlint:enable function_body_length

@@ -25,6 +25,7 @@ public struct AppState: StateType {
     public var settingState: SettingState = .init()
 
     // Optional State
+    public var booksState: BooksState?
     //public var userRepositoriesState: UserRepositoriesState?
     //public var publicRepositoriesState: PublicRepositoriesState?
 

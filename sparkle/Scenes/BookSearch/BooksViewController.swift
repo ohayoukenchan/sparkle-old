@@ -12,10 +12,11 @@ import ReSwift
 import ReSwiftRouter
 import RxSwift
 import RxCocoa
+import RxOptional
 import Redux
 import SparkleClient
 import SVProgressHUD
-
+import IGListKit
 
 final class BooksViewController: UIViewController, HasWeakStateDisposeBag {
     let reduxStore: RxReduxStore
@@ -27,6 +28,12 @@ final class BooksViewController: UIViewController, HasWeakStateDisposeBag {
     let collectionView: UICollectionView = .init(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     var didSetupConstraints = false
     private let disposeBag = DisposeBag()
+    lazy var adapter: IGListKit.ListAdapter = .init(updater: IGListKit.ListAdapterUpdater(), viewController: self)
+    lazy var loadingViewController: LoadingViewController = .init()
+    lazy var networkErrorViewController: NetworkErrorViewController = .init()
+    lazy var serverErrorViewController: ServerErrorViewController = .init()
+    lazy var unknownErrorViewController: UnknownErrorViewController = .init()
+    lazy var refreshControl: UIRefreshControl = .init()
 
     init(reduxStore: RxReduxStore, state: Observable<ThisState>, disposeBag: RxSwift.DisposeBag) {
         self.reduxStore = reduxStore
@@ -46,7 +53,20 @@ final class BooksViewController: UIViewController, HasWeakStateDisposeBag {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(collectionView)
+        print("\(self.state)DDDDDDDDDDDDDDDDDDDDDDDDDDDDD")
+        collectionView.backgroundColor = .init(white: 0.9, alpha: 1.0)
+        collectionView.refreshControl = refreshControl
 
+        addChildHelper(networkErrorViewController)
+        addChildHelper(loadingViewController)
+        addChildHelper(serverErrorViewController)
+        addChildHelper(unknownErrorViewController)
+        view.setNeedsUpdateConstraints()
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
     }
 }
 

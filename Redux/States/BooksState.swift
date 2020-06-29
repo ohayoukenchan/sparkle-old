@@ -1,5 +1,5 @@
 //
-//  SearchBooksState.swift
+//  BooksState.swift
 //  sparkle
 //
 //  Created by  ohayoukenchan on 2020/06/10.
@@ -12,6 +12,15 @@ import RxSwift
 import API
 import SparkleClient
 //import GitHubAPI
+
+struct tryState: HasDisposeBag, HasDataSourceElements {
+    // var disposeBag: DisposeBag
+
+    var dataSourceElements: DataSourceElements
+
+    var disposeBag: RxSwift.DisposeBag = .init()
+
+}
 
 //////////////////////////////////////////////////////////////////////////////////////////
 // MARK: - State
