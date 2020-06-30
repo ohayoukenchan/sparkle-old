@@ -27,7 +27,10 @@ final class BooksViewController: UIViewController, HasWeakStateDisposeBag {
 
     let collectionView: UICollectionView = .init(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     var didSetupConstraints = false
+
     private let disposeBag = DisposeBag()
+
+    lazy var dataSource: DataSource = .init(reduxStore, disposeBag: disposeBag)
     lazy var adapter: IGListKit.ListAdapter = .init(updater: IGListKit.ListAdapterUpdater(), viewController: self)
     lazy var loadingViewController: LoadingViewController = .init()
     lazy var networkErrorViewController: NetworkErrorViewController = .init()
@@ -62,6 +65,10 @@ final class BooksViewController: UIViewController, HasWeakStateDisposeBag {
         addChildHelper(loadingViewController)
         addChildHelper(serverErrorViewController)
         addChildHelper(unknownErrorViewController)
+
+        adapter.collectionView = collectionView
+        adapter.rx.setDataSource(dataSource).disposed(by: disposeBag)
+
         view.setNeedsUpdateConstraints()
     }
 
@@ -70,7 +77,28 @@ final class BooksViewController: UIViewController, HasWeakStateDisposeBag {
     }
 }
 
-
+extension BooksViewController {
+    final class DataSource: AdapterDataSource {
+        override func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
+            switch object {
+            case let o as DiffableWrap<TitleSectionController.Element>:
+                return TitleSectionController(o, reduxStore: reduxStore, disposeBag: disposeBag)
+            case let o as DiffableWrap<NoticeSectionController.Element>:
+                return NoticeSectionController(o, reduxStore: reduxStore, disposeBag: disposeBag)
+            case let o as DiffableWrap<RepositoryHeaderSectionController.Element>:
+                return RepositoryHeaderSectionController(o, reduxStore: reduxStore, disposeBag: disposeBag)
+            case let o as DiffableWrap<PublicRepositorySectionController.Element>:
+                return PublicRepositorySectionController(o, reduxStore: reduxStore, disposeBag: disposeBag)
+            case let o as DiffableWrap<AdvertisingSectionController.Element>:
+                return AdvertisingSectionController(o, reduxStore: reduxStore, disposeBag: disposeBag)
+            case let o as DiffableWrap<ShowMoreRepositorySectionController.Element>:
+                return ShowMoreRepositorySectionController(o, reduxStore: reduxStore, disposeBag: disposeBag)
+            default:
+                assertionFailureUnreachable(); return SpaceBoxSectionController()
+            }
+        }
+    }
+}
 
 
 //class SplashViewController: UIViewController, Routable {
