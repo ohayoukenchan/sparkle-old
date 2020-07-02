@@ -55,6 +55,9 @@ public func appReducer(action: Action, state: AppState?) -> AppState {
     }
 
     // Optional State
+    if let thisState = state.booksState {
+        state.booksState = BooksState.reducer(action: action, state: thisState)
+    }
 //    if let thisState = state.userRepositoriesState {
 //        state.userRepositoriesState = UserRepositoriesState.reducer(action: action, state: thisState)
 //    }
@@ -70,10 +73,11 @@ public func appReducer(action: Action, state: AppState?) -> AppState {
     state.routingState = RoutingState.reducer(action: action, state: state.routingState)
     state.authenticationState = AuthenticationState.reducer(action: action, state: state.authenticationState)
     //state.favoritesState = FavoritesState.reducer(action: action, state: state.favoritesState)
-//    state.settingState = SettingState.reducer(action: action, state: state.settingState)
+    state.settingState = SettingState.reducer(action: action, state: state.settingState)
     return state
 }
 
+public final class BooksInitializeAction: InitializeAction { }
 public final class PublicRepositoriesInitializeAction: InitializeAction { }
 public final class UserRepositoriesInitializeAction: InitializeAction { }
 //public final class RepositoryInitializeAction: InitializeAction {
@@ -87,6 +91,7 @@ public final class UserRepositoriesInitializeAction: InitializeAction { }
 func initializeReducer(action: InitializeAction, state: AppState) -> AppState {
     var state = state
     switch action {
+    case is BooksInitializeAction: state.booksState = .init()
 //    case is UserRepositoriesInitializeAction:
 //        state.userRepositoriesState = .init()
 //    case is PublicRepositoriesInitializeAction:
@@ -99,6 +104,9 @@ func initializeReducer(action: InitializeAction, state: AppState) -> AppState {
 
 func disposeReducer(action: DisposeAction, state: AppState) -> AppState {
     var state = state
+    if state.booksState?.disposeBag === action.disposeBag {
+        state.booksState = nil
+    }
 //    if state.userRepositoriesState?.disposeBag === action.disposeBag {
 //        state.userRepositoriesState = nil
 //    }

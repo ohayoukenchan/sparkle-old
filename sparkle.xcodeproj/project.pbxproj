@@ -45,7 +45,6 @@
 		09B8A45D24A03666003EA4A9 /* Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8A45C24A03666003EA4A9 /* Elements.swift */; };
 		09B8A45F24A0395D003EA4A9 /* FavoriteState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8A45E24A0395D003EA4A9 /* FavoriteState.swift */; };
 		09B8A46224A039C8003EA4A9 /* TitleElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8A46124A039C8003EA4A9 /* TitleElement.swift */; };
-		09B8A46424A44C8C003EA4A9 /* RepositoryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8A46324A44C8C003EA4A9 /* RepositoryState.swift */; };
 		09B8A46624A44E35003EA4A9 /* UserDefaults+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8A46524A44E35003EA4A9 /* UserDefaults+Ex.swift */; };
 		09B8A46C24A460D5003EA4A9 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8A46B24A460D5003EA4A9 /* WebViewController.swift */; };
 		09B8A47224AB3476003EA4A9 /* TitleSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8A46E24AB3476003EA4A9 /* TitleSectionController.swift */; };
@@ -247,7 +246,6 @@
 		09B8A45C24A03666003EA4A9 /* Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elements.swift; sourceTree = "<group>"; };
 		09B8A45E24A0395D003EA4A9 /* FavoriteState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteState.swift; sourceTree = "<group>"; };
 		09B8A46124A039C8003EA4A9 /* TitleElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleElement.swift; sourceTree = "<group>"; };
-		09B8A46324A44C8C003EA4A9 /* RepositoryState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryState.swift; sourceTree = "<group>"; };
 		09B8A46524A44E35003EA4A9 /* UserDefaults+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ex.swift"; sourceTree = "<group>"; };
 		09B8A46B24A460D5003EA4A9 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		09B8A46E24AB3476003EA4A9 /* TitleSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSectionController.swift; sourceTree = "<group>"; };
@@ -755,7 +753,6 @@
 			children = (
 				09B8A46024A039B7003EA4A9 /* CommonElements */,
 				09ECECD0249310A60028CDBA /* GlobalState.swift */,
-				09B8A46324A44C8C003EA4A9 /* RepositoryState.swift */,
 				09952F71249AD71C0049919F /* SettingState.swift */,
 				09DB07322490C58900FF6D5D /* BooksState.swift */,
 				09DB074C24920EF800FF6D5D /* RequestState.swift */,
@@ -1445,7 +1442,6 @@
 				097B10E724922F3C003CD691 /* DataSourceElements.swift in Sources */,
 				09952F72249AD71C0049919F /* SettingState.swift in Sources */,
 				09ECECD9249310A70028CDBA /* GlobalState.swift in Sources */,
-				09B8A46424A44C8C003EA4A9 /* RepositoryState.swift in Sources */,
 				09ECECCA24930E9C0028CDBA /* KeychainStore.swift in Sources */,
 				097B10FE24922F3D003CD691 /* BooksState.swift in Sources */,
 				097B10FF24922F3D003CD691 /* RequestState.swift in Sources */,

@@ -21,7 +21,6 @@ import IGListKit
 final class BooksViewController: UIViewController, HasWeakStateDisposeBag {
     let reduxStore: RxReduxStore
     typealias ThisState = BooksState
-   // let state: Observable<AuthenticationState>
     let state: Observable<ThisState>
     weak var weakStateDisposeBag: RxSwift.DisposeBag? // For HasWeakStateDisposeBag
 
@@ -61,10 +60,10 @@ final class BooksViewController: UIViewController, HasWeakStateDisposeBag {
         collectionView.backgroundColor = .init(white: 0.9, alpha: 1.0)
         collectionView.refreshControl = refreshControl
 
-        addChildHelper(networkErrorViewController)
-        addChildHelper(loadingViewController)
-        addChildHelper(serverErrorViewController)
-        addChildHelper(unknownErrorViewController)
+//        addChildHelper(networkErrorViewController)
+//        addChildHelper(loadingViewController)
+//        addChildHelper(serverErrorViewController)
+//        addChildHelper(unknownErrorViewController)
 
         adapter.collectionView = collectionView
         adapter.rx.setDataSource(dataSource).disposed(by: disposeBag)
@@ -97,19 +96,19 @@ final class BooksViewController: UIViewController, HasWeakStateDisposeBag {
             .bind(to: Binder(self) { me, _ in me.refreshReload() })
             .disposed(by: disposeBag)
 
-        networkErrorViewController.retryButton.rx.tap
-            .bind(to: Binder(self) { me, _ in me.request(.initialRequest) })
-            .disposed(by: disposeBag)
+//        networkErrorViewController.retryButton.rx.tap
+//            .bind(to: Binder(self) { me, _ in me.request(.initialRequest) })
+//            .disposed(by: disposeBag)
 
         request(.initialRequest)
         reduxStore.dispatch(FavoritesState.Action.loadFavoritesActionCreator())
 
         view.setNeedsUpdateConstraints()
     }
-
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-    }
+//
+//    override func viewDidLayoutSubviews() {
+//        super.viewDidLayoutSubviews()
+//    }
 
     func request(_ connectionType: ConnectionType) {
         reduxStore.dispatch(

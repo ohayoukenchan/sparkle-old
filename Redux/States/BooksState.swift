@@ -90,7 +90,7 @@ extension BooksState {
                 store.dispatch(Action.requestStart(connectionType: connectionType))
                 return ThunkAction(
                     BooksAPI
-                        .getBooksGet()//(perPage: perPage)
+                        .booksGetSingle()
                         .map { Action.requestSuccess(response: $0) }
                         .mapError { Action.requestError(error: $0) },
                     disposeBag: disposeBag
@@ -182,7 +182,7 @@ extension BooksState {
     ) -> DataSourceElements {
         let ds = DataSourceElements(animated: true)
         ds.append(TitleElement("MainViewController"))
-        ds.append(TitleElement("┗ PublicRepositoriesViewController"))
+        ds.append(TitleElement("┗ BooksViewController"))
         for i in 0..<noticeCount {
             ds.append(NoticeElement(notice: notices[i]))
         }

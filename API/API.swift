@@ -135,7 +135,7 @@ extension AlamofireRequestBuilder {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 extension SparkleClient.BooksAPI {
-    public class func getBooksGet() -> Single<Response<[Book]>> {
+    public class func booksGetSingle() -> Single<Response<[Book]>> {
         let rb = getBooksGetWithRequestBuilder()
         //let rb = userGetWithRequestBuilder()
         //rb.addAuthorizationHeader(<#AccessToken#>)
