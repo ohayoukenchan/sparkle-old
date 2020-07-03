@@ -19,10 +19,11 @@ import SVProgressHUD
 import IGListKit
 
 final class BooksViewController: UIViewController, HasWeakStateDisposeBag {
-    let reduxStore: RxReduxStore
     typealias ThisState = BooksState
-    let state: Observable<ThisState>
     weak var weakStateDisposeBag: RxSwift.DisposeBag? // For HasWeakStateDisposeBag
+    let reduxStore: ReduxStoreType
+    let state: Observable<ThisState>
+
 
     let collectionView: UICollectionView = .init(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     var didSetupConstraints = false

@@ -19,7 +19,7 @@ import RxOptional
 import IQKeyboardManagerSwift
 import SwiftyBeaver
 import Redux
-import API
+import SparkleClient
 
 func createReSwiftSrore() -> ReSwift.Store<AppState> {
     var middleware = [Redux.MiddlewareFunction]()
@@ -229,7 +229,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             #if !DEBUG
             customHeaders["Accept-Encoding"] = "gzip, deflate"
             #endif
-            //GitHubAPI.GitHubAPIAPI.customHeaders = customHeaders
+            SparkleClient.SparkleClientAPI.customHeaders = customHeaders
         }
 
         do { // Appearance settings

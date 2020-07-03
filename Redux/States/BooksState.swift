@@ -11,16 +11,6 @@ import ReSwift
 import RxSwift
 import API
 import SparkleClient
-//import GitHubAPI
-
-struct tryState: HasDisposeBag, HasDataSourceElements {
-    // var disposeBag: DisposeBag
-
-    var dataSourceElements: DataSourceElements
-
-    var disposeBag: RxSwift.DisposeBag = .init()
-
-}
 
 //////////////////////////////////////////////////////////////////////////////////////////
 // MARK: - State
@@ -103,6 +93,7 @@ extension BooksState {
 //////////////////////////////////////////////////////////////////////////////////////////
 // MARK: - Reducer
 //////////////////////////////////////////////////////////////////////////////////////////
+
 extension BooksState {
     public static func reducer(action: ReSwift.Action, state: ThisState) -> ThisState {
         var state = state

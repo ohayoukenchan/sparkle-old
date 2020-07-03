@@ -131,6 +131,7 @@ func stateMapReducer(action: StateMapAction, state: AppState) -> AppState {
 //                RepositoryState.reducer(action: action.originalAction, state: thisState)
 //        }
 //    }
+    state = appReducer(action: action.originalAction, state: state)
     return state
 }
 

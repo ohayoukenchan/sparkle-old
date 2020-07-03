@@ -146,6 +146,7 @@ final class Router: Routerable, Transitionable {
             )
             return vc
         case .books:
+            reduxStore.dispatch(BooksInitializeAction())
             let state = mapToState(reduxStore, transform: { $0.booksState })
             let disposeBag = reduxStore.state.disposeBag
             let vc = BooksViewController(
