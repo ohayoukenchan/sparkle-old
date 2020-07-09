@@ -115,6 +115,55 @@ public struct RepositoryElement: Diffable {
 }
 
 public typealias PublicRepositoryId = Int
+
+
+public struct PhrasesElement: Diffable {
+    public let identifier: Identifier
+    public let bookId: Double
+    public let phrase: String
+    public let userID: UserInPhrases?
+    public let createdAt: String
+    public let updatedAt: String
+//    public let identifier: Identifier
+//    public let id: RepositoryId
+//    public let owner: String
+//    public let name: String
+//    public let descriptionForRepository: String
+//   public let routingPage: Routing.Page
+    public let isFavorite: Bool
+//    public var favorite: Favorite {
+//        return Favorite(id: self.id, owner: self.owner, name: self.name, descriptionForRepository: self.descriptionForRepository)
+//    }
+//    public var fullName: String { return "\(owner)/\(name)" }
+//
+//    init(_ repo: GitHubAPI.PublicRepo, isFavorite: Bool) {
+//        self.identifier = .init("\(String(describing: PublicRepositoryElement.self))-\(repo._id)")
+//        self.id = repo._id
+//        self.owner = repo.owner.login
+//        self.name = repo.name
+//        self.descriptionForRepository = repo._description ?? ""
+//        self.routingPage = .repository((owner: repo.owner.login, repo: repo.name))
+//        self.isFavorite = isFavorite
+//    }
+
+    init(_ phrase: Phrase, isFavorite: Bool) {
+        self.identifier = .init("\(String(describing: PublicRepositoryElement.self))-\(phrase.bookId)")
+        self.bookId = phrase.bookId
+        self.phrase = phrase.phrase ?? ""
+        self.createdAt = phrase.createdAt ?? ""
+        self.updatedAt = phrase.updatedAt ?? ""
+        self.userID = phrase.userID
+        // self.routingPage = .repository((owner: book.title, repo: book.title))
+        self.isFavorite = isFavorite
+    }
+
+    public static func == (lhs: PhrasesElement, rhs: PhrasesElement) -> Bool {
+        return lhs.isFavorite == rhs.isFavorite
+    }
+}
+
+
+
 public struct PublicRepositoryElement: Diffable {
     public let identifier: Identifier
     public let isbn: Double

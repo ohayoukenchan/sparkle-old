@@ -39,6 +39,8 @@ public struct Routing {
                 return true
             case (.books, .books):
                 return true
+            case (.phrases, .phrases):
+                return true
 //            case (.userRepositories, .userRepositories):
 //                return true
 //            case (.publicRepositories, .publicRepositories):
@@ -62,6 +64,7 @@ public struct Routing {
 
         case main
         case books
+        case phrases
 //        case userRepositories
 //        case publicRepositories
 //        case repository(RepositoryState.Input)

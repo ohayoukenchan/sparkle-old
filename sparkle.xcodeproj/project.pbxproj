@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090E7E8124B75C2C0007A33D /* PhrasesState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E7E8024B75C2C0007A33D /* PhrasesState.swift */; };
+		090E7E8524B761930007A33D /* PhrasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E7E8424B761930007A33D /* PhrasesViewController.swift */; };
 		095F761E2493638800ADFC66 /* UIViewController+EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095F761D2493638800ADFC66 /* UIViewController+EX.swift */; };
 		095F7621249367CB00ADFC66 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095F7620249367CB00ADFC66 /* BooksViewController.swift */; };
 		095F76292493727800ADFC66 /* UIView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095F76222493727600ADFC66 /* UIView+Rx.swift */; };
@@ -208,6 +210,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		090E7E8024B75C2C0007A33D /* PhrasesState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesState.swift; sourceTree = "<group>"; };
+		090E7E8424B761930007A33D /* PhrasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesViewController.swift; sourceTree = "<group>"; };
 		0916185B2495A2A40077334B /* FBLPromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBLPromises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0916185D2495A2DB0077334B /* FBLPromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBLPromises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		091618602495A37C0077334B /* FBLPromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBLPromises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -462,6 +466,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		090E7E8224B761720007A33D /* Phrases */ = {
+			isa = PBXGroup;
+			children = (
+				090E7E8424B761930007A33D /* PhrasesViewController.swift */,
+			);
+			path = Phrases;
+			sourceTree = "<group>";
+		};
 		095F761F249367B300ADFC66 /* BookSearch */ = {
 			isa = PBXGroup;
 			children = (
@@ -755,6 +767,7 @@
 				09ECECD0249310A60028CDBA /* GlobalState.swift */,
 				09952F71249AD71C0049919F /* SettingState.swift */,
 				09DB07322490C58900FF6D5D /* BooksState.swift */,
+				090E7E8024B75C2C0007A33D /* PhrasesState.swift */,
 				09DB074C24920EF800FF6D5D /* RequestState.swift */,
 				09DB0754249212DB00FF6D5D /* RoutingState.swift */,
 				09DB07562492131E00FF6D5D /* AuthenticationState.swift */,
@@ -767,6 +780,7 @@
 		3AE8EF5021B4F2560098FE23 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				090E7E8224B761720007A33D /* Phrases */,
 				09B8A47624AB3570003EA4A9 /* Repositories */,
 				09B8A46A24A460C3003EA4A9 /* WebView */,
 				09B8A46D24AB3476003EA4A9 /* SectionController */,
@@ -1223,7 +1237,7 @@
 			);
 			name = "Run Script";
 			outputPaths = (
-				"$SRCROOT/R.generated.swift",
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1396,6 +1410,7 @@
 				09ECECCC249310310028CDBA /* AppStateReducer.swift in Sources */,
 				09B8A45D24A03666003EA4A9 /* Elements.swift in Sources */,
 				097B110124922F3D003CD691 /* AuthenticationState.swift in Sources */,
+				090E7E8124B75C2C0007A33D /* PhrasesState.swift in Sources */,
 				097B10B72492297F003CD691 /* Routing.swift in Sources */,
 				097B10B82492297F003CD691 /* ReponseErrorConcern.swift in Sources */,
 				097B10B92492297F003CD691 /* ReduxStoreType.swift in Sources */,
@@ -1443,6 +1458,7 @@
 				095F762F2493727800ADFC66 /* RxIGListAdapterDataSource.swift in Sources */,
 				09DB07352490CE9700FF6D5D /* SVProgressHUD.swift in Sources */,
 				09B8A49424AB3571003EA4A9 /* RepositoryCell.swift in Sources */,
+				090E7E8524B761930007A33D /* PhrasesViewController.swift in Sources */,
 				09B8A49F24AB3571003EA4A9 /* ShowMoreRepositoryCell.swift in Sources */,
 				09F65AD42493416F00A87B01 /* Helper.swift in Sources */,
 				09B8A49E24AB3571003EA4A9 /* PublicRepositoryCell.swift in Sources */,

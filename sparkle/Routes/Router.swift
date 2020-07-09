@@ -155,67 +155,77 @@ final class Router: Routerable, Transitionable {
                 disposeBag: disposeBag
             )
             return vc
-//        case .userRepositories: // Optional State
-//            reduxStore.dispatch(UserRepositoriesInitializeAction())
-//            let state = mapToState(reduxStore, transform: { $0.userRepositoriesState })
-//            let disposeBag = reduxStore.state.userRepositoriesState?.disposeBag
-//                            ?? { assertionFailureUnreachable(); return .init() }()
-//            let vc = UserRepositoriesViewController(
-//                reduxStore: reduxStore,
-//                state: state,
-//                disposeBag: disposeBag
-//            )
-//            return vc
-//        case .publicRepositories: // Optional State
-//            reduxStore.dispatch(PublicRepositoriesInitializeAction())
-//            let state = mapToState(reduxStore, transform: { $0.publicRepositoriesState })
-//            let disposeBag = reduxStore.state.publicRepositoriesState?.disposeBag
-//                            ?? { assertionFailureUnreachable(); return .init() }()
-//            let vc = PublicRepositoriesViewController(
-//                reduxStore: reduxStore,
-//                state: state,
-//                disposeBag: disposeBag
-//            )
-//            return vc
-//        case .repository(let input): // Map State
-//            let stateIdentifier: StateIdentifier = .init(RepositoryState.self)
-//            let stateMapReduxStore = RxStateMapReduxStore(reduxStore, stateIdentifier: stateIdentifier)
-//            stateMapReduxStore.dispatch(RepositoryInitializeAction(input))
-//            let state = mapToState(reduxStore, transform: { $0.repositoryStateMap[stateIdentifier] })
-//            let disposeBag = reduxStore.state.repositoryStateMap[stateIdentifier]?.disposeBag
-//                                    ?? { assertionFailureUnreachable(); return .init() }()
-//            let vc = RepositoryViewController(
-//                reduxStore: stateMapReduxStore,
-//                state: state,
-//                stateIdentifier: stateIdentifier,
-//                input: input,
-//                disposeBag: disposeBag
-//            )
-//            return vc
-//        case .favorites:
-//            let disposeBag: RxSwift.DisposeBag = reduxStore.state.disposeBag
-//            let state = mapToState(reduxStore, transform: { $0.favoritesState })
-//            let vc = FavoritesViewController(reduxStore: reduxStore, state: state, disposeBag: disposeBag)
-//            return vc
-//        case .serviceUnavailable:
-//            let vc = ServiceUnavailableViewController(reduxStore: reduxStore)
-//            return vc
-//        case .setting:
-//            let disposeBag: RxSwift.DisposeBag = reduxStore.state.disposeBag
-//            let state = mapToState(reduxStore, transform: { $0.settingState })
-//            let vc = SettingViewController(reduxStore: reduxStore, state: state, disposeBag: disposeBag)
-//            return vc
-//        case .login:
-//            assert(GitHubClientID.count > 0)
-//            assert(GitHubClientSecret.count > 0)
-//            let vc = LoginWebViewController(reduxStore: reduxStore,
-//                                            clientID: GitHubClientID,
-//                                            clientSecret: GitHubClientSecret,
-//                                            redirectURL: GitHubRedirectURL)
-//            return vc
-//        case .webView(let url):
-//            let vc = WebViewController(reduxStore: reduxStore, url: url)
-//            return vc
+        case .phrases:
+            reduxStore.dispatch(PhrasesInitializeAction())
+            let state = mapToState(reduxStore, transform: { $0.phrasesState })
+            let disposeBag = reduxStore.state.disposeBag
+            let vc = PhrasesViewController(
+                reduxStore: reduxStore,
+                state: state,
+                disposeBag: disposeBag
+            )
+            return vc
+            //        case .userRepositories: // Optional State
+            //            reduxStore.dispatch(UserRepositoriesInitializeAction())
+            //            let state = mapToState(reduxStore, transform: { $0.userRepositoriesState })
+            //            let disposeBag = reduxStore.state.userRepositoriesState?.disposeBag
+            //                            ?? { assertionFailureUnreachable(); return .init() }()
+            //            let vc = UserRepositoriesViewController(
+            //                reduxStore: reduxStore,
+            //                state: state,
+            //                disposeBag: disposeBag
+            //            )
+            //            return vc
+            //        case .publicRepositories: // Optional State
+            //            reduxStore.dispatch(PublicRepositoriesInitializeAction())
+            //            let state = mapToState(reduxStore, transform: { $0.publicRepositoriesState })
+            //            let disposeBag = reduxStore.state.publicRepositoriesState?.disposeBag
+            //                            ?? { assertionFailureUnreachable(); return .init() }()
+            //            let vc = PublicRepositoriesViewController(
+            //                reduxStore: reduxStore,
+            //                state: state,
+            //                disposeBag: disposeBag
+            //            )
+            //            return vc
+            //        case .repository(let input): // Map State
+            //            let stateIdentifier: StateIdentifier = .init(RepositoryState.self)
+            //            let stateMapReduxStore = RxStateMapReduxStore(reduxStore, stateIdentifier: stateIdentifier)
+            //            stateMapReduxStore.dispatch(RepositoryInitializeAction(input))
+            //            let state = mapToState(reduxStore, transform: { $0.repositoryStateMap[stateIdentifier] })
+            //            let disposeBag = reduxStore.state.repositoryStateMap[stateIdentifier]?.disposeBag
+            //                                    ?? { assertionFailureUnreachable(); return .init() }()
+            //            let vc = RepositoryViewController(
+            //                reduxStore: stateMapReduxStore,
+            //                state: state,
+            //                stateIdentifier: stateIdentifier,
+            //                input: input,
+            //                disposeBag: disposeBag
+            //            )
+            //            return vc
+            //        case .favorites:
+            //            let disposeBag: RxSwift.DisposeBag = reduxStore.state.disposeBag
+            //            let state = mapToState(reduxStore, transform: { $0.favoritesState })
+            //            let vc = FavoritesViewController(reduxStore: reduxStore, state: state, disposeBag: disposeBag)
+            //            return vc
+            //        case .serviceUnavailable:
+            //            let vc = ServiceUnavailableViewController(reduxStore: reduxStore)
+            //            return vc
+            //        case .setting:
+            //            let disposeBag: RxSwift.DisposeBag = reduxStore.state.disposeBag
+            //            let state = mapToState(reduxStore, transform: { $0.settingState })
+            //            let vc = SettingViewController(reduxStore: reduxStore, state: state, disposeBag: disposeBag)
+            //            return vc
+            //        case .login:
+            //            assert(GitHubClientID.count > 0)
+            //            assert(GitHubClientSecret.count > 0)
+            //            let vc = LoginWebViewController(reduxStore: reduxStore,
+            //                                            clientID: GitHubClientID,
+            //                                            clientSecret: GitHubClientSecret,
+            //                                            redirectURL: GitHubRedirectURL)
+            //            return vc
+            //        case .webView(let url):
+            //            let vc = WebViewController(reduxStore: reduxStore, url: url)
+        //            return vc
         case .webView(let url):
             let vc = WebViewController(reduxStore: reduxStore, url: url)
             return vc
