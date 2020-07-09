@@ -61,10 +61,10 @@ final class BooksViewController: UIViewController, HasWeakStateDisposeBag {
         collectionView.backgroundColor = .init(white: 0.9, alpha: 1.0)
         collectionView.refreshControl = refreshControl
 
-//        addChildHelper(networkErrorViewController)
-//        addChildHelper(loadingViewController)
-//        addChildHelper(serverErrorViewController)
-//        addChildHelper(unknownErrorViewController)
+        addChildHelper(networkErrorViewController)
+        addChildHelper(loadingViewController)
+        addChildHelper(serverErrorViewController)
+        addChildHelper(unknownErrorViewController)
 
         adapter.collectionView = collectionView
         adapter.rx.setDataSource(dataSource).disposed(by: disposeBag)
@@ -97,19 +97,19 @@ final class BooksViewController: UIViewController, HasWeakStateDisposeBag {
             .bind(to: Binder(self) { me, _ in me.refreshReload() })
             .disposed(by: disposeBag)
 
-//        networkErrorViewController.retryButton.rx.tap
-//            .bind(to: Binder(self) { me, _ in me.request(.initialRequest) })
-//            .disposed(by: disposeBag)
+        networkErrorViewController.retryButton.rx.tap
+            .bind(to: Binder(self) { me, _ in me.request(.initialRequest) })
+            .disposed(by: disposeBag)
 
         request(.initialRequest)
         reduxStore.dispatch(FavoritesState.Action.loadFavoritesActionCreator())
 
         view.setNeedsUpdateConstraints()
     }
-//
-//    override func viewDidLayoutSubviews() {
-//        super.viewDidLayoutSubviews()
-//    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+    }
 
     func request(_ connectionType: ConnectionType) {
         reduxStore.dispatch(
@@ -171,72 +171,3 @@ extension BooksViewController {
         }
     }
 }
-
-
-//class SplashViewController: UIViewController, Routable {
-//
-//
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//    }
-//
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//
-//        //store.subscribe(self)
-//    }
-//
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//
-//        fooButton.rx.tap.asDriver().drive(onNext: { [weak self]() in
-//            print("HOOOOOOOO")
-//            //store.dispatch(SplashState.routesChange())
-//        }).disposed(by: self.disposeBag)
-//
-//
-//        counterUpButton.rx.tap.asDriver().drive(onNext: { [weak self]() in
-//            print("SSSSSSS")
-//            //store.dispatch(increase)
-//            //store.dispatch(CounterState.counterActionIncrease())
-//        }).disposed(by: self.disposeBag)
-//
-//
-//        counterDownButton.rx.tap.asDriver().drive(onNext: { [weak self]() in
-//            //store.dispatch(CounterState.counterActionDecrease())
-//            //store.dispatch(decrease)
-//        }).disposed(by: self.disposeBag)
-//    }
-//
-//    override func viewWillDisappear(_ animated: Bool) {
-//        super.viewWillDisappear(animated)
-//
-//        //store.unsubscribe(self)
-//    }
-//
-//}
-//
-////extension SplashViewController: StoreSubscriber {
-////
-////    typealias StoreSubscriberStateType = AppState
-////
-////    func newState(state: AppState) {
-////
-////        switch state.viewState.currentViewState {
-////            case .Requesting:
-////                SVProgressHUD.sparkle.show()
-////            case .Working:
-////                SVProgressHUD.dismiss()
-////            case .Blank:
-////                print("aaa")
-////            case .Error(_):
-////                print("aaa")
-////        }
-////
-////        if (state.searchBooksState.books.count > 0) {
-////            currentViewStateLabel.text = state.searchBooksState.books[0].title
-////        }
-////        counterLabel.text = "\(state.counterState.counter)"
-////    }
-////}
