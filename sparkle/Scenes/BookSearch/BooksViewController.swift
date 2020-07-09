@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import TwitterKit
 import ReSwift
 import ReSwiftRouter
 import RxSwift

@@ -920,7 +920,6 @@
 				097B10A424922970003CD691 /* Sources */,
 				097B10A524922970003CD691 /* Frameworks */,
 				097B10A624922970003CD691 /* Resources */,
-				29AB8D928A8C0A78B7FF1FB9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -941,7 +940,6 @@
 				097B10BB2492298B003CD691 /* Sources */,
 				097B10BC2492298B003CD691 /* Frameworks */,
 				097B10BD2492298B003CD691 /* Resources */,
-				4B6E1C53FF73797297B7EB7A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -963,7 +961,6 @@
 				3A9FFCD321896A63007E2B8C /* Resources */,
 				3A9FFD2921896F10007E2B8C /* Embed Frameworks */,
 				A8594C845284FBF4994ABE3A /* [CP] Embed Pods Frameworks */,
-				07D6C399D86A63FE9F6367BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1194,40 +1191,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		07D6C399D86A63FE9F6367BA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sparkle/Pods-sparkle-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sparkle/Pods-sparkle-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sparkle/Pods-sparkle-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		29AB8D928A8C0A78B7FF1FB9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sparkle-Redux/Pods-sparkle-Redux-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sparkle-Redux/Pods-sparkle-Redux-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sparkle-Redux/Pods-sparkle-Redux-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2C46F5A2648F7050DCB9F92B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1260,7 +1223,7 @@
 			);
 			name = "Run Script";
 			outputPaths = (
-				$SRCROOT/R.generated.swift,
+				"$SRCROOT/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1286,23 +1249,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4B6E1C53FF73797297B7EB7A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sparkle-API/Pods-sparkle-API-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sparkle-API/Pods-sparkle-API-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sparkle-API/Pods-sparkle-API-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5BD876E54D675FC25790F091 /* [CP] Check Pods Manifest.lock */ = {
@@ -1674,7 +1620,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3E5A17E84C2EBE8C7D7B3AC8 /* Pods-sparkle-Redux.development.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1804,7 +1750,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0A13347679D22F14AFC4A015 /* Pods-sparkle-API.development.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2003,7 +1949,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8C393E3698F298D707864833 /* Pods-Infra.development.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2340,7 +2286,6 @@
 				OTHER_SWIFT_FLAGS = "-D RELEASE";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = RELEASE;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
 			};

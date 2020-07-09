@@ -16,7 +16,6 @@ target 'Infra' do
   target 'sparkle' do
     inherit! :search_paths
     # Social
-    pod 'TwitterKit'
     pod 'Firebase/Core'
     pod 'Firebase/Firestore'
     pod 'Firebase/Database'

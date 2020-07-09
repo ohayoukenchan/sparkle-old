@@ -378,9 +378,6 @@ PODS:
     - RxSwift (~> 5.0.0)
   - SVProgressHUD (2.2.5)
   - SwiftyBeaver (1.9.1)
-  - TwitterCore (3.2.0)
-  - TwitterKit (3.4.2):
-    - TwitterCore (>= 3.2.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -407,7 +404,6 @@ DEPENDENCIES:
   - SparkleClient (from `https://github.com/ohayoukenchan/sparkle-api-ios.git`)
   - SVProgressHUD
   - SwiftyBeaver
-  - TwitterKit
 
 SPEC REPOS:
   trunk:
@@ -453,8 +449,6 @@ SPEC REPOS:
     - SnapKit
     - SVProgressHUD
     - SwiftyBeaver
-    - TwitterCore
-    - TwitterKit
 
 EXTERNAL SOURCES:
   SparkleClient:
@@ -509,9 +503,7 @@ SPEC CHECKSUMS:
   SparkleClient: 5a74ca7aa513ff87c73ae7201a03c851f4d1c018
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyBeaver: a1f5691458561414bcfab51874b2b7445451602b
-  TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
-  TwitterKit: 5e4f41d70b9abdb41df5467f52d7aa2c0fd26ebb
 
-PODFILE CHECKSUM: abc8d5f24257adf54ca5816b2f7acfee1af7884d
+PODFILE CHECKSUM: b5084b066b6ea0dab79b38d554570242217c5395
 
 COCOAPODS: 1.9.0
