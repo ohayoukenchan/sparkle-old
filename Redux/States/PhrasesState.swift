@@ -185,7 +185,7 @@ extension PhrasesState {
             if shouldShowMoreRepository || $0.offset < 10 {
                 let isFavorite = favoriteIds.contains(RepositoryId($0.element.bookId))
                 favoriteIds.contains(RepositoryId($0.element.bookId))
-                ds.append(PhrasesElement($0.element, isFavorite: isFavorite))
+                ds.append(PublicRepositoryElement($0.element, isFavorite: isFavorite))
             }
         }
         if shouldShowMoreRepository == false {

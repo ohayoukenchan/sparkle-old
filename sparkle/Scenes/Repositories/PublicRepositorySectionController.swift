@@ -11,8 +11,8 @@ final class PublicRepositorySectionController: SectionController<PublicRepositor
 
     override func cellForItem(at index: Int) -> UICollectionViewCell {
         let cell = dequeueReusableCell(PublicRepositoryCell.self, at: index)
-        cell.titleLabel.text = element.title
-        cell.descriptionForRepositoryLabel.text = element.publisher
+        cell.titleLabel.text = element.phrase
+        cell.descriptionForRepositoryLabel.text = element.createdAt
         cell.favoriteButton.isSelected = element.isFavorite
         cell.favoriteButton.rx.tap
             .bind(to: Binder(self) { me, _ in me.toggleFavorite() })

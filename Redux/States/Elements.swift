@@ -70,7 +70,7 @@ public struct AdvertisingElement: Diffable {
 public typealias RepositoryId = Int
 public struct RepositoryElement: Diffable {
     public let identifier: Identifier
-    public let isbn: Double
+    public let isbn: Int
     public let title: String
     public let publisher: String
     public let price: String
@@ -92,7 +92,7 @@ public struct RepositoryElement: Diffable {
 
     init(_ book: Book, isFavorite: Bool) {
         self.identifier = .init("\(String(describing: RepositoryElement.self))-\(book.isbn)")
-        self.isbn = book.isbn
+        self.isbn = Int(book.isbn)
         self.title = book.title ?? ""
         self.publisher = book.publisher ?? ""
         self.price = book.price ?? ""
@@ -117,9 +117,9 @@ public struct RepositoryElement: Diffable {
 public typealias PublicRepositoryId = Int
 
 
-public struct PhrasesElement: Diffable {
+public struct PublicRepositoryElement: Diffable {
     public let identifier: Identifier
-    public let bookId: Double
+    public let bookId: Int
     public let phrase: String
     public let userID: UserInPhrases?
     public let createdAt: String
@@ -157,55 +157,55 @@ public struct PhrasesElement: Diffable {
         self.isFavorite = isFavorite
     }
 
-    public static func == (lhs: PhrasesElement, rhs: PhrasesElement) -> Bool {
-        return lhs.isFavorite == rhs.isFavorite
-    }
-}
-
-
-
-public struct PublicRepositoryElement: Diffable {
-    public let identifier: Identifier
-    public let isbn: Double
-    public let title: String
-    public let publisher: String
-    public let price: String
-//    public let identifier: Identifier
-//    public let id: RepositoryId
-//    public let owner: String
-//    public let name: String
-//    public let descriptionForRepository: String
-//   public let routingPage: Routing.Page
-    public let isFavorite: Bool
-//    public var favorite: Favorite {
-//        return Favorite(id: self.id, owner: self.owner, name: self.name, descriptionForRepository: self.descriptionForRepository)
-//    }
-//    public var fullName: String { return "\(owner)/\(name)" }
-//
-//    init(_ repo: GitHubAPI.PublicRepo, isFavorite: Bool) {
-//        self.identifier = .init("\(String(describing: PublicRepositoryElement.self))-\(repo._id)")
-//        self.id = repo._id
-//        self.owner = repo.owner.login
-//        self.name = repo.name
-//        self.descriptionForRepository = repo._description ?? ""
-//        self.routingPage = .repository((owner: repo.owner.login, repo: repo.name))
-//        self.isFavorite = isFavorite
-//    }
-
-    init(_ book: Book, isFavorite: Bool) {
-        self.identifier = .init("\(String(describing: PublicRepositoryElement.self))-\(book.isbn)")
-        self.isbn = book.isbn
-        self.title = book.title ?? ""
-        self.publisher = book.publisher ?? ""
-        self.price = book.price ?? ""
-        // self.routingPage = .repository((owner: book.title, repo: book.title))
-        self.isFavorite = isFavorite
-    }
-
     public static func == (lhs: PublicRepositoryElement, rhs: PublicRepositoryElement) -> Bool {
         return lhs.isFavorite == rhs.isFavorite
     }
 }
+
+//
+//
+//public struct PublicRepositoryElement: Diffable {
+//    public let identifier: Identifier
+//    public let isbn: Double
+//    public let title: String
+//    public let publisher: String
+//    public let price: String
+////    public let identifier: Identifier
+////    public let id: RepositoryId
+////    public let owner: String
+////    public let name: String
+////    public let descriptionForRepository: String
+////   public let routingPage: Routing.Page
+//    public let isFavorite: Bool
+////    public var favorite: Favorite {
+////        return Favorite(id: self.id, owner: self.owner, name: self.name, descriptionForRepository: self.descriptionForRepository)
+////    }
+////    public var fullName: String { return "\(owner)/\(name)" }
+////
+////    init(_ repo: GitHubAPI.PublicRepo, isFavorite: Bool) {
+////        self.identifier = .init("\(String(describing: PublicRepositoryElement.self))-\(repo._id)")
+////        self.id = repo._id
+////        self.owner = repo.owner.login
+////        self.name = repo.name
+////        self.descriptionForRepository = repo._description ?? ""
+////        self.routingPage = .repository((owner: repo.owner.login, repo: repo.name))
+////        self.isFavorite = isFavorite
+////    }
+//
+//    init(_ book: Book, isFavorite: Bool) {
+//        self.identifier = .init("\(String(describing: PublicRepositoryElement.self))-\(book.isbn)")
+//        self.isbn = book.isbn
+//        self.title = book.title ?? ""
+//        self.publisher = book.publisher ?? ""
+//        self.price = book.price ?? ""
+//        // self.routingPage = .repository((owner: book.title, repo: book.title))
+//        self.isFavorite = isFavorite
+//    }
+//
+//    public static func == (lhs: PublicRepositoryElement, rhs: PublicRepositoryElement) -> Bool {
+//        return lhs.isFavorite == rhs.isFavorite
+//    }
+//}
 
 public struct ShowMoreRepositoryElement: Diffable {
     public enum RepositoryType {

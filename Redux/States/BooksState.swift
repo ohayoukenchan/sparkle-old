@@ -185,7 +185,8 @@ extension BooksState {
             if shouldShowMoreRepository || $0.offset < 10 {
                 let isFavorite = favoriteIds.contains(RepositoryId($0.element.isbn))
                 favoriteIds.contains(RepositoryId($0.element.isbn))
-                ds.append(PublicRepositoryElement($0.element, isFavorite: isFavorite))
+                // TODO: ちょっとPhrasesのほうに処理移したのであとで考える
+                //ds.append(PublicRepositoryElement($0.element, isFavorite: isFavorite))
             }
         }
         if shouldShowMoreRepository == false {
